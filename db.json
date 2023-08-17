@@ -3,19 +3,22 @@
     "results": [
         {
             "object": "page",
-            "id": "576175a2-3e2c-4d84-b0fe-aa1b14c10545",
-            "created_time": "2023-08-16T07:41:00.000Z",
-            "last_edited_time": "2023-08-16T07:41:00.000Z",
+            "id": "088ece82-bdde-477b-bffb-84c14c81ed2e",
+            "created_time": "2023-08-17T07:09:00.000Z",
+            "last_edited_time": "2023-08-17T07:21:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
             },
             "last_edited_by": {
                 "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
             },
             "cover": null,
-            "icon": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
             "parent": {
                 "type": "database_id",
                 "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
@@ -25,17 +28,1785 @@
                 "YoB": {
                     "id": "ECFj",
                     "type": "number",
-                    "number": null
+                    "number": 1960
                 },
                 "Country": {
                     "id": "Gt%5BC",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
                 },
                 "Wiki": {
                     "id": "OZCe",
                     "type": "url",
-                    "url": null
+                    "url": "https://en.wikipedia.org/wiki/Uncle_Luke"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Uncle%20Luke"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "503a60fa-9db7-469a-b215-7baaf0322893",
+                            "name": "Rapper",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "75cedaf2-b0c5-47ee-952e-f6db0a3cbe70",
+                            "name": "Promoter",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "7cceb6da-1f7a-4b0e-a7fe-8eb09d97db01",
+                            "name": "Record",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "c239bd20-b3f6-431a-98ab-9c60f27618de",
+                            "name": "Executive",
+                            "color": "green"
+                        },
+                        {
+                            "id": "58afa212-87b5-487b-8b76-2f40a80af10a",
+                            "name": "Actor",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1960-12-22",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ca80f3d6-148b-4509-9611-41c406303716",
+                            "name": "Miami",
+                            "color": "default"
+                        },
+                        {
+                            "id": "e8dbd043-f59c-4a2f-a036-2ba94e94ebfd",
+                            "name": "Florida",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Uncle Luke",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Uncle Luke",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Uncle-Luke-088ece82bdde477bbffb84c14c81ed2e",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6ecf92e9-7365-4070-8dc6-ee05adb7c523",
+            "created_time": "2023-08-17T07:09:00.000Z",
+            "last_edited_time": "2023-08-17T07:47:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1962
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Marley_Marl"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Marley%20Marl"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "191250f7-f326-4c19-a029-f08c1cbcb977",
+                            "name": "Dj",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "b40acf50-2a5e-4d8d-9407-b81e76c12de0",
+                            "name": "Producer",
+                            "color": "red"
+                        },
+                        {
+                            "id": "503a60fa-9db7-469a-b215-7baaf0322893",
+                            "name": "Rapper",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "610a707b-4d65-4364-871e-5db699f90f99",
+                            "name": "Music",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "c239bd20-b3f6-431a-98ab-9c60f27618de",
+                            "name": "Executive",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4433a162-11ee-49b4-9d4e-31dd7aa5aac4",
+                            "name": "Hip",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "877554ad-12d1-4233-bfad-da66cbb6f9d0",
+                            "name": "Hop",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1962-09-30",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "6a62c311-381a-4aa8-bdec-397804498918",
+                            "name": "NYC",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Marley Marl",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Marley Marl",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Marley-Marl-6ecf92e9736540708dc6ee05adb7c523",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "bf2a2d76-14e6-4cb6-b81e-76198f4b4f7e",
+            "created_time": "2023-08-17T07:08:00.000Z",
+            "last_edited_time": "2023-08-17T07:46:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1957
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Russell_Simmons"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Russell%20Simmons"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "c276c42f-8a3a-47e6-8327-1fce65b687b0",
+                            "name": "Entrepreneur",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "91e76b64-373b-4e58-a7b5-4c9178b32a6c",
+                            "name": "Writer",
+                            "color": "default"
+                        },
+                        {
+                            "id": "7cceb6da-1f7a-4b0e-a7fe-8eb09d97db01",
+                            "name": "Record",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "c239bd20-b3f6-431a-98ab-9c60f27618de",
+                            "name": "Executive",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1957-10-04",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "f1c3af1b-55b2-4a38-b952-3fd10242b19a",
+                            "name": "Queens",
+                            "color": "default"
+                        },
+                        {
+                            "id": "6386efb9-9928-4165-a437-f0e1731976ef",
+                            "name": "New York City",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Russell Simmons",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Russell Simmons",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Russell-Simmons-bf2a2d7614e64cb6b81e76198f4b4f7e",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "e1caa9c0-baee-420e-8f2f-1fbcd056c247",
+            "created_time": "2023-08-17T07:08:00.000Z",
+            "last_edited_time": "2023-08-17T07:46:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1959
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Kurtis_Blow"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Kurtis%20Blow"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "503a60fa-9db7-469a-b215-7baaf0322893",
+                            "name": "Rapper",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "370cd76a-4e3e-42e4-af52-65afdff0a184",
+                            "name": "Songwriter",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "b40acf50-2a5e-4d8d-9407-b81e76c12de0",
+                            "name": "Producer",
+                            "color": "red"
+                        },
+                        {
+                            "id": "191250f7-f326-4c19-a029-f08c1cbcb977",
+                            "name": "Dj",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "065d19a4-9ffd-4a58-bd6f-d4e171b4291e",
+                            "name": "Minister",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4433a162-11ee-49b4-9d4e-31dd7aa5aac4",
+                            "name": "Hip",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "877554ad-12d1-4233-bfad-da66cbb6f9d0",
+                            "name": "Hop",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1959-08-09",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "6a62c311-381a-4aa8-bdec-397804498918",
+                            "name": "NYC",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Kurtis Blow",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Kurtis Blow",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Kurtis-Blow-e1caa9c0baee420e8f2f1fbcd056c247",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "d98cc4a0-8d5a-469d-8c33-59e8621dc587",
+            "created_time": "2023-08-17T07:08:00.000Z",
+            "last_edited_time": "2023-08-17T07:46:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1937
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Frankie_Crocker"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2000
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Frankie%20Crocker"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "39420730-4e72-4c93-913c-95df669675e2",
+                            "name": "Disc",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "fbe360d6-5065-4c84-b1d9-7dd622b35081",
+                            "name": "Jockey",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1937-12-18",
+                        "end": "2000-10-21",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "a6e05f5b-dbd3-436a-9102-b3bc0694b3da",
+                            "name": "Buffalo",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "8aead8e8-46fc-450f-8f13-36f9ad98ce23",
+                            "name": "NY",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Frankie Crocker",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Frankie Crocker",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Frankie-Crocker-d98cc4a08d5a469d8c3359e8621dc587",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "9a4db57f-e754-4ae6-b8f2-44942abad2ce",
+            "created_time": "2023-08-17T07:08:00.000Z",
+            "last_edited_time": "2023-08-17T07:46:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1904
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Pigmeat_Markham"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1981
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Pigmeat%20Markham"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "c139afd1-03c2-4202-862d-687fd145c638",
+                            "name": "Comedian",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "58afa212-87b5-487b-8b76-2f40a80af10a",
+                            "name": "Actor",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "e941c343-9a50-47db-ae41-f94464b37fc7",
+                            "name": "Singer",
+                            "color": "default"
+                        },
+                        {
+                            "id": "7b7c3599-feca-4460-9abb-d302bfb48b29",
+                            "name": "Dancer",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1904-04-18",
+                        "end": "1981-12-13",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "f51d300d-914c-4f15-a0a9-007a2c64f2c2",
+                            "name": "Durham",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "08cb3378-38d6-4cc9-b407-b256b83c60b4",
+                            "name": "NC",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Pigmeat Markham",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Pigmeat Markham",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Pigmeat-Markham-9a4db57fe7544ae6b8f244942abad2ce",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "790dbcaf-9516-4eed-910b-8fb045b50058",
+            "created_time": "2023-08-17T07:08:00.000Z",
+            "last_edited_time": "2023-08-17T07:14:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1954
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/DJ_Hollywood"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Dj%20Hollywood"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "39420730-4e72-4c93-913c-95df669675e2",
+                            "name": "Disc",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "fbe360d6-5065-4c84-b1d9-7dd622b35081",
+                            "name": "Jockey",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "92030880-2777-4025-a493-6f1b032fb98a",
+                            "name": "MC",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1954-12-10",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "53545915-8f1b-43c2-b176-967831f88aab",
+                            "name": "Harlem",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "8aead8e8-46fc-450f-8f13-36f9ad98ce23",
+                            "name": "NY",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "DJ Hollywood",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "DJ Hollywood",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/DJ-Hollywood-790dbcaf95164eed910b8fb045b50058",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "71726c68-b1cb-426d-8c14-118accbe2ec4",
+            "created_time": "2023-08-17T07:07:00.000Z",
+            "last_edited_time": "2023-08-17T07:45:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1942
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Isaac_Hayes"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2008
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Isaac%20Hayes"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e941c343-9a50-47db-ae41-f94464b37fc7",
+                            "name": "Singer",
+                            "color": "default"
+                        },
+                        {
+                            "id": "370cd76a-4e3e-42e4-af52-65afdff0a184",
+                            "name": "Songwriter",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "75bad998-0fda-4d18-843c-c571dd936227",
+                            "name": "Musician",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "57086b0a-47c2-4408-9ddb-36b2c9c32a46",
+                            "name": "Composer",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "58afa212-87b5-487b-8b76-2f40a80af10a",
+                            "name": "Actor",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "98010932-f5e4-44c6-b494-7bc69d468246",
+                            "name": "Progressive",
+                            "color": "default"
+                        },
+                        {
+                            "id": "fc684975-ad65-4d2b-b36d-70fd20f26a34",
+                            "name": "Soul",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "36ca8e89-3095-43f5-8931-f96601782137",
+                            "name": "Funk",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1942-08-20",
+                        "end": "2008-08-10",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3c42cd7c-8339-48d1-8c38-42589ce6f923",
+                            "name": "Covington",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "cbc26b38-047e-4e1e-9bcf-0e633ed0c9f5",
+                            "name": "TN",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Isaac Hayes",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Isaac Hayes",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Isaac-Hayes-71726c68b1cb426d8c14118accbe2ec4",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6b155c48-da35-4934-964c-15fb6fd38b8f",
+            "created_time": "2023-08-17T07:07:00.000Z",
+            "last_edited_time": "2023-08-17T07:45:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1944
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Barry_White"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2003
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Barry%20White"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e941c343-9a50-47db-ae41-f94464b37fc7",
+                            "name": "Singer",
+                            "color": "default"
+                        },
+                        {
+                            "id": "370cd76a-4e3e-42e4-af52-65afdff0a184",
+                            "name": "Songwriter",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "7cceb6da-1f7a-4b0e-a7fe-8eb09d97db01",
+                            "name": "Record",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "b40acf50-2a5e-4d8d-9407-b81e76c12de0",
+                            "name": "Producer",
+                            "color": "red"
+                        },
+                        {
+                            "id": "57086b0a-47c2-4408-9ddb-36b2c9c32a46",
+                            "name": "Composer",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "a3e0fc02-b9d3-4007-9572-3aaced6fd2c2",
+                            "name": "R",
+                            "color": "default"
+                        },
+                        {
+                            "id": "dd0c79d2-f56e-40a5-8fc8-ad37cc5fd15f",
+                            "name": "B",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "fc684975-ad65-4d2b-b36d-70fd20f26a34",
+                            "name": "Soul",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "36ca8e89-3095-43f5-8931-f96601782137",
+                            "name": "Funk",
+                            "color": "green"
+                        },
+                        {
+                            "id": "a9f9aed9-1e27-4590-b3f3-fd77b6da46af",
+                            "name": "Disco",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1944-09-12",
+                        "end": "2003-07-04",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "299db348-b381-469c-8f32-db3be05363f1",
+                            "name": "Galveston",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "e4d9451a-99e6-4252-87c1-e023c4c97d0c",
+                            "name": "TX",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Barry White",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Barry White",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Barry-White-6b155c48da354934964c15fb6fd38b8f",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "5525d541-8af0-44ae-81d7-10ce42ec8e8f",
+            "created_time": "2023-08-17T07:07:00.000Z",
+            "last_edited_time": "2023-08-17T07:45:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1958
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Grandmaster_Flash"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Grandmaster%20Flash"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "191250f7-f326-4c19-a029-f08c1cbcb977",
+                            "name": "Dj",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "503a60fa-9db7-469a-b215-7baaf0322893",
+                            "name": "Rapper",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "b40acf50-2a5e-4d8d-9407-b81e76c12de0",
+                            "name": "Producer",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4433a162-11ee-49b4-9d4e-31dd7aa5aac4",
+                            "name": "Hip",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "877554ad-12d1-4233-bfad-da66cbb6f9d0",
+                            "name": "Hop",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "e294eb22-d3aa-495a-b5bd-12c0195dbdc3",
+                            "name": "Old",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "8d002067-be22-4e22-b6e9-cc5c1dccaa18",
+                            "name": "School",
+                            "color": "red"
+                        },
+                        {
+                            "id": "aaa8015a-9778-422b-9f46-7907f76a2ea0",
+                            "name": "Breakbeat",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "36ca8e89-3095-43f5-8931-f96601782137",
+                            "name": "Funk",
+                            "color": "green"
+                        },
+                        {
+                            "id": "11037055-09bd-4687-b58a-29e1a1445e81",
+                            "name": "Electro",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1958-01-01",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "be6db091-17c5-4fd2-911c-d0e76cb6e652",
+                            "name": "The Bronx",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "8aead8e8-46fc-450f-8f13-36f9ad98ce23",
+                            "name": "NY",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Grandmaster Flash",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Grandmaster Flash",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Grandmaster-Flash-5525d5418af044ae81d710ce42ec8e8f",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "22dfb82f-3c27-4efb-8100-c5842ba5f063",
+            "created_time": "2023-08-17T07:06:00.000Z",
+            "last_edited_time": "2023-08-17T07:45:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1957
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Afrika_Bambaataa"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Afrika%20Bambaataa"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "191250f7-f326-4c19-a029-f08c1cbcb977",
+                            "name": "Dj",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "b40acf50-2a5e-4d8d-9407-b81e76c12de0",
+                            "name": "Producer",
+                            "color": "red"
+                        },
+                        {
+                            "id": "503a60fa-9db7-469a-b215-7baaf0322893",
+                            "name": "Rapper",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4433a162-11ee-49b4-9d4e-31dd7aa5aac4",
+                            "name": "Hip",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "877554ad-12d1-4233-bfad-da66cbb6f9d0",
+                            "name": "Hop",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "11037055-09bd-4687-b58a-29e1a1445e81",
+                            "name": "Electro",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "5a040726-e02b-4777-83ba-822023cf0b13",
+                            "name": "House",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "7cda1585-0c7d-44e3-8936-3ae66ca05560",
+                            "name": "Electronic",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "aaa8015a-9778-422b-9f46-7907f76a2ea0",
+                            "name": "Breakbeat",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "36ca8e89-3095-43f5-8931-f96601782137",
+                            "name": "Funk",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1957-04-17",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "6a62c311-381a-4aa8-bdec-397804498918",
+                            "name": "NYC",
+                            "color": "default"
+                        },
+                        {
+                            "id": "8aead8e8-46fc-450f-8f13-36f9ad98ce23",
+                            "name": "NY",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Afrika Bambaataa",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Afrika Bambaataa",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Afrika-Bambaataa-22dfb82f3c274efb8100c5842ba5f063",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6d18c010-69d6-42f8-bb63-cd84902f6dee",
+            "created_time": "2023-08-17T07:06:00.000Z",
+            "last_edited_time": "2023-08-17T07:15:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇯🇲"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1955
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2fcac69e-9b5f-420b-a060-219449146a0a",
+                            "name": "Jamaica",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/DJ_Kool_Herc"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Img": {
+                    "id": "l%60%3AZ",
+                    "type": "url",
+                    "url": "https://www.google.com/search?tbm=isch&q=Dj%20Kool%20Herc"
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "191250f7-f326-4c19-a029-f08c1cbcb977",
+                            "name": "Dj",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1955-04-16",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "a434d84e-7c32-4571-8fb2-cd6bc802d3dc",
+                            "name": "Kingston",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "DJ Kool Herc",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "DJ Kool Herc",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/DJ-Kool-Herc-6d18c01069d642f8bb63cd84902f6dee",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "576175a2-3e2c-4d84-b0fe-aa1b14c10545",
+            "created_time": "2023-08-16T07:41:00.000Z",
+            "last_edited_time": "2023-08-16T07:45:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1954
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Cindy_Sherman"
                 },
                 "YoD": {
                     "id": "P%3D%60Q",
@@ -50,6 +1821,17 @@
                 "Job(s)": {
                     "id": "mNBM",
                     "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "17b54a56-e7c9-48c8-8271-ff5e2f7177ee",
+                            "name": "Artist",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
                     "multi_select": []
                 },
                 "Date": {
@@ -60,7 +1842,18 @@
                 "City/Region": {
                     "id": "%7CtND",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "a8f59cdc-369a-4dbf-a3ea-44e35a77b506",
+                            "name": "Glen Ridge",
+                            "color": "default"
+                        },
+                        {
+                            "id": "e4728c4a-ec89-4271-92db-260fb04baf73",
+                            "name": "NJ",
+                            "color": "default"
+                        }
+                    ]
                 },
                 "Name": {
                     "id": "title",
@@ -93,17 +1886,20 @@
             "object": "page",
             "id": "57bb8b73-93d4-41be-acaf-242e2694b9a9",
             "created_time": "2023-08-16T07:41:00.000Z",
-            "last_edited_time": "2023-08-16T07:41:00.000Z",
+            "last_edited_time": "2023-08-16T07:45:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
             },
             "last_edited_by": {
                 "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
             },
             "cover": null,
-            "icon": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+            },
             "parent": {
                 "type": "database_id",
                 "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
@@ -118,7 +1914,13 @@
                 "Country": {
                     "id": "Gt%5BC",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "24b32801-5407-4fb5-b912-23f867764068",
+                            "name": "England",
+                            "color": "blue"
+                        }
+                    ]
                 },
                 "Wiki": {
                     "id": "OZCe",
@@ -138,6 +1940,17 @@
                 "Job(s)": {
                     "id": "mNBM",
                     "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "17b54a56-e7c9-48c8-8271-ff5e2f7177ee",
+                            "name": "Artist",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
                     "multi_select": []
                 },
                 "Date": {
@@ -152,7 +1965,13 @@
                 "City/Region": {
                     "id": "%7CtND",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "b9eb53aa-cad1-4d04-a9d7-df8f823c8c3b",
+                            "name": "Lancashire",
+                            "color": "default"
+                        }
+                    ]
                 },
                 "Name": {
                     "id": "title",
@@ -185,7 +2004,7 @@
             "object": "page",
             "id": "25e69ebd-3a97-401f-a7d0-1d93c9cf26c9",
             "created_time": "2023-08-16T07:41:00.000Z",
-            "last_edited_time": "2023-08-16T07:41:00.000Z",
+            "last_edited_time": "2023-08-16T07:44:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -246,6 +2065,11 @@
                             "color": "brown"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -370,6 +2194,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -487,6 +2316,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -611,6 +2445,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -734,6 +2573,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -841,6 +2685,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -959,6 +2808,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -1082,6 +2936,11 @@
                             "color": "red"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -1211,6 +3070,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -1334,6 +3198,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -1451,6 +3320,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -1570,6 +3444,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -1686,6 +3565,11 @@
                             "color": "green"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -1810,6 +3694,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -1927,6 +3816,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -2046,6 +3940,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -2163,6 +4062,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -2282,6 +4186,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -2399,6 +4308,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -2523,6 +4437,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -2641,6 +4560,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -2758,6 +4682,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -2882,6 +4811,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -3004,6 +4938,11 @@
                             "color": "default"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -3128,6 +5067,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -3245,6 +5189,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -3374,6 +5323,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -3497,6 +5451,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -3614,6 +5573,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",
@@ -3738,6 +5702,11 @@
                         }
                     ]
                 },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -3855,6 +5824,11 @@
                             "color": "orange"
                         }
                     ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Date": {
                     "id": "xYFl",

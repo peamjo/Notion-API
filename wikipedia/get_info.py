@@ -4,6 +4,7 @@ from import_requests import get_pages
 from final_transfer import update_page, create_page, create_content
 import re
 from wikipedia_summary import wiki_summary
+from get_images import get_images
 
 #Enter_input = input("Search: ")
 def input_names(Enter_input):
@@ -63,7 +64,7 @@ def get_info(data):
                 info.append(['City', city])
                 info.append(['Country', country])
             if len(info)>1:
-                if (info[-1])[1] == 'U.S.' or (info[-1])[1] == 'US':
+                if (info[-1])[1] == 'U.S.' or (info[-1])[1] == 'US' or (info[-1])[1] == 'United States':
                     (info[-1])[1] = 'USA'
                     if len(final_location)>2:
                         for key in us_states:                    
@@ -74,6 +75,8 @@ def get_info(data):
                         info.append(['Flag', key])
         if i[0] == "Occupations" or i[0] == 'Occupation' or i[0] == "Occupation(s)":
             info.append(['Occupations', i[1]])
+        if i[0] == "Genres":
+            info.append(['Genres', i[1]])
     info.append(['Wiki', url])
     info.append(['Img','https://www.google.com/search?tbm=isch&q='+img_word])
     return(info)
@@ -125,13 +128,23 @@ def edit_data(ip):
                 if i[0] == 'Img':
                     update_data = {"Img": {"url": i[1]}}
                     update_page(page_id, update_data)
+                if i[0] == 'Genres':
+                    genres = []
+                    for j in i[1]:
+                        j = {"name": j}
+                        genres.append(j)
+                    update_data = {"Genres (music)": {"multi_select": genres}}
+                    update_page(page_id, update_data)
             update_data = wiki_summary(name)
             create_content(page_id, update_data)
 
 artist_names = ["Henri Rousseau", "Leonora Carrington", "Cindy Sherman"]
 designer_names = ["Azzedine Alaïa", "Cristóbal Balenciaga", "Pierre Balmain", "Pierre Cardin", "Gabrielle Chanel", "Christian Dior", "Hubert De Givenchy", "Halston", "Paul Poiret", "Charles James", "Karl Lagerfeld", "Yves Saint Laurent (designer)", "Oscar de la Renta", "Elsa Schiaparelli", "Madeleine Vionnet", "Giorgio Armani", "Hussein Chalayan", "Maria Grazia Chiuri", "Tom Ford", "John Galliano", "Marc Jacobs", "Rei Kawakubo", "Martin Margiela", "Alexander McQueen", "Issey Miyake", "Thierry Mugler", "Carol Christian Poell", "Miuccia Prada", "Yohji Yamamoto"]
+rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry White", "Isaac Hayes",
+"DJ Hollywood", "Pigmeat Markham", "Frankie Crocker", "Kurtis Blow", "Russell Simmons", "Marley Marl",
+"Uncle Luke"]
 
-for i in artist_names:
+for i in rapper_names:
     u_i, url, name, img_word = input_names(i)
     data = wiki_scrape_bot(url)
     print(data)
@@ -147,3 +160,4 @@ for i in artist_names:
         create_page(name)
         pages = get_pages()
     edit_data((info[0])[0])
+
