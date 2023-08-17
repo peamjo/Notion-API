@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "5c60a3bc-51a9-4611-85c2-f7fc3f4c4651",
-            "created_time": "2023-08-17T10:22:00.000Z",
-            "last_edited_time": "2023-08-17T10:22:00.000Z",
+            "id": "8206cb32-d62e-4c15-8160-85de3c3904b0",
+            "created_time": "2023-08-17T18:09:00.000Z",
+            "last_edited_time": "2023-08-17T18:09:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -42,6 +42,16 @@
                     "type": "number",
                     "number": null
                 },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Job(s)": {
                     "id": "mNBM",
                     "type": "multi_select",
@@ -52,6 +62,11 @@
                     "type": "multi_select",
                     "multi_select": []
                 },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": null
+                },
                 "Date": {
                     "id": "xYFl",
                     "type": "date",
@@ -61,6 +76,307 @@
                     "id": "%7CtND",
                     "type": "multi_select",
                     "multi_select": []
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Zayn Malik",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Zayn Malik",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Zayn-Malik-8206cb32d62e4c15816085de3c3904b0",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6894b878-99b4-44f0-a904-2637bb7766a2",
+            "created_time": "2023-08-17T18:05:00.000Z",
+            "last_edited_time": "2023-08-17T18:08:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1979
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Jordan_Peele"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9b5378da-8339-4f4b-ad25-82d182823b67",
+                            "name": "Black",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "58afa212-87b5-487b-8b76-2f40a80af10a",
+                            "name": "Actor",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "c139afd1-03c2-4202-862d-687fd145c638",
+                            "name": "Comedian",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "3beb92bf-b88a-4958-9bcd-9953953c712a",
+                            "name": "Filmmaker",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1979-02-21",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "6a62c311-381a-4aa8-bdec-397804498918",
+                            "name": "NYC",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Jordan Peele",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Jordan Peele",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Jordan-Peele-6894b87899b444f0a9042637bb7766a2",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "558495e7-523e-4b06-ac60-e791c4af371b",
+            "created_time": "2023-08-17T17:57:00.000Z",
+            "last_edited_time": "2023-08-17T17:59:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1920
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/James_Farmer"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1999
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9b5378da-8339-4f4b-ad25-82d182823b67",
+                            "name": "Black",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3b385af4-5d1a-41ad-9faf-c8b97a9b925f",
+                            "name": "Civil",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "c2ccf03b-fb82-4b9a-a746-1277fce813dd",
+                            "name": "Rights",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "4edaf94a-3caa-4bfb-b660-ae276e656552",
+                            "name": "Activist",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1920-01-12",
+                        "end": "1999-07-09",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "cd32b84b-24a5-4767-aa74-ec01fabc7bdb",
+                            "name": "Marshall",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "e4d9451a-99e6-4252-87c1-e023c4c97d0c",
+                            "name": "TX",
+                            "color": "gray"
+                        }
+                    ]
                 },
                 "Name": {
                     "id": "title",
@@ -86,7 +402,7 @@
                     ]
                 }
             },
-            "url": "https://www.notion.so/James-Farmer-5c60a3bc51a9461185c2f7fc3f4c4651",
+            "url": "https://www.notion.so/James-Farmer-558495e7523e4b06ac60e791c4af371b",
             "public_url": null
         }
     ],

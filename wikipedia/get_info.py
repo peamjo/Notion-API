@@ -5,7 +5,7 @@ from final_transfer import update_page, create_page, create_content
 import re
 from wikipedia_summary import wiki_summary
 from get_images import get_images
-from face_recognition import face_recognition
+from face_recognition import face_recognition, majority_race_gender
 
 #Enter_input = input("Search: ")
 def input_names(Enter_input):
@@ -124,6 +124,12 @@ def edit_data(ip):
                 if i[0] == 'State':
                     update_data = {"City/Region": {"multi_select": [{"name": city}, {"name": i[1]}]}}
                     update_page(page_id, update_data)
+                if i[0] == 'Gender':
+                    update_data = {"Gender": {"select": {"name": i[1]}}}
+                    update_page(page_id, update_data)
+                if i[0] == 'Ethnicity':
+                    update_data = {"Ethnicity": {"multi_select": [{"name": i[1]}]}}
+                    update_page(page_id, update_data)
                 if i[0] == 'Flag':
                     update_data = {"emoji": i[1]}
                     update_page(page_id, update_data)
@@ -155,8 +161,8 @@ rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry 
 "Uncle Luke"]
 
 
-people = "James Farmer"
-job = "Civil Rights Activist"
+people = "Zayn Malik"
+job = "Singer"
 
 #for people in artist_names:
 u_i, url, name = input_names(people)
@@ -165,7 +171,17 @@ print(data)
 info = get_info(data)
 add_or_check_jobs(info, job)
 get_images(people)
-face_recognition()
+gender_list = []
+ethnicity_list = []
+for x in range(1,6):
+    link = rf"C:\Users\Peam\iCloudDrive\Notion API\download\{people} face\Image_{x}.jpg"
+    gender_count, ethnicity_count = face_recognition(link)
+    gender_list.append(gender_count)
+    ethnicity_list.append(ethnicity_count)
+print(gender_list, ethnicity_list)
+gender, ethnicity = majority_race_gender(gender_list, ethnicity_list)
+info.append(["Gender", gender])
+info.append(["Ethnicity", ethnicity])
 print(info)
 pages = get_pages()
 exist = False

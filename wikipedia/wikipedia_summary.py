@@ -9,6 +9,6 @@ def wiki_summary(search):
         summary = ''
     return(summary)
 
-#search = "Dwayne Johnson"
-#print(result)
-#print(page.summary)
+#search = "Jordan Peele"
+#summary = wiki_summary(search)
+#print(summary)
