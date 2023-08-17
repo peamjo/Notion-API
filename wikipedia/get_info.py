@@ -8,15 +8,17 @@ from get_images import get_images
 
 #Enter_input = input("Search: ")
 def input_names(Enter_input):
-    u_i = string.capwords(Enter_input)
+    if Enter_input[:2] != "DJ":
+        u_i = string.capwords(Enter_input)
+    else:
+        u_i = "DJ " + string.capwords(Enter_input).split(" ",1)[1]
     lists = u_i.split()
     word = "_".join(lists)
-    img_word = "%20".join(lists)
     url = "https://en.wikipedia.org/wiki/" + word
     name = {
         "Name": {"title": [{"text": {"content": u_i}}]},
     }
-    return u_i, url, name, img_word
+    return u_i, url, name
 
 def get_info(data):
     info = []
@@ -78,8 +80,17 @@ def get_info(data):
         if i[0] == "Genres":
             info.append(['Genres', i[1]])
     info.append(['Wiki', url])
-    info.append(['Img','https://www.google.com/search?tbm=isch&q='+img_word])
     return(info)
+
+def add_or_check_jobs(info, job):
+    counter = 0
+    for i in info:
+        if i[0] == "Occupations":
+            break
+        else: counter+=1
+    if counter == len(info):
+        info.append(['Occupations', [job]])
+        
 
 def edit_data(ip):
     for page in pages:
@@ -125,9 +136,6 @@ def edit_data(ip):
                 if i[0] == 'Wiki':
                     update_data = {"Wiki": {"url": i[1]}}
                     update_page(page_id, update_data)
-                if i[0] == 'Img':
-                    update_data = {"Img": {"url": i[1]}}
-                    update_page(page_id, update_data)
                 if i[0] == 'Genres':
                     genres = []
                     for j in i[1]:
@@ -138,26 +146,32 @@ def edit_data(ip):
             update_data = wiki_summary(name)
             create_content(page_id, update_data)
 
+
 artist_names = ["Henri Rousseau", "Leonora Carrington", "Cindy Sherman"]
 designer_names = ["Azzedine Alaïa", "Cristóbal Balenciaga", "Pierre Balmain", "Pierre Cardin", "Gabrielle Chanel", "Christian Dior", "Hubert De Givenchy", "Halston", "Paul Poiret", "Charles James", "Karl Lagerfeld", "Yves Saint Laurent (designer)", "Oscar de la Renta", "Elsa Schiaparelli", "Madeleine Vionnet", "Giorgio Armani", "Hussein Chalayan", "Maria Grazia Chiuri", "Tom Ford", "John Galliano", "Marc Jacobs", "Rei Kawakubo", "Martin Margiela", "Alexander McQueen", "Issey Miyake", "Thierry Mugler", "Carol Christian Poell", "Miuccia Prada", "Yohji Yamamoto"]
 rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry White", "Isaac Hayes",
 "DJ Hollywood", "Pigmeat Markham", "Frankie Crocker", "Kurtis Blow", "Russell Simmons", "Marley Marl",
 "Uncle Luke"]
 
-for i in rapper_names:
-    u_i, url, name, img_word = input_names(i)
-    data = wiki_scrape_bot(url)
-    print(data)
-    info = get_info(data)
-    print(info)
-    pages = get_pages()
-    exist = False
-    for page in pages:
-        og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
-        if og_name == u_i:
-            exist = True
-    if exist == False:
-        create_page(name)
-        pages = get_pages()
-    edit_data((info[0])[0])
 
+people = "James Farmer"
+job = "Civil Rights Activist"
+
+#for people in artist_names:
+u_i, url, name = input_names(people)
+data = wiki_scrape_bot(url)
+print(data)
+info = get_info(data)
+add_or_check_jobs(info, job)
+print(info)
+pages = get_pages()
+exist = False
+for page in pages:
+    og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
+    if og_name == u_i:
+        exist = True
+if exist == False:
+    create_page(name)
+    pages = get_pages()
+edit_data((info[0])[0])
+get_images(people)

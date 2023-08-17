@@ -47,6 +47,8 @@ def wiki_scrape_bot(url):
             i[1] = wordninja.split(i[1])
             for j in range(len(i[1])):
                 new = ((i[1])[j]).capitalize()
+                if new == "Dj":
+                    new = "DJ"
                 (i[1])[j] = new
     #print (data_list)
     return (data_list)

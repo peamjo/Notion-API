@@ -6,9 +6,8 @@ Born
 - City/State/Country x
 Occupations
 Flag x
-
-Photo
-Summary
+Images x
+Summary x
 
 Years active
 
