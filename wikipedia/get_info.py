@@ -5,6 +5,7 @@ from final_transfer import update_page, create_page, create_content
 import re
 from wikipedia_summary import wiki_summary
 from get_images import get_images
+from face_recognition import face_recognition
 
 #Enter_input = input("Search: ")
 def input_names(Enter_input):
@@ -163,6 +164,8 @@ data = wiki_scrape_bot(url)
 print(data)
 info = get_info(data)
 add_or_check_jobs(info, job)
+get_images(people)
+face_recognition()
 print(info)
 pages = get_pages()
 exist = False
@@ -174,4 +177,3 @@ if exist == False:
     create_page(name)
     pages = get_pages()
 edit_data((info[0])[0])
-get_images(people)
