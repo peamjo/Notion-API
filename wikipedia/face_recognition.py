@@ -26,5 +26,4 @@ def majority_race_gender(gender_list = [], ethnicity_list = []):
     ethnicity_list = Counter(ethnicity_list)
     gender = gender_list.most_common()[0][0]
     ethnicity = ethnicity_list.most_common()[0][0]
-    print(gender, ethnicity)
     return (gender, ethnicity)

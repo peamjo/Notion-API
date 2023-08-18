@@ -4,7 +4,7 @@ from import_requests import get_pages
 from final_transfer import update_page, create_page, create_content
 import re
 from wikipedia_summary import wiki_summary
-from get_images import get_images
+from get_images import get_images, convert_to_jpg
 from face_recognition import face_recognition, majority_race_gender
 
 #Enter_input = input("Search: ")
@@ -161,16 +161,18 @@ rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry 
 "Uncle Luke"]
 
 
-people = "Zayn Malik"
-job = "Singer"
+people = "Selena Gomez"
+job = ""
 
 #for people in artist_names:
 u_i, url, name = input_names(people)
 data = wiki_scrape_bot(url)
 print(data)
 info = get_info(data)
-add_or_check_jobs(info, job)
+if job != None:
+    add_or_check_jobs(info, job)
 get_images(people)
+convert_to_jpg(people)
 gender_list = []
 ethnicity_list = []
 for x in range(1,6):
