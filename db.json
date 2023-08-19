@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "c2f41926-1652-4368-b4d1-01f1315aa7d2",
-            "created_time": "2023-08-18T19:19:00.000Z",
-            "last_edited_time": "2023-08-18T19:19:00.000Z",
+            "id": "5a19c625-4ee2-47d4-824c-34e4b8d843ac",
+            "created_time": "2023-08-19T10:09:00.000Z",
+            "last_edited_time": "2023-08-19T10:10:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -13,109 +13,6 @@
             "last_edited_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "cover": null,
-            "icon": null,
-            "parent": {
-                "type": "database_id",
-                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
-            },
-            "archived": false,
-            "properties": {
-                "YoB": {
-                    "id": "ECFj",
-                    "type": "number",
-                    "number": null
-                },
-                "Country": {
-                    "id": "Gt%5BC",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Wiki": {
-                    "id": "OZCe",
-                    "type": "url",
-                    "url": null
-                },
-                "YoD": {
-                    "id": "P%3D%60Q",
-                    "type": "number",
-                    "number": null
-                },
-                "Ethnicity": {
-                    "id": "QCv%3D",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Group": {
-                    "id": "jTF%60",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Job(s)": {
-                    "id": "mNBM",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Genres (music)": {
-                    "id": "t~lk",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Gender": {
-                    "id": "v%5CfL",
-                    "type": "select",
-                    "select": null
-                },
-                "Date": {
-                    "id": "xYFl",
-                    "type": "date",
-                    "date": null
-                },
-                "City/Region": {
-                    "id": "%7CtND",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Name": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "Selena Gomez",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "Selena Gomez",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/Selena-Gomez-c2f4192616524368b4d101f1315aa7d2",
-            "public_url": null
-        },
-        {
-            "object": "page",
-            "id": "3a40aea4-496d-4fff-a298-8b0af253be6a",
-            "created_time": "2023-08-18T17:59:00.000Z",
-            "last_edited_time": "2023-08-18T19:10:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
             },
             "cover": null,
             "icon": {
@@ -131,7 +28,7 @@
                 "YoB": {
                     "id": "ECFj",
                     "type": "number",
-                    "number": 1973
+                    "number": 1944
                 },
                 "Country": {
                     "id": "Gt%5BC",
@@ -147,12 +44,12 @@
                 "Wiki": {
                     "id": "OZCe",
                     "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/Nas"
+                    "url": "https://en.wikipedia.org/wiki/Barry_White"
                 },
                 "YoD": {
                     "id": "P%3D%60Q",
                     "type": "number",
-                    "number": null
+                    "number": 2003
                 },
                 "Ethnicity": {
                     "id": "QCv%3D",
@@ -175,9 +72,9 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "503a60fa-9db7-469a-b215-7baaf0322893",
-                            "name": "Rapper",
-                            "color": "yellow"
+                            "id": "e941c343-9a50-47db-ae41-f94464b37fc7",
+                            "name": "Singer",
+                            "color": "default"
                         },
                         {
                             "id": "370cd76a-4e3e-42e4-af52-65afdff0a184",
@@ -185,13 +82,18 @@
                             "color": "orange"
                         },
                         {
-                            "id": "cb940fbd-1016-4e4c-85d1-b0e47e22b250",
-                            "name": "Record Executive",
-                            "color": "green"
+                            "id": "022b06d3-9ed2-4c3b-87ee-c8394e3c481b",
+                            "name": "Record Producer",
+                            "color": "gray"
                         },
                         {
-                            "id": "58afa212-87b5-487b-8b76-2f40a80af10a",
-                            "name": "Actor",
+                            "id": "57086b0a-47c2-4408-9ddb-36b2c9c32a46",
+                            "name": "Composer",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "503a60fa-9db7-469a-b215-7baaf0322893",
+                            "name": "Rapper",
                             "color": "yellow"
                         }
                     ]
@@ -199,28 +101,7 @@
                 "Genres (music)": {
                     "id": "t~lk",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "5924ac64-3dbf-441b-9b17-76a03472a4a6",
-                            "name": "Hip Hop",
-                            "color": "red"
-                        },
-                        {
-                            "id": "70e22f26-e8e3-4884-ae66-bb896641f98f",
-                            "name": "East Coast Hiphop",
-                            "color": "green"
-                        },
-                        {
-                            "id": "94bcc6c7-8ad0-4be5-95a4-3b167547dacb",
-                            "name": "Jazz Rap",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "cec4b7e0-c2b4-4c7e-8201-95a445d84e81",
-                            "name": "Conscious Rap",
-                            "color": "pink"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Gender": {
                     "id": "v%5CfL",
@@ -235,8 +116,8 @@
                     "id": "xYFl",
                     "type": "date",
                     "date": {
-                        "start": "1973-09-14",
-                        "end": null,
+                        "start": "1944-09-12",
+                        "end": "2003-07-04",
                         "time_zone": null
                     }
                 },
@@ -245,9 +126,14 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "6a62c311-381a-4aa8-bdec-397804498918",
-                            "name": "NYC",
-                            "color": "default"
+                            "id": "299db348-b381-469c-8f32-db3be05363f1",
+                            "name": "Galveston",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "e4d9451a-99e6-4252-87c1-e023c4c97d0c",
+                            "name": "TX",
+                            "color": "gray"
                         }
                     ]
                 },
@@ -258,7 +144,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Nas",
+                                "content": "Barry White",
                                 "link": null
                             },
                             "annotations": {
@@ -269,20 +155,20 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Nas",
+                            "plain_text": "Barry White",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Nas-3a40aea4496d4fffa2988b0af253be6a",
+            "url": "https://www.notion.so/Barry-White-5a19c6254ee247d4824c34e4b8d843ac",
             "public_url": null
         },
         {
             "object": "page",
-            "id": "e57c56a4-8453-4f20-874f-286c2c7b4cb7",
-            "created_time": "2023-08-18T16:03:00.000Z",
-            "last_edited_time": "2023-08-18T16:03:00.000Z",
+            "id": "c4c1b456-8868-4790-ae10-233a71cf58c6",
+            "created_time": "2023-08-19T09:23:00.000Z",
+            "last_edited_time": "2023-08-19T09:23:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -305,7 +191,7 @@
                 "YoB": {
                     "id": "ECFj",
                     "type": "number",
-                    "number": 1994
+                    "number": 1906
                 },
                 "Country": {
                     "id": "Gt%5BC",
@@ -321,7 +207,293 @@
                 "Wiki": {
                     "id": "OZCe",
                     "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/Harry_Styles"
+                    "url": "https://en.wikipedia.org/wiki/Charles_James_(designer)"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1978
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1906-07-18",
+                        "end": "1978-09-23",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "8e75da14-e080-4700-a866-f24a85c0c064",
+                            "name": "Camberley",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Charles James (designer)",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Charles James (designer)",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Charles-James-designer-c4c1b45688684790ae10233a71cf58c6",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "2e3c8b4f-a330-45a1-af62-e7dc3f6130bf",
+            "created_time": "2023-08-19T09:23:00.000Z",
+            "last_edited_time": "2023-08-19T09:23:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇯🇵"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1943
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e3ea7bdb-8cca-4c95-bf18-406df5e17181",
+                            "name": "Japan",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Yohji_Yamamoto"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "973e210a-b786-400e-9fb8-40653a2b6ce9",
+                            "name": "Asian",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1943-10-03",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2d228424-7251-4de4-8ad4-c6f53ea93d2c",
+                            "name": "Tokyo",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Yohji Yamamoto",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Yohji Yamamoto",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Yohji-Yamamoto-2e3c8b4fa33045a1af62e7dc3f6130bf",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "a61e1e00-9e69-49e5-a8e7-3416d1ec9532",
+            "created_time": "2023-08-19T09:22:00.000Z",
+            "last_edited_time": "2023-08-19T09:22:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇮🇹"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1949
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d932ecb5-894a-4f49-b2e1-ebe96e2eaf99",
+                            "name": "Italy",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Miuccia_Prada"
                 },
                 "YoD": {
                     "id": "P%3D%60Q",
@@ -349,52 +521,26 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "e941c343-9a50-47db-ae41-f94464b37fc7",
-                            "name": "Singer",
-                            "color": "default"
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
                         },
                         {
-                            "id": "370cd76a-4e3e-42e4-af52-65afdff0a184",
-                            "name": "Songwriter",
+                            "id": "78808067-3b3f-4c2e-afa5-69220efc08ed",
+                            "name": "Businessperson",
+                            "color": "green"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
                             "color": "orange"
-                        },
-                        {
-                            "id": "58afa212-87b5-487b-8b76-2f40a80af10a",
-                            "name": "Actor",
-                            "color": "yellow"
                         }
                     ]
                 },
                 "Genres (music)": {
                     "id": "t~lk",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "8edfcfd4-80b2-45ad-87c7-d1404e88f949",
-                            "name": "Pop",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "345ffa7c-264d-4f57-a46f-9d3d60ca265f",
-                            "name": "Rock",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "ab0aa01f-9710-444c-b90d-085ad1d00bad",
-                            "name": "Britpop",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "9484ffee-1d21-4cb3-9c37-8f542ccc8af7",
-                            "name": "New",
-                            "color": "default"
-                        },
-                        {
-                            "id": "161e2a6c-e607-4fa3-b760-e4f8cb1e11de",
-                            "name": "Wave",
-                            "color": "orange"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Gender": {
                     "id": "v%5CfL",
@@ -409,7 +555,7 @@
                     "id": "xYFl",
                     "type": "date",
                     "date": {
-                        "start": "1994-02-01",
+                        "start": "1949-05-10",
                         "end": null,
                         "time_zone": null
                     }
@@ -419,13 +565,299 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "3cb97b33-1f34-4262-8129-643d6cc0ecef",
-                            "name": "Redditch",
-                            "color": "yellow"
+                            "id": "72435ced-6251-44c6-992d-a9d0e6d7372d",
+                            "name": "Milan",
+                            "color": "red"
                         },
                         {
-                            "id": "a0ae905f-37d6-4a85-826e-27cf754e1dff",
-                            "name": "Worcestershire",
+                            "id": "544d7523-92bc-4f45-b9c4-140d7a70ccb5",
+                            "name": "Lombardy",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Miuccia Prada",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Miuccia Prada",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Miuccia-Prada-a61e1e009e6949e5a8e73416d1ec9532",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "a885ace1-f430-489a-bba9-6b6015efb368",
+            "created_time": "2023-08-19T09:21:00.000Z",
+            "last_edited_time": "2023-08-19T09:22:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇫🇷"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1948
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9db65ce4-7003-4478-89de-e846409e0c9d",
+                            "name": "France",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Thierry_Mugler"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2022
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1948-12-21",
+                        "end": "2022-01-23",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4cd087d8-42d9-45ae-bd36-0f305fe8f6be",
+                            "name": "Strasbourg",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Thierry Mugler",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Thierry Mugler",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Thierry-Mugler-a885ace1f430489abba96b6015efb368",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "e7ed0a63-0841-4988-8a1f-faed03ae3582",
+            "created_time": "2023-08-19T09:20:00.000Z",
+            "last_edited_time": "2023-08-19T09:21:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇯🇵"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1938
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e3ea7bdb-8cca-4c95-bf18-406df5e17181",
+                            "name": "Japan",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Issey_Miyake"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2022
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "973e210a-b786-400e-9fb8-40653a2b6ce9",
+                            "name": "Asian",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1938-04-22",
+                        "end": "2022-08-05",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "42116cd4-1e57-4d85-8ee6-5c0458b59f5d",
+                            "name": "Hiroshima",
                             "color": "yellow"
                         }
                     ]
@@ -437,7 +869,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Harry Styles",
+                                "content": "Issey Miyake",
                                 "link": null
                             },
                             "annotations": {
@@ -448,20 +880,20 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Harry Styles",
+                            "plain_text": "Issey Miyake",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Harry-Styles-e57c56a484534f20874f286c2c7b4cb7",
+            "url": "https://www.notion.so/Issey-Miyake-e7ed0a63084149888a1ffaed03ae3582",
             "public_url": null
         },
         {
             "object": "page",
-            "id": "8206cb32-d62e-4c15-8160-85de3c3904b0",
-            "created_time": "2023-08-17T18:09:00.000Z",
-            "last_edited_time": "2023-08-18T19:16:00.000Z",
+            "id": "8ce080a5-12a2-42d5-b99b-9ab5707de159",
+            "created_time": "2023-08-19T09:20:00.000Z",
+            "last_edited_time": "2023-08-19T09:20:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -484,7 +916,7 @@
                 "YoB": {
                     "id": "ECFj",
                     "type": "number",
-                    "number": 1993
+                    "number": 1969
                 },
                 "Country": {
                     "id": "Gt%5BC",
@@ -500,21 +932,21 @@
                 "Wiki": {
                     "id": "OZCe",
                     "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/Zayn_Malik"
+                    "url": "https://en.wikipedia.org/wiki/Alexander_Mcqueen"
                 },
                 "YoD": {
                     "id": "P%3D%60Q",
                     "type": "number",
-                    "number": null
+                    "number": 2010
                 },
                 "Ethnicity": {
                     "id": "QCv%3D",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "0d9f91f5-e564-49ac-8640-01b53c68a195",
-                            "name": "Arab",
-                            "color": "green"
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
                         }
                     ]
                 },
@@ -528,32 +960,26 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "e941c343-9a50-47db-ae41-f94464b37fc7",
-                            "name": "Singer",
-                            "color": "default"
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "172d88b8-2236-4caf-8824-8ea364bd2139",
+                            "name": "Couturier",
+                            "color": "red"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
                         }
                     ]
                 },
                 "Genres (music)": {
                     "id": "t~lk",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "8edfcfd4-80b2-45ad-87c7-d1404e88f949",
-                            "name": "Pop",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "a3e0fc02-b9d3-4007-9572-3aaced6fd2c2",
-                            "name": "R",
-                            "color": "default"
-                        },
-                        {
-                            "id": "dd0c79d2-f56e-40a5-8fc8-ad37cc5fd15f",
-                            "name": "B",
-                            "color": "blue"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Gender": {
                     "id": "v%5CfL",
@@ -568,8 +994,8 @@
                     "id": "xYFl",
                     "type": "date",
                     "date": {
-                        "start": "1993-01-12",
-                        "end": null,
+                        "start": "1969-03-17",
+                        "end": "2010-02-11",
                         "time_zone": null
                     }
                 },
@@ -578,14 +1004,14 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "991cdd87-25af-426e-8e01-150275bc4cea",
-                            "name": "Bradford",
-                            "color": "default"
+                            "id": "68944c1b-0c1a-4982-860b-2293877bb75a",
+                            "name": "Lewisham",
+                            "color": "gray"
                         },
                         {
-                            "id": "3e9d9133-c804-42a1-8936-e8290a70f371",
-                            "name": "West Yorkshire",
-                            "color": "blue"
+                            "id": "969e0599-f46e-40ef-a840-1e729ae7d107",
+                            "name": " London",
+                            "color": "green"
                         }
                     ]
                 },
@@ -596,7 +1022,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Zayn Malik",
+                                "content": "Alexander Mcqueen",
                                 "link": null
                             },
                             "annotations": {
@@ -607,27 +1033,323 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Zayn Malik",
+                            "plain_text": "Alexander Mcqueen",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Zayn-Malik-8206cb32d62e4c15816085de3c3904b0",
+            "url": "https://www.notion.so/Alexander-Mcqueen-8ce080a512a242d5b99b9ab5707de159",
             "public_url": null
         },
         {
             "object": "page",
-            "id": "6894b878-99b4-44f0-a904-2637bb7766a2",
-            "created_time": "2023-08-17T18:05:00.000Z",
-            "last_edited_time": "2023-08-17T18:08:00.000Z",
+            "id": "63cd25c8-4b02-46a3-b3f6-8d40b0f4b7be",
+            "created_time": "2023-08-19T09:20:00.000Z",
+            "last_edited_time": "2023-08-19T09:20:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
             },
             "last_edited_by": {
                 "object": "user",
-                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇧🇪"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1957
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "134fc7fd-12f1-4640-aa75-c37bada7e812",
+                            "name": "Belgium",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Martin_Margiela"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "17b54a56-e7c9-48c8-8271-ff5e2f7177ee",
+                            "name": "Artist",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1957-04-09",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "f05dae90-c1b2-436a-92c3-e4af1476a8b1",
+                            "name": "Genk",
+                            "color": "green"
+                        },
+                        {
+                            "id": "ea1f280e-56fc-4b8d-a040-bbace60abc1a",
+                            "name": "Limburg",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Martin Margiela",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Martin Margiela",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Martin-Margiela-63cd25c84b0246a3b3f68d40b0f4b7be",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "91490c05-a17e-414f-bfeb-c41e640df66b",
+            "created_time": "2023-08-19T09:19:00.000Z",
+            "last_edited_time": "2023-08-19T09:19:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇯🇵"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1942
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e3ea7bdb-8cca-4c95-bf18-406df5e17181",
+                            "name": "Japan",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Rei_Kawakubo"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1942-10-11",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2d228424-7251-4de4-8ad4-c6f53ea93d2c",
+                            "name": "Tokyo",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Rei Kawakubo",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Rei Kawakubo",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Rei-Kawakubo-91490c05a17e414fbfebc41e640df66b",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "5a480dd4-8330-42b6-a827-83be4002c0de",
+            "created_time": "2023-08-19T09:19:00.000Z",
+            "last_edited_time": "2023-08-19T09:19:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
             },
             "cover": null,
             "icon": {
@@ -643,7 +1365,7 @@
                 "YoB": {
                     "id": "ECFj",
                     "type": "number",
-                    "number": 1979
+                    "number": 1963
                 },
                 "Country": {
                     "id": "Gt%5BC",
@@ -659,7 +1381,7 @@
                 "Wiki": {
                     "id": "OZCe",
                     "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/Jordan_Peele"
+                    "url": "https://en.wikipedia.org/wiki/Marc_Jacobs"
                 },
                 "YoD": {
                     "id": "P%3D%60Q",
@@ -671,9 +1393,9 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "9b5378da-8339-4f4b-ad25-82d182823b67",
-                            "name": "Black",
-                            "color": "default"
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
                         }
                     ]
                 },
@@ -687,19 +1409,14 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "58afa212-87b5-487b-8b76-2f40a80af10a",
-                            "name": "Actor",
-                            "color": "yellow"
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
                         },
                         {
-                            "id": "c139afd1-03c2-4202-862d-687fd145c638",
-                            "name": "Comedian",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "3beb92bf-b88a-4958-9bcd-9953953c712a",
-                            "name": "Filmmaker",
-                            "color": "green"
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
                         }
                     ]
                 },
@@ -721,7 +1438,7 @@
                     "id": "xYFl",
                     "type": "date",
                     "date": {
-                        "start": "1979-02-21",
+                        "start": "1963-04-09",
                         "end": null,
                         "time_zone": null
                     }
@@ -744,7 +1461,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Jordan Peele",
+                                "content": "Marc Jacobs",
                                 "link": null
                             },
                             "annotations": {
@@ -755,20 +1472,20 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Jordan Peele",
+                            "plain_text": "Marc Jacobs",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Jordan-Peele-6894b87899b444f0a9042637bb7766a2",
+            "url": "https://www.notion.so/Marc-Jacobs-5a480dd4833042b6a82783be4002c0de",
             "public_url": null
         },
         {
             "object": "page",
-            "id": "558495e7-523e-4b06-ac60-e791c4af371b",
-            "created_time": "2023-08-17T17:57:00.000Z",
-            "last_edited_time": "2023-08-18T17:11:00.000Z",
+            "id": "3499d1bb-2919-452d-b9d0-7d6d42daf2ad",
+            "created_time": "2023-08-19T09:18:00.000Z",
+            "last_edited_time": "2023-08-19T09:18:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -791,7 +1508,7 @@
                 "YoB": {
                     "id": "ECFj",
                     "type": "number",
-                    "number": 1920
+                    "number": 1961
                 },
                 "Country": {
                     "id": "Gt%5BC",
@@ -807,21 +1524,21 @@
                 "Wiki": {
                     "id": "OZCe",
                     "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/James_Farmer"
+                    "url": "https://en.wikipedia.org/wiki/Tom_Ford"
                 },
                 "YoD": {
                     "id": "P%3D%60Q",
                     "type": "number",
-                    "number": 1999
+                    "number": null
                 },
                 "Ethnicity": {
                     "id": "QCv%3D",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "9b5378da-8339-4f4b-ad25-82d182823b67",
-                            "name": "Black",
-                            "color": "default"
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
                         }
                     ]
                 },
@@ -835,18 +1552,18 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "3b385af4-5d1a-41ad-9faf-c8b97a9b925f",
-                            "name": "Civil",
-                            "color": "brown"
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
                         },
                         {
-                            "id": "c2ccf03b-fb82-4b9a-a746-1277fce813dd",
-                            "name": "Rights",
-                            "color": "orange"
+                            "id": "3beb92bf-b88a-4958-9bcd-9953953c712a",
+                            "name": "Filmmaker",
+                            "color": "green"
                         },
                         {
-                            "id": "4edaf94a-3caa-4bfb-b660-ae276e656552",
-                            "name": "Activist",
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
                             "color": "orange"
                         }
                     ]
@@ -869,8 +1586,8 @@
                     "id": "xYFl",
                     "type": "date",
                     "date": {
-                        "start": "1920-01-12",
-                        "end": "1999-07-09",
+                        "start": "1961-08-27",
+                        "end": null,
                         "time_zone": null
                     }
                 },
@@ -879,9 +1596,9 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "cd32b84b-24a5-4767-aa74-ec01fabc7bdb",
-                            "name": "Marshall",
-                            "color": "yellow"
+                            "id": "408a2b8f-a42a-4878-af9e-e1026375178a",
+                            "name": "Austin",
+                            "color": "pink"
                         },
                         {
                             "id": "e4d9451a-99e6-4252-87c1-e023c4c97d0c",
@@ -897,7 +1614,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "James Farmer",
+                                "content": "Tom Ford",
                                 "link": null
                             },
                             "annotations": {
@@ -908,13 +1625,2175 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "James Farmer",
+                            "plain_text": "Tom Ford",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/James-Farmer-558495e7523e4b06ac60e791c4af371b",
+            "url": "https://www.notion.so/Tom-Ford-3499d1bb2919452db9d07d6d42daf2ad",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "a105821d-7a61-4db4-8316-88739af7448a",
+            "created_time": "2023-08-19T09:18:00.000Z",
+            "last_edited_time": "2023-08-19T09:18:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇮🇹"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1964
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d932ecb5-894a-4f49-b2e1-ebe96e2eaf99",
+                            "name": "Italy",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Maria_Grazia_Chiuri"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1964-02-02",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "33275b28-cb83-403c-b6cf-9ae45f44a92a",
+                            "name": "Rome",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Maria Grazia Chiuri",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Maria Grazia Chiuri",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Maria-Grazia-Chiuri-a105821d7a614db4831688739af7448a",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1955b7ad-840c-4f6b-b337-0f8b645168d2",
+            "created_time": "2023-08-19T09:17:00.000Z",
+            "last_edited_time": "2023-08-19T09:17:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇨🇾"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1970
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "c225c2c0-5ff6-42db-b988-c57be0fd6606",
+                            "name": "Cyprus",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Hussein_Chalayan"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1970-08-12",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "7c7c0112-4cac-4771-a0dd-f26e20d89ff8",
+                            "name": "Nicosia",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Hussein Chalayan",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Hussein Chalayan",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Hussein-Chalayan-1955b7ad840c4f6bb3370f8b645168d2",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "7a5e63b7-a223-4d5d-897e-e3cd60518e80",
+            "created_time": "2023-08-19T09:17:00.000Z",
+            "last_edited_time": "2023-08-19T09:17:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇮🇹"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1934
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d932ecb5-894a-4f49-b2e1-ebe96e2eaf99",
+                            "name": "Italy",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Giorgio_Armani"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1934-07-11",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3c2bede3-48c7-48ae-8445-0fac3831007f",
+                            "name": "Piacenza",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Giorgio Armani",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Giorgio Armani",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Giorgio-Armani-7a5e63b7a2234d5d897ee3cd60518e80",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6bc283f1-bedb-4a09-bdd4-066716127c4e",
+            "created_time": "2023-08-19T09:17:00.000Z",
+            "last_edited_time": "2023-08-19T09:17:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1876
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Madeleine_Vionnet"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1975
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1876-06-22",
+                        "end": "1975-03-02",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Madeleine Vionnet",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Madeleine Vionnet",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Madeleine-Vionnet-6bc283f1bedb4a09bdd4066716127c4e",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "9a44c3ad-8645-45c8-adb9-6e79e3c1567b",
+            "created_time": "2023-08-19T09:16:00.000Z",
+            "last_edited_time": "2023-08-19T09:16:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇮🇹"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1890
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d932ecb5-894a-4f49-b2e1-ebe96e2eaf99",
+                            "name": "Italy",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Elsa_Schiaparelli"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1973
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1890-09-10",
+                        "end": "1973-11-13",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "33275b28-cb83-403c-b6cf-9ae45f44a92a",
+                            "name": "Rome",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Elsa Schiaparelli",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Elsa Schiaparelli",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Elsa-Schiaparelli-9a44c3ad864545c8adb96e79e3c1567b",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "40c0f61e-cc96-4d5c-92d5-10aad0a80263",
+            "created_time": "2023-08-19T09:16:00.000Z",
+            "last_edited_time": "2023-08-19T09:16:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇩🇴"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1932
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "6232348f-215c-4b3b-9bba-0df3c8184e4d",
+                            "name": "Dominican Republic",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Oscar_De_La_Renta"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2014
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "6a51c064-bb4e-4a30-a1ae-5027d6221b3d",
+                            "name": "Latinx",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1932-07-22",
+                        "end": "2014-10-20",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "f87cf2a8-46bb-4aed-a590-fb6ca947d1d3",
+                            "name": "Santo Domingo",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Oscar De La Renta",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Oscar De La Renta",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Oscar-De-La-Renta-40c0f61ecc964d5c92d510aad0a80263",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "9723e752-b225-4daa-9945-72dc4ac43f64",
+            "created_time": "2023-08-19T09:15:00.000Z",
+            "last_edited_time": "2023-08-19T09:15:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1936
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3c7f020b-d073-4825-b6b4-513cdb258283",
+                            "name": "French Algeria",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Yves_Saint_Laurent_(designer)"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2008
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1936-08-01",
+                        "end": "2008-06-01",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "cba14bd3-5bf8-4019-a993-992302e99d29",
+                            "name": "Oran",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Yves Saint Laurent (designer)",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Yves Saint Laurent (designer)",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Yves-Saint-Laurent-designer-9723e752b2254daa994572dc4ac43f64",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "3522d458-49cd-4a06-b052-323f0be5ec7d",
+            "created_time": "2023-08-19T09:15:00.000Z",
+            "last_edited_time": "2023-08-19T09:15:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇩🇪"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1933
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "c18a8aee-dcdc-478f-b3b7-c2b2799e69a9",
+                            "name": "Germany",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Karl_Lagerfeld"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2019
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9b5378da-8339-4f4b-ad25-82d182823b67",
+                            "name": "Black",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1933-09-10",
+                        "end": "2019-02-19",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "177cc755-73b0-4359-aba9-253b7514a7ed",
+                            "name": "Hamburg",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Karl Lagerfeld",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Karl Lagerfeld",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Karl-Lagerfeld-3522d45849cd4a06b052323f0be5ec7d",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "c9abdf87-21cb-4a4b-bdb8-b958a3092d07",
+            "created_time": "2023-08-19T09:14:00.000Z",
+            "last_edited_time": "2023-08-19T09:14:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇫🇷"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1879
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9db65ce4-7003-4478-89de-e846409e0c9d",
+                            "name": "France",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Paul_Poiret"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1944
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "172d88b8-2236-4caf-8824-8ea364bd2139",
+                            "name": "Couturier",
+                            "color": "red"
+                        },
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1879-04-20",
+                        "end": "1944-04-30",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "59ac02ba-64e4-468d-9904-ad37880ce23b",
+                            "name": "Paris",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Paul Poiret",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Paul Poiret",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Paul-Poiret-c9abdf8721cb4a4bbdb8b958a3092d07",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "aae473d9-9e7b-48ff-ad39-0cf422df68e1",
+            "created_time": "2023-08-19T09:13:00.000Z",
+            "last_edited_time": "2023-08-19T09:14:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1932
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Halston"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1990
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "2c0c9092-74ad-474f-876a-3d8f21086b29",
+                            "name": "Milliner",
+                            "color": "default"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "d8bb2c92-23a0-46d1-ada1-1e782b2d5f08",
+                        "name": "Female",
+                        "color": "pink"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1932-04-23",
+                        "end": "1990-03-26",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e65ed9a7-1275-4bb2-ae4e-037d5980310a",
+                            "name": "Des Moines",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "5061b51a-9f67-4b84-883a-3d806973ca43",
+                            "name": "IA",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Halston",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Halston",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Halston-aae473d99e7b48ffad390cf422df68e1",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "71297a96-1c37-43a7-b0f3-0d2107605275",
+            "created_time": "2023-08-19T09:13:00.000Z",
+            "last_edited_time": "2023-08-19T09:13:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇫🇷"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1927
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9db65ce4-7003-4478-89de-e846409e0c9d",
+                            "name": "France",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Hubert_De_Givenchy"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2018
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1927-02-20",
+                        "end": "2018-03-10",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "28c73f63-ac2f-4d66-a803-107afe162352",
+                            "name": "Beauvais",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Hubert De Givenchy",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Hubert De Givenchy",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Hubert-De-Givenchy-71297a961c3743a7b0f30d2107605275",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "55315454-6822-4f0b-8eab-d953aa06525c",
+            "created_time": "2023-08-19T09:13:00.000Z",
+            "last_edited_time": "2023-08-19T09:13:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇫🇷"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1905
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9db65ce4-7003-4478-89de-e846409e0c9d",
+                            "name": "France",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Christian_Dior"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1957
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1905-01-21",
+                        "end": "1957-10-24",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e06131d5-2768-48b7-a28e-145075d7b9d2",
+                            "name": "Granville",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Christian Dior",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Christian Dior",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Christian-Dior-5531545468224f0b8eabd953aa06525c",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "26d7a471-1bf1-4ae7-b3f7-ebbb57faf60b",
+            "created_time": "2023-08-19T09:12:00.000Z",
+            "last_edited_time": "2023-08-19T09:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇫🇷"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1883
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9db65ce4-7003-4478-89de-e846409e0c9d",
+                            "name": "France",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Gabrielle_Chanel"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1971
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c0c9092-74ad-474f-876a-3d8f21086b29",
+                            "name": "Milliner",
+                            "color": "default"
+                        },
+                        {
+                            "id": "07a0898f-008c-4dce-ae4c-3c021ffb25ae",
+                            "name": "Dressmaker",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "d8bb2c92-23a0-46d1-ada1-1e782b2d5f08",
+                        "name": "Female",
+                        "color": "pink"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1883-08-19",
+                        "end": "1971-01-10",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "b2d1da23-e851-4a32-acb6-ae47813b3502",
+                            "name": "Saumur",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Gabrielle Chanel",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Gabrielle Chanel",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Gabrielle-Chanel-26d7a4711bf14ae7b3f7ebbb57faf60b",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "f70db259-8350-4e6f-8c58-114c0494f67a",
+            "created_time": "2023-08-19T09:12:00.000Z",
+            "last_edited_time": "2023-08-19T09:12:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇮🇹"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1922
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d932ecb5-894a-4f49-b2e1-ebe96e2eaf99",
+                            "name": "Italy",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Pierre_Cardin"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 2020
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "8c2db4fe-33a0-4239-b888-83e2dedd4d61",
+                            "name": "Grand Couturier",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1922-07-02",
+                        "end": "2020-12-29",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "8c92baf5-1a55-4b4c-9576-94fd3baf3bad",
+                            "name": "San Biagio di Callalta",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Pierre Cardin",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Pierre Cardin",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Pierre-Cardin-f70db25983504e6f8c58114c0494f67a",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "76cc1bdc-42e7-40ff-aaab-a7f598a0bb69",
+            "created_time": "2023-08-19T09:11:00.000Z",
+            "last_edited_time": "2023-08-19T09:11:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇫🇷"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1914
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9db65ce4-7003-4478-89de-e846409e0c9d",
+                            "name": "France",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Pierre_Balmain"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1982
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3ee64858-1c7a-48d6-912c-ae581166a0da",
+                            "name": "Fashion Designer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "60497b51-9e47-48aa-bd18-bddfc8222e33",
+                            "name": "Designer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1914-05-18",
+                        "end": "1982-06-29",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fd9537f7-a58e-4361-8c27-2e9de146963f",
+                            "name": "Saint-Jean-de-Maurienne",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "071539b3-8474-4ec6-9277-9c10853b1c46",
+                            "name": "Savoie",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Pierre Balmain",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Pierre Balmain",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Pierre-Balmain-76cc1bdc42e740ffaaaba7f598a0bb69",
             "public_url": null
         }
     ],

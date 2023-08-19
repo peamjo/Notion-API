@@ -87,10 +87,13 @@ def add_or_check_jobs(info, job):
     counter = 0
     for i in info:
         if i[0] == "Occupations":
+            for x in job:
+                if x not in i[1]: 
+                    i[1].append(x)
             break
         else: counter+=1
     if counter == len(info):
-        info.append(['Occupations', [job]])
+        info.append(['Occupations', job])
         
 
 def edit_data(ip):
@@ -155,43 +158,52 @@ def edit_data(ip):
 
 
 artist_names = ["Henri Rousseau", "Leonora Carrington", "Cindy Sherman"]
-designer_names = ["Azzedine Alaïa", "Cristóbal Balenciaga", "Pierre Balmain", "Pierre Cardin", "Gabrielle Chanel", "Christian Dior", "Hubert De Givenchy", "Halston", "Paul Poiret", "Charles James", "Karl Lagerfeld", "Yves Saint Laurent (designer)", "Oscar de la Renta", "Elsa Schiaparelli", "Madeleine Vionnet", "Giorgio Armani", "Hussein Chalayan", "Maria Grazia Chiuri", "Tom Ford", "John Galliano", "Marc Jacobs", "Rei Kawakubo", "Martin Margiela", "Alexander McQueen", "Issey Miyake", "Thierry Mugler", "Carol Christian Poell", "Miuccia Prada", "Yohji Yamamoto"]
+designer_names = ["Cristóbal Balenciaga","Azzedine Alaïa","Pierre Balmain", "Pierre Cardin", "Gabrielle Chanel", "Christian Dior", "Hubert De Givenchy", "Halston", "Paul Poiret", "Charles James", "Karl Lagerfeld", "Yves Saint Laurent (designer)", "Oscar de la Renta", "Elsa Schiaparelli", "Madeleine Vionnet", "Giorgio Armani", "Hussein Chalayan", "Maria Grazia Chiuri", "Tom Ford", "John Galliano", "Marc Jacobs", "Rei Kawakubo", "Martin Margiela", "Alexander McQueen", "Issey Miyake", "Thierry Mugler", "Carol Christian Poell", "Miuccia Prada", "Yohji Yamamoto", "Charles James (designer)"]
 rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry White", "Isaac Hayes",
 "DJ Hollywood", "Pigmeat Markham", "Frankie Crocker", "Kurtis Blow", "Russell Simmons", "Marley Marl",
 "Uncle Luke"]
 
+test_list=["Barry White"]
 
-people = "Selena Gomez"
-job = ""
+people = ""
+job = ["Rapper"]
+error_list = []
 
-#for people in artist_names:
-u_i, url, name = input_names(people)
-data = wiki_scrape_bot(url)
-print(data)
-info = get_info(data)
-if job != None:
-    add_or_check_jobs(info, job)
-get_images(people)
-convert_to_jpg(people)
-gender_list = []
-ethnicity_list = []
-for x in range(1,6):
-    link = rf"C:\Users\Peam\iCloudDrive\Notion API\download\{people} face\Image_{x}.jpg"
-    gender_count, ethnicity_count = face_recognition(link)
-    gender_list.append(gender_count)
-    ethnicity_list.append(ethnicity_count)
-print(gender_list, ethnicity_list)
-gender, ethnicity = majority_race_gender(gender_list, ethnicity_list)
-info.append(["Gender", gender])
-info.append(["Ethnicity", ethnicity])
-print(info)
-pages = get_pages()
-exist = False
-for page in pages:
-    og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
-    if og_name == u_i:
-        exist = True
-if exist == False:
-    create_page(name)
-    pages = get_pages()
-edit_data((info[0])[0])
+for people in test_list:
+    try:
+        u_i, url, name = input_names(people)
+        data = wiki_scrape_bot(url)
+        print(data)
+        info = get_info(data)
+        if job != []:
+            add_or_check_jobs(info, job)
+        get_images(people)
+        convert_to_jpg(people)
+        gender_list = []
+        ethnicity_list = []
+        for x in range(1,6):
+            link = rf"C:\Users\Peam\iCloudDrive\Notion API\download\{people} face\Image_{x}.jpg"
+            gender_count, ethnicity_count = face_recognition(link)
+            gender_list.append(gender_count)
+            ethnicity_list.append(ethnicity_count)
+        print(gender_list, ethnicity_list)
+        gender, ethnicity = majority_race_gender(gender_list, ethnicity_list)
+        info.append(["Gender", gender])
+        info.append(["Ethnicity", ethnicity])
+        print(info)
+        pages = get_pages()
+        exist = False
+        for page in pages:
+            og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
+            if og_name == u_i:
+                exist = True
+        if exist == False:
+            create_page(name)
+            pages = get_pages()
+        edit_data((info[0])[0])
+    except KeyboardInterrupt:
+        break
+    except:
+        error_list.append(people)
+        continue
+print("Error List:", error_list)

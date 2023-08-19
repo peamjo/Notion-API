@@ -53,10 +53,17 @@ def wiki_scrape_bot(url):
                 out = map(lambda x:x.capitalize(), (i[1])[j])
                 (i[1])[j] = list(out)
                 (i[1])[j] = (' '.join((i[1])[j]))
-                if (i[1])[j] == "Dj":
+                if (i[1])[j] == "R":
+                    (i[1])[j] = "R&B"
+                if (i[1])[j] == "B":
+                    (i[1])[j] = "R&B"
+                if (i[1])[j] == "Dj" or (i[1])[j] == "Disc Jockey":
                     (i[1])[j] = "DJ"
+                if (i[1])[j] == "Mc":
+                    (i[1])[j] = "MC"
                 if (i[1])[j] == "Hiphop":
                     (i[1])[j] = "Hip Hop"  
+    print(data_list)
     return (data_list)
 
 #wikibot(url)
