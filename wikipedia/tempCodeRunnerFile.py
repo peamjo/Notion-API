@@ -1,1 +1,1 @@
-Designer
+str(Path.cwd().joinpath('download','{people} face','Image_{x}.jpg'))

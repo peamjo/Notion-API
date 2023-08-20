@@ -4,7 +4,7 @@ Overall:
 Born
 - Birthday x
 - City/State/Country x
-Occupations
+Occupations x
 Flag x
 Images x
 Summary x

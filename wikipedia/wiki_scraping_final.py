@@ -6,6 +6,8 @@ import wordninja
 import gzip
 import shutil
 from bs4 import BeautifulSoup
+from pathlib import Path
+
 """
 Enter_input = input("Search: ")
 u_i = string.capwords(Enter_input)
@@ -20,11 +22,14 @@ def wiki_scrape_bot(url):
     soup = BeautifulSoup(url_open.content, 'html.parser')
     details = soup('table', {'class': 'infobox'})
     data_list = []
-    with open(rf'C:\Users\Peam\iCloudDrive\Notion API\wikipedia\lang_database.txt', 'rb') as f_in:
+    with open(str(Path.cwd().joinpath('wikipedia','lang_database.txt')), 'rb') as f_in:
          with gzip.open('lang_database.txt.gz', 'wb') as f_out:
              shutil.copyfileobj(f_in, f_out)
     wordninja.DEFAULT_LANGUAGE_MODEL = wordninja.LanguageModel('lang_database.txt.gz')
-    og_list_split = wordninja.LanguageModel(rf'C:\Users\Peam\iCloudDrive\Notion API\og_lang_database.txt.gz')
+    with open(str(Path.cwd().joinpath('wikipedia','og_lang_database.txt')), 'rb') as f_in:
+         with gzip.open('og_lang_database.txt.gz', 'wb') as f_out:
+             shutil.copyfileobj(f_in, f_out)
+    og_list_split = wordninja.LanguageModel(str(Path.cwd().joinpath('og_lang_database.txt.gz')))
     for i in details:
         rows = i.find_all('tr')
         for row in rows:
@@ -45,7 +50,7 @@ def wiki_scrape_bot(url):
                         break
     print(data_list)
     for i in data_list:
-        if i[0] == "Occupations" or i[0] == "Occupation" or i[0] == "Occupation(s)" or i[0] == "Genres":
+        if i[0] == "Occupations" or i[0] == "Occupation" or i[0] == "Occupation(s)" or i[0] == "Genres" or i[0] == "Instruments" or i[0] == "Instrument(s)":
             i[1]=i[1].replace(" ","")
             i[1] = wordninja.split(i[1])
             for j in range(len(i[1])):
@@ -53,16 +58,18 @@ def wiki_scrape_bot(url):
                 out = map(lambda x:x.capitalize(), (i[1])[j])
                 (i[1])[j] = list(out)
                 (i[1])[j] = (' '.join((i[1])[j]))
-                if (i[1])[j] == "R":
+                if (i[1])[j] == "R" or (i[1])[j] == "B" or (i[1])[j] == "Rhythm And Blues":
                     (i[1])[j] = "R&B"
-                if (i[1])[j] == "B":
-                    (i[1])[j] = "R&B"
+                if (i[1])[j] == "Edm":
+                    (i[1])[j] = "EDM"
                 if (i[1])[j] == "Dj" or (i[1])[j] == "Disc Jockey":
                     (i[1])[j] = "DJ"
                 if (i[1])[j] == "Mc":
                     (i[1])[j] = "MC"
                 if (i[1])[j] == "Hiphop":
                     (i[1])[j] = "Hip Hop"  
+                if (i[1])[j] == "Businesswoman" or (i[1])[j] == "Businessman":
+                    (i[1])[j] = "Business Person"  
     print(data_list)
     return (data_list)
 

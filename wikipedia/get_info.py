@@ -6,6 +6,7 @@ import re
 from wikipedia_summary import wiki_summary
 from get_images import get_images, convert_to_jpg
 from face_recognition import face_recognition, majority_race_gender
+from pathlib import Path
 
 #Enter_input = input("Search: ")
 def input_names(Enter_input):
@@ -80,6 +81,12 @@ def get_info(data):
             info.append(['Occupations', i[1]])
         if i[0] == "Genres":
             info.append(['Genres', i[1]])
+        if i[0] == "Instruments" or i[0] == "Instrument(s)":
+            info.append(['Instruments', i[1]])
+        if i[0] == "Years active":
+            i[1]=i[1].replace("–"," to ")
+            print(i[1])
+            info.append(['Years active', i[1]])
     info.append(['Wiki', url])
     return(info)
 
@@ -117,6 +124,9 @@ def edit_data(ip):
                 if i[0] == 'YoD':
                     update_data = {"YoD": {"number": int(i[1])}}
                     update_page(page_id, update_data)
+                if i[0] == 'Years active':
+                    update_data = {"Years active": {"rich_text": [{"text": {"content": i[1]}}]}}
+                    update_page(page_id, update_data)
                 if i[0] == 'Country':
                     update_data = {"Country": {"multi_select": [{"name": i[1]}]}}
                     update_page(page_id, update_data)
@@ -153,6 +163,13 @@ def edit_data(ip):
                         genres.append(j)
                     update_data = {"Genres (music)": {"multi_select": genres}}
                     update_page(page_id, update_data)
+                if i[0] == 'Instruments':
+                    genres = []
+                    for j in i[1]:
+                        j = {"name": j}
+                        genres.append(j)
+                    update_data = {"Instrument(s)": {"multi_select": genres}}
+                    update_page(page_id, update_data)
             update_data = wiki_summary(name)
             create_content(page_id, update_data)
 
@@ -162,14 +179,15 @@ designer_names = ["Cristóbal Balenciaga","Azzedine Alaïa","Pierre Balmain", "P
 rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry White", "Isaac Hayes",
 "DJ Hollywood", "Pigmeat Markham", "Frankie Crocker", "Kurtis Blow", "Russell Simmons", "Marley Marl",
 "Uncle Luke"]
+test_list=["Melvin B. Tolson", "James Farmer", "Helen Keller", "Fran Lebowitz", "Mardy Fish", "Albert Göring", "Alec Monopoly", "Enya"]
+test_list2 = ["Jacob Collier"]
 
-test_list=["Barry White"]
 
 people = ""
-job = ["Rapper"]
+job = []
 error_list = []
 
-for people in test_list:
+for people in test_list2:
     try:
         u_i, url, name = input_names(people)
         data = wiki_scrape_bot(url)
@@ -182,7 +200,7 @@ for people in test_list:
         gender_list = []
         ethnicity_list = []
         for x in range(1,6):
-            link = rf"C:\Users\Peam\iCloudDrive\Notion API\download\{people} face\Image_{x}.jpg"
+            link = str(Path.cwd().joinpath('download',rf'{people} face',rf'Image_{x}.jpg'))
             gender_count, ethnicity_count = face_recognition(link)
             gender_list.append(gender_count)
             ethnicity_list.append(ethnicity_count)
@@ -203,7 +221,7 @@ for people in test_list:
         edit_data((info[0])[0])
     except KeyboardInterrupt:
         break
-    except:
-        error_list.append(people)
-        continue
+    #except:
+      #  error_list.append(people)
+      #  continue
 print("Error List:", error_list)

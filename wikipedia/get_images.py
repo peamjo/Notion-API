@@ -1,6 +1,7 @@
 from bing_image_downloader import downloader
 from PIL import Image
 import os
+from pathlib import Path
 
 
 def get_images(query):
@@ -24,7 +25,7 @@ def get_images(query):
 #        print (f)
 
 def convert_to_jpg(name):
-    directory = rf"C:\Users\Peam\iCloudDrive\Notion API\download\{name} face"
+    directory = str(Path.cwd().joinpath('download',rf'{name} face'))
     for filename in os.listdir(directory):
         f = os.path.join(directory, filename)
         f_split = (os.path.join(directory, filename)).split(".")
