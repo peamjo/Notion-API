@@ -49,6 +49,8 @@ def get_info(data):
             final_location = location.split(',')
             info.append(['Birthday', birth_date])
             info.append(['YoB', birth_date.split("-",1)[0]])
+            if len(final_location) > 3:
+                final_location.pop(0)
             if len(final_location) == 3:
                 city = final_location[0]
                 state = final_location[1].replace(' ','',1)
@@ -83,10 +85,14 @@ def get_info(data):
             info.append(['Genres', i[1]])
         if i[0] == "Instruments" or i[0] == "Instrument(s)":
             info.append(['Instruments', i[1]])
+        if i[0] == "Movement":
+            info.append(['Art Style/Movement', i[1]])
         if i[0] == "Years active" or i[0] == "Turned pro":
             i[1]=i[1].replace("–"," to ")
-            print(i[1])
+            i[1]=i[1].replace("-"," to ")
             info.append(['Years active', i[1]])
+        if i[0] == "Retired":
+            info.append(['Retired', i[1]])
     info.append(['Wiki', url])
     return(info)
 
@@ -161,31 +167,30 @@ def edit_data(ip):
                     for j in i[1]:
                         j = {"name": j}
                         genres.append(j)
-                    update_data = {"Genres (music)": {"multi_select": genres}}
+                    update_data = {"Genres (Music)": {"multi_select": genres}}
                     update_page(page_id, update_data)
                 if i[0] == 'Instruments':
-                    genres = []
+                    instruments = []
                     for j in i[1]:
                         j = {"name": j}
-                        genres.append(j)
-                    update_data = {"Instrument(s)": {"multi_select": genres}}
+                        instruments.append(j)
+                    update_data = {"Instrument(s)": {"multi_select": instruments}}
+                    update_page(page_id, update_data)
+                if i[0] == 'Art Style/Movement':
+                    movement = []
+                    for j in i[1]:
+                        j = {"name": j}
+                        movement.append(j)
+                    update_data = {"Art Style/Movement": {"multi_select": movement}}
                     update_page(page_id, update_data)
             update_data = wiki_summary(name)
             create_content(page_id, update_data)
 
-
-artist_names = ["Henri Rousseau", "Leonora Carrington", "Cindy Sherman"]
-designer_names = ["Cristóbal Balenciaga","Azzedine Alaïa","Pierre Balmain", "Pierre Cardin", "Gabrielle Chanel", "Christian Dior", "Hubert De Givenchy", "Halston", "Paul Poiret", "Charles James", "Karl Lagerfeld", "Yves Saint Laurent (designer)", "Oscar de la Renta", "Elsa Schiaparelli", "Madeleine Vionnet", "Giorgio Armani", "Hussein Chalayan", "Maria Grazia Chiuri", "Tom Ford", "John Galliano", "Marc Jacobs", "Rei Kawakubo", "Martin Margiela", "Alexander McQueen", "Issey Miyake", "Thierry Mugler", "Carol Christian Poell", "Miuccia Prada", "Yohji Yamamoto", "Charles James (designer)"]
-rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry White", "Isaac Hayes",
-"DJ Hollywood", "Pigmeat Markham", "Frankie Crocker", "Kurtis Blow", "Russell Simmons", "Marley Marl",
-"Uncle Luke"]
-test_list=["Melvin B. Tolson", "James Farmer", "Helen Keller", "Fran Lebowitz", "Mardy Fish", "Albert Göring", "Alec Monopoly", "Enya"]
-
 people_list = []
-job = ["Artist"]
+job = []
 error_list = []
 
-for people in artist_names:
+for people in people_list:
     try:
         u_i, url, name = input_names(people)
         data = wiki_scrape_bot(url)

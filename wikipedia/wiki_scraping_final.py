@@ -50,7 +50,7 @@ def wiki_scrape_bot(url):
                         break
     print(data_list)
     for i in data_list:
-        if i[0] == "Occupations" or i[0] == "Occupation" or i[0] == "Occupation(s)" or i[0] == "Genres" or i[0] == "Instruments" or i[0] == "Instrument(s)":
+        if i[0] == "Occupations" or i[0] == "Occupation" or i[0] == "Occupation(s)" or i[0] == "Genres" or i[0] == "Instruments" or i[0] == "Instrument(s)" or i[0] == "Movement":
             i[1]=i[1].replace(" ","")
             i[1] = wordninja.split(i[1])
             for j in range(len(i[1])):
@@ -68,8 +68,13 @@ def wiki_scrape_bot(url):
                     (i[1])[j] = "MC"
                 if (i[1])[j] == "Hiphop":
                     (i[1])[j] = "Hip Hop"  
-                if (i[1])[j] == "Businesswoman" or (i[1])[j] == "Businessman":
-                    (i[1])[j] = "Business Person"  
+                if (i[1])[j] == "Businesswoman" or (i[1])[j] == "Businessman" or (i[1])[j] == "Businessperson":
+                    (i[1])[j] = "Business Person"
+        if i[0] == "Country":
+            if i[1].find("French") != -1:
+                i[1] = "France"
+            if i[1].find("German") != -1:
+                i[1] = "Germany"
     print(data_list)
     return (data_list)
 
