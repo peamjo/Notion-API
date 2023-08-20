@@ -180,14 +180,12 @@ rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry 
 "DJ Hollywood", "Pigmeat Markham", "Frankie Crocker", "Kurtis Blow", "Russell Simmons", "Marley Marl",
 "Uncle Luke"]
 test_list=["Melvin B. Tolson", "James Farmer", "Helen Keller", "Fran Lebowitz", "Mardy Fish", "Albert Göring", "Alec Monopoly", "Enya"]
-test_list2 = ["Jacob Collier"]
-
 
 people = ""
 job = []
 error_list = []
 
-for people in test_list2:
+for people in test_list:
     try:
         u_i, url, name = input_names(people)
         data = wiki_scrape_bot(url)
@@ -221,7 +219,7 @@ for people in test_list2:
         edit_data((info[0])[0])
     except KeyboardInterrupt:
         break
-    #except:
-      #  error_list.append(people)
-      #  continue
+    except:
+        error_list.append(people)
+        continue
 print("Error List:", error_list)
