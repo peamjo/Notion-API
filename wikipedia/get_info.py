@@ -83,7 +83,7 @@ def get_info(data):
             info.append(['Genres', i[1]])
         if i[0] == "Instruments" or i[0] == "Instrument(s)":
             info.append(['Instruments', i[1]])
-        if i[0] == "Years active":
+        if i[0] == "Years active" or i[0] == "Turned pro":
             i[1]=i[1].replace("–"," to ")
             print(i[1])
             info.append(['Years active', i[1]])
@@ -181,11 +181,11 @@ rapper_names = ["DJ Kool Herc", "Afrika Bambaataa", "Grandmaster Flash", "Barry 
 "Uncle Luke"]
 test_list=["Melvin B. Tolson", "James Farmer", "Helen Keller", "Fran Lebowitz", "Mardy Fish", "Albert Göring", "Alec Monopoly", "Enya"]
 
-people = ""
-job = []
+people_list = []
+job = ["Artist"]
 error_list = []
 
-for people in test_list:
+for people in artist_names:
     try:
         u_i, url, name = input_names(people)
         data = wiki_scrape_bot(url)

@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "410d7b83-3a2f-4535-8121-9c23de8e8959",
-            "created_time": "2023-08-20T09:54:00.000Z",
-            "last_edited_time": "2023-08-20T09:54:00.000Z",
+            "id": "ca912f0f-27d1-4660-8737-2b4d205776f8",
+            "created_time": "2023-08-20T11:51:00.000Z",
+            "last_edited_time": "2023-08-20T11:51:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -25,7 +25,7 @@
                 "Created time": {
                     "id": "%3A%60L%7D",
                     "type": "created_time",
-                    "created_time": "2023-08-20T09:54:00.000Z"
+                    "created_time": "2023-08-20T11:51:00.000Z"
                 },
                 "YoB": {
                     "id": "ECFj",
@@ -99,7 +99,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Jacob Collier",
+                                "content": "Rafael Nadal",
                                 "link": null
                             },
                             "annotations": {
@@ -110,13 +110,1165 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Jacob Collier",
+                            "plain_text": "Rafael Nadal",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Jacob-Collier-410d7b833a2f453581219c23de8e8959",
+            "url": "https://www.notion.so/Rafael-Nadal-ca912f0f27d1466087372b4d205776f8",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "64ab92c7-1108-45a6-99a7-76de20489807",
+            "created_time": "2023-08-20T11:45:00.000Z",
+            "last_edited_time": "2023-08-20T11:46:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇮🇪"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-20T11:45:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1961
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0637a263-def1-45f3-a623-fd0a5ea99b87",
+                            "name": "Ireland",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Enya"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "1980 to present",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "1980 to present",
+                            "href": null
+                        }
+                    ]
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e941c343-9a50-47db-ae41-f94464b37fc7",
+                            "name": "Singer",
+                            "color": "default"
+                        },
+                        {
+                            "id": "370cd76a-4e3e-42e4-af52-65afdff0a184",
+                            "name": "Songwriter",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "57086b0a-47c2-4408-9ddb-36b2c9c32a46",
+                            "name": "Composer",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "75bad998-0fda-4d18-843c-c571dd936227",
+                            "name": "Musician",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "830c0072-ff7e-4849-9b6d-80426ca4ecf5",
+                            "name": "Celtic Pop",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "9484ffee-1d21-4cb3-9c37-8f542ccc8af7",
+                            "name": "New",
+                            "color": "default"
+                        },
+                        {
+                            "id": "b472993a-5c6c-40a7-b174-99daa9bc7459",
+                            "name": "Age",
+                            "color": "red"
+                        },
+                        {
+                            "id": "2ffafad0-9acb-4518-82a0-b4ff9ee98a30",
+                            "name": "World Indie",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "d8bb2c92-23a0-46d1-ada1-1e782b2d5f08",
+                        "name": "Female",
+                        "color": "pink"
+                    }
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4cd7198b-f0bb-4251-bfc4-e6f1880da26d",
+                            "name": "Vocals",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "22cb3359-f66c-478d-bf69-4f4bb8ca6e91",
+                            "name": "Piano",
+                            "color": "red"
+                        },
+                        {
+                            "id": "67b01821-ce93-47e6-8fc1-5f2996efbb39",
+                            "name": "Keyboards",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1961-05-17",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "df394e47-755e-4e14-8a2f-269f4430b356",
+                            "name": "Dore",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "612faf17-88fe-47ff-ab7f-602f72596b89",
+                            "name": "Gweedore",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Enya",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Enya",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Enya-64ab92c7110845a699a776de20489807",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "be14c940-8372-44cb-8bf9-8f80c48eacfc",
+            "created_time": "2023-08-20T11:45:00.000Z",
+            "last_edited_time": "2023-08-20T11:45:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-20T11:45:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": null
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Alec_Monopoly"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": null
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Alec Monopoly",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Alec Monopoly",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Alec-Monopoly-be14c940837244cb8bf98f80c48eacfc",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "679804f1-da15-4e8d-9689-1e5a6ab93d8c",
+            "created_time": "2023-08-20T11:44:00.000Z",
+            "last_edited_time": "2023-08-20T11:45:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-20T11:44:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1895
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4cc7354a-3606-4560-a3d9-5d7cc3409010",
+                            "name": "German Empire",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Albert_Göring"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1966
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "95618eed-ba15-494d-a8be-d3ddc3044061",
+                            "name": "Business Person",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1895-03-09",
+                        "end": "1966-12-20",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "5ca51f3e-bca8-410b-9eb7-3e7288a230fe",
+                            "name": "Friedenau",
+                            "color": "red"
+                        },
+                        {
+                            "id": "58fa34f4-d2b2-4cc7-8836-474feba240fe",
+                            "name": "Berlin",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Albert Göring",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Albert Göring",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Albert-G-ring-679804f1da154e8d96891e5a6ab93d8c",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "394e363a-9e6c-407d-9c16-2fe5d86dbfcb",
+            "created_time": "2023-08-20T11:44:00.000Z",
+            "last_edited_time": "2023-08-20T11:44:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-20T11:44:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1981
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Mardy_Fish"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1981-12-09",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "7d4eb9a6-7d76-4424-a577-940ad0a7ebff",
+                            "name": "Edina",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "6fa28d01-7f97-4fc3-944b-7df90db923d0",
+                            "name": "MN",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Mardy Fish",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Mardy Fish",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Mardy-Fish-394e363a9e6c407d9c162fe5d86dbfcb",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "733d5d4b-e0d0-4a7d-906d-e081eddb3f0d",
+            "created_time": "2023-08-20T11:43:00.000Z",
+            "last_edited_time": "2023-08-20T11:43:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-20T11:43:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1950
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Fran_Lebowitz"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "73eccfa8-0401-4902-88a6-f6e786c66a9b",
+                            "name": "Author",
+                            "color": "green"
+                        },
+                        {
+                            "id": "e05438a9-3f9e-463c-83af-c086c473910f",
+                            "name": "Public Speaker",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1950-10-27",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4e563588-a2de-4634-abf7-59855af2ba56",
+                            "name": "Morristown",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "e4728c4a-ec89-4271-92db-260fb04baf73",
+                            "name": "NJ",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Fran Lebowitz",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Fran Lebowitz",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Fran-Lebowitz-733d5d4be0d04a7d906de081eddb3f0d",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6bdf6a7d-b274-4134-8317-7881e98e3127",
+            "created_time": "2023-08-20T11:43:00.000Z",
+            "last_edited_time": "2023-08-20T11:43:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-20T11:43:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1880
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/Helen_Keller"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1968
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "73eccfa8-0401-4902-88a6-f6e786c66a9b",
+                            "name": "Author",
+                            "color": "green"
+                        },
+                        {
+                            "id": "61378d35-cb4e-46cc-8d4f-dfe21c046705",
+                            "name": "Political Activist",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "cf1e6d2e-d579-4187-90c5-27e616a711a3",
+                            "name": "Lecturer",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1880-06-27",
+                        "end": "1968-06-01",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "98b40f4a-665f-47e0-9e48-bc45773f88c6",
+                            "name": "Tuscumbia",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "c919a7e7-abba-4d1d-9151-b6faa12c1c03",
+                            "name": "AL",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Helen Keller",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Helen Keller",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Helen-Keller-6bdf6a7db274413483177881e98e3127",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "2ae3394e-9073-42be-9eb8-1b82e03bca40",
+            "created_time": "2023-08-20T11:42:00.000Z",
+            "last_edited_time": "2023-08-20T11:43:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇺🇸"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-20T11:42:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": 1920
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ee01ee35-fd54-4093-942e-f6aaea959d70",
+                            "name": "USA",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/James_Farmer"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": 1999
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9b5378da-8339-4f4b-ad25-82d182823b67",
+                            "name": "Black",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "8063906d-8219-4be9-9bf6-ebd40eeaba8f",
+                            "name": "Civil Rights Activist",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Genres (music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "select",
+                    "select": {
+                        "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                        "name": "Male",
+                        "color": "blue"
+                    }
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": {
+                        "start": "1920-01-12",
+                        "end": "1999-07-09",
+                        "time_zone": null
+                    }
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "cd32b84b-24a5-4767-aa74-ec01fabc7bdb",
+                            "name": "Marshall",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "e4d9451a-99e6-4252-87c1-e023c4c97d0c",
+                            "name": "TX",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "James Farmer",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "James Farmer",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/James-Farmer-2ae3394e907342be9eb81b82e03bca40",
             "public_url": null
         }
     ],
