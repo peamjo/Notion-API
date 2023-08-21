@@ -8,23 +8,24 @@ from get_images import get_images, convert_to_jpg
 from face_recognition import face_recognition, majority_race_gender
 from pathlib import Path
 import json
+from add_to_notion import add_text, add_number, add_select, add_multiselect, add_url, add_emoji, add_birthday
 
-#Enter_input = input("Search: ")
-def input_names(Enter_input):
-    if Enter_input[:2] != "DJ":
-        u_i = string.capwords(Enter_input)
+#input_name = input("Search: ")
+def input_names(input_name):
+    if input_name[:2] != "DJ":
+        name = string.capwords(input_name)
     else:
-        u_i = "DJ " + string.capwords(Enter_input).split(" ",1)[1]
-    lists = u_i.split()
+        name = "DJ " + string.capwords(input_name).split(" ",1)[1]
+    lists = name.split()
     word = "_".join(lists)
     url = "https://en.wikipedia.org/wiki/" + word
-    name = {
-        "Name": {"title": [{"text": {"content": u_i}}]},
+    property_name = {
+        "Name": {"title": [{"text": {"content": name}}]},
     }
-    return u_i, url, name
+    return name, url, property_name
 
 def get_info(data):
-    info = [[u_i]]    
+    info = [[name]]    
     us_states, flags_final = load_dict()
 
     for counter, property in enumerate(data):
@@ -66,7 +67,7 @@ def get_info(data):
                     country = "Japan"
             #   if country == "French Algeria":
             #       country = "'France', 'Algeria'"
-                info.append(['City', city])
+                info.append(['City/Region', city])
                 info.append(['Country', country])
             if len(info)>1:
                 if (info[-1])[1] == 'U.S.' or (info[-1])[1] == 'US' or (info[-1])[1] == 'United States':
@@ -115,91 +116,47 @@ def add_or_check_jobs(info, job):
         else: counter+=1
     if counter == len(info):
         info.append(['Occupations', job])
-        
 
 def edit_data(individual):
     for page in pages:
         page_id = page["id"]
-        props = page["properties"]
-        name = props["Name"]["title"][0]["text"]["content"]
-        if name == individual:
-            for counter,property in enumerate(info):
+        query_name = page["properties"]["Name"]["title"][0]["text"]["content"]
+        if query_name == individual:
+            for property in info:
                 if property[0] == 'Birthday':
-                    update_data = {"Date": {"date": {"start": property[1]}}}
-                    update_page(page_id, update_data)
+                    add_birthday(page_id, "Date", property)
                     birth = property[1]
                 if property[0] == 'Died':
                     update_data = {"Date": {"date": {"start": birth, "end": property[1]}}}
                     update_page(page_id, update_data)
-                if property[0] == 'YoB':
-                    update_data = {"YoB": {"number": int(property[1])}}
-                    update_page(page_id, update_data)
-                if property[0] == 'YoD':
-                    update_data = {"YoD": {"number": int(property[1])}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Years active':
-                    update_data = {"Years active": {"rich_text": [{"text": {"content": property[1]}}]}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Country':
-                    update_data = {"Country": {"multi_select": [{"name": property[1]}]}}
-                    update_page(page_id, update_data)
+                if property[0] == 'YoB': add_number(page_id, "YoB", property)
+                if property[0] == 'YoD': add_number(page_id, "YoD", property)
+                if property[0] == 'Years active': add_text(page_id, 'Years active', property)
+                if property[0] == 'Country': add_multiselect(page_id,"Country", property)
                 if property[0] == 'City/Region':
-                    update_data = {"City/Region": {"multi_select": [{"name": property[1]}]}}
-                    update_page(page_id, update_data)
+                    add_multiselect(page_id,"City/Region", property)
                     city = property[1]
                 if property[0] == 'State':
                     update_data = {"City/Region": {"multi_select": [{"name": city}, {"name": property[1]}]}}
                     update_page(page_id, update_data)
-                if property[0] == 'Gender':
-                    update_data = {"Gender": {"select": {"name": property[1]}}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Ethnicity':
-                    update_data = {"Ethnicity": {"multi_select": [{"name": property[1]}]}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Flag':
-                    update_data = {"emoji": property[1]}
-                    update_page(page_id, update_data)
-                if property[0] == 'Occupations':
-                    jobs = []
-                    for j in property[1]:
-                        j = {"name": j}
-                        jobs.append(j)
-                    update_data = {"Job(s)": {"multi_select": jobs}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Wiki':
-                    update_data = {"Wiki": {"url": property[1]}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Genres (Music)':
-                    genres = []
-                    for j in property[1]:
-                        j = {"name": j}
-                        genres.append(j)
-                    update_data = {"Genre (Music)": {"multi_select": genres}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Instrument(s)':
-                    instruments = []
-                    for j in property[1]:
-                        j = {"name": j}
-                        instruments.append(j)
-                    update_data = {"Instrument(s)": {"multi_select": instruments}}
-                    update_page(page_id, update_data)
-                if property[0] == 'Art Style/Movement':
-                    movement = []
-                    for j in property[1]:
-                        j = {"name": j}
-                        movement.append(j)
-                    update_data = {"Art Style/Movement": {"multi_select": movement}}
-                    update_page(page_id, update_data)
+                if property[0] == 'Gender': add_select(page_id, "Gender", property)
+                if property[0] == 'Ethnicity': add_multiselect(page_id,"Ethnicity", property)
+                if property[0] == 'Flag': add_emoji(page_id, property)
+                if property[0] == 'Occupations': add_multiselect(page_id, "Occupations", property)
+                if property[0] == 'Wiki': add_url(page_id, "Wiki", property)
+                if property[0] == 'Genres (Music)': add_multiselect(page_id, "Genres (Music)", property)
+                if property[0] == 'Instrument(s)': add_multiselect(page_id, "Instrument(s)", property)
+                if property[0] == 'Art Style/Movement': add_multiselect(page_id, "Art Style/Movement", property)
             update_data = wiki_summary(name)
             create_content(page_id, update_data)
 
-people_list = ["Taylor Swift"]
+people_list = ["Adam Levine"]
 job = []
 error_list = []
 
 for people in people_list:
     try:
-        u_i, url, name = input_names(people)
+        name, url, property_name = input_names(people)
         data = wiki_scrape_bot(url)
         print(data)
         info = get_info(data)
@@ -223,10 +180,10 @@ for people in people_list:
         exist = False
         for page in pages:
             og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
-            if og_name == u_i:
+            if og_name == name:
                 exist = True
         if exist == False:
-            create_page(name)
+            create_page(property_name)
             pages = get_pages()
         edit_data((info[0])[0])
     except KeyboardInterrupt:
@@ -234,4 +191,5 @@ for people in people_list:
     #except:
      #   error_list.append(people)
      #   continue
+
 print("Error List:", error_list)

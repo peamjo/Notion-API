@@ -23,6 +23,7 @@ politicalactivist
 recordproducer
 recordexecutive
 eastcoasthiphop
+experimentalhiphop
 old-schoolhiphop
 hiphop
 rhythmandblues
@@ -30,6 +31,8 @@ jazzrap
 consciousrap
 progressivesoul
 psychedelicsoul
+psychedelicrap
+cloudrap
 miamibass
 fashiondesigner
 grandcouturier
@@ -38,6 +41,9 @@ discjockey
 publicspeaker
 newwave
 newage
+softrock
+poprock
+dancepop
 worldmusic
 worldindie
 celticpop
