@@ -81,9 +81,9 @@ def get_info(data):
         if property[0] == "Occupations" or property[0] == 'Occupation' or property[0] == "Occupation(s)":
             info.append(['Occupations', property[1]])
         if property[0] == "Genres":
-            info.append(['Genres', property[1]])
+            info.append(['Genres (Music)', property[1]])
         if property[0] == "Instruments" or property[0] == "Instrument(s)":
-            info.append(['Instruments', property[1]])
+            info.append(['Instrument(s)', property[1]])
         if property[0] == "Movement":
             info.append(['Art Style/Movement', property[1]])
         if property[0] == "Years active" or property[0] == "Turned pro":
@@ -169,14 +169,14 @@ def edit_data(individual):
                 if property[0] == 'Wiki':
                     update_data = {"Wiki": {"url": property[1]}}
                     update_page(page_id, update_data)
-                if property[0] == 'Genres':
+                if property[0] == 'Genres (Music)':
                     genres = []
                     for j in property[1]:
                         j = {"name": j}
                         genres.append(j)
                     update_data = {"Genre (Music)": {"multi_select": genres}}
                     update_page(page_id, update_data)
-                if property[0] == 'Instruments':
+                if property[0] == 'Instrument(s)':
                     instruments = []
                     for j in property[1]:
                         j = {"name": j}
