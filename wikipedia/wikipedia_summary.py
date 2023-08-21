@@ -8,7 +8,3 @@ def wiki_summary(search):
     except (wiki.exceptions.PageError, wiki.exceptions.DisambiguationError) as e:
         summary = None
     return(summary)
-
-#search = "Jordan Peele"
-#summary = wiki_summary(search)
-#print(summary)

@@ -5,17 +5,9 @@ import json
 import wordninja
 import gzip
 import shutil
-from bs4 import BeautifulSoup
 from pathlib import Path
-
-"""
-Enter_input = input("Search: ")
-u_i = string.capwords(Enter_input)
-lists = u_i.split()
-word = "_".join(lists)
-
-url = "https://en.wikipedia.org/wiki/" + word
-"""
+from bs4 import BeautifulSoup
+from property_exceptions import data_list_exception
 
 def wiki_scrape_bot(url):
     url_open = requests.get(url)
@@ -48,7 +40,7 @@ def wiki_scrape_bot(url):
                         else:
                             data_list.append([normalized_x, normalized_y])
                         break
-    print(data_list)
+    
     for i in data_list:
         if i[0] == "Occupations" or i[0] == "Occupation" or i[0] == "Occupation(s)" or i[0] == "Genres" or i[0] == "Instruments" or i[0] == "Instrument(s)" or i[0] == "Movement":
             i[1]=i[1].replace(" ","")
@@ -58,24 +50,7 @@ def wiki_scrape_bot(url):
                 out = map(lambda x:x.capitalize(), (i[1])[j])
                 (i[1])[j] = list(out)
                 (i[1])[j] = (' '.join((i[1])[j]))
-                if (i[1])[j] == "R" or (i[1])[j] == "B" or (i[1])[j] == "Rhythm And Blues":
-                    (i[1])[j] = "R&B"
-                if (i[1])[j] == "Edm":
-                    (i[1])[j] = "EDM"
-                if (i[1])[j] == "Dj" or (i[1])[j] == "Disc Jockey":
-                    (i[1])[j] = "DJ"
-                if (i[1])[j] == "Mc":
-                    (i[1])[j] = "MC"
-                if (i[1])[j] == "Hiphop":
-                    (i[1])[j] = "Hip Hop"  
-                if (i[1])[j] == "Businesswoman" or (i[1])[j] == "Businessman" or (i[1])[j] == "Businessperson":
-                    (i[1])[j] = "Business Person"
-        if i[0] == "Country":
-            if i[1].find("French") != -1:
-                i[1] = "France"
-            if i[1].find("German") != -1:
-                i[1] = "Germany"
+                (i[1])[j] = data_list_exception((i[1])[j])
+
     print(data_list)
     return (data_list)
-
-#wikibot(url)

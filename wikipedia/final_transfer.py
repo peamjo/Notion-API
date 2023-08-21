@@ -46,46 +46,34 @@ def create_content(page_id: str, data: str):
                             "text": {
                                 "content": data,}}]}}]}
     res = requests.patch(url, json=payload, headers=headers)
-    #print(res.json())
     return res
 
-"""
+
 def date_to_yob(page):
-        props = page["properties"]
-        while True:        
-            try:
-                current_yob = props["YoB"]["rich_text"][0]["text"]["content"]
-                # edit YoB & YoD
-                if len(current_yob) > 4:
-                    new_yob = current_yob.split(' to ')[0]
-                    new_yod = current_yob.split(' to ')[1]
-                    update_data = {"YoD": {"rich_text": [{"text": {"content": new_yod}}]}}
+    props = page["properties"]
+    while True:        
+        try:
+            current_yob = props["YoB"]["rich_text"][0]["text"]["content"]
+            # edit YoB & YoD
+            if len(current_yob) > 4:
+                new_yob = current_yob.split(' to ')[0]
+                new_yod = current_yob.split(' to ')[1]
+                update_data = {"YoD": {"rich_text": [{"text": {"content": new_yod}}]}}
+                update_page(page_id, update_data)
+                update_data = {"YoB": {"rich_text": [{"text": {"content": new_yob}}]}}
+                update_page(page_id, update_data)
+            break
+        except IndexError:
+            while True:
+                try:
+                    # move Date to YoB & YoD
+                    current_date_start = props["Date"]["date"]["start"]
+                    current_date_end = props["Date"]["date"]["end"]
+                    update_data = {"YoB": {"rich_text": [{"text": {"content": current_date_start[:4]}}]}}
                     update_page(page_id, update_data)
-                    update_data = {"YoB": {"rich_text": [{"text": {"content": new_yob}}]}}
+                    update_data = {"YoD": {"rich_text": [{"text": {"content": current_date_end[:4]}}]}}
                     update_page(page_id, update_data)
-                break
-            except IndexError:
-                while True:
-                    try:
-                        # move Date to YoB & YoD
-                        current_date_start = props["Date"]["date"]["start"]
-                        current_date_end = props["Date"]["date"]["end"]
-                        update_data = {"YoB": {"rich_text": [{"text": {"content": current_date_start[:4]}}]}}
-                        update_page(page_id, update_data)
-                        update_data = {"YoD": {"rich_text": [{"text": {"content": current_date_end[:4]}}]}}
-                        update_page(page_id, update_data)
-                        break
-                    except TypeError:
-                        break
-                break
-"""
-
-
-"""
-name = "Yoyo Ma"
-data = {
-    "Name": {"title": [{"text": {"content": name}}]},
-}
-
-create_page(data)
-"""
+                    break
+                except TypeError:
+                    break
+            break

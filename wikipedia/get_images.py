@@ -13,6 +13,15 @@ def get_images(query):
     print()
 
 
+def convert_to_jpg(name):
+    directory = str(Path.cwd().joinpath('download',rf'{name} face'))
+    for filename in os.listdir(directory):
+        f = os.path.join(directory, filename)
+        f_split = (os.path.join(directory, filename)).split(".")
+        jpg = ".jpg"
+        os.rename(f, f_split[0]+jpg)
+
+
 # def convert_to_jpg(name):
 #    directory = rf"C:\Users\Peam\iCloudDrive\Notion API\download\{name} face"
 #    for filename in os.listdir(directory):
@@ -23,11 +32,3 @@ def get_images(query):
         # exporting the image
 #        rgb_im.save(filename[:7]+".jpg")
 #        print (f)
-
-def convert_to_jpg(name):
-    directory = str(Path.cwd().joinpath('download',rf'{name} face'))
-    for filename in os.listdir(directory):
-        f = os.path.join(directory, filename)
-        f_split = (os.path.join(directory, filename)).split(".")
-        jpg = ".jpg"
-        os.rename(f, f_split[0]+jpg)

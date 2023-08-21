@@ -1,4 +1,5 @@
 import requests
+import json
 from datetime import datetime, timezone
 
 NOTION_TOKEN = "secret_SMfvYsCKecVMjPMQ2KsssmffUnyt7xF5XtMX8xfB2GP"
@@ -21,7 +22,6 @@ def get_pages(num_pages=None):
 
     data = response.json()
 
-    import json
     with open('db.json', 'w', encoding='utf8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
@@ -37,16 +37,3 @@ def get_pages(num_pages=None):
         print("page added", number)
 
     return results
-
-pages = get_pages()
-
-"""
-for page in pages:
-    page_id = page["id"]
-    props = page["properties"]
-    name = props["Name"]["title"][0]["text"]["content"]
-    date = props["Date"]["date"]["start"]
-    #date = datetime.fromisoformat(date)
-    yob = props["YoB"]["rich_text"][0]["text"]["content"]
-    print(name, date, yob)
-"""

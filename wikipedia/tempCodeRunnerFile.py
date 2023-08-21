@@ -1,1 +1,1 @@
-str(Path.cwd().joinpath('download','{people} face','Image_{x}.jpg'))
+eople_list
