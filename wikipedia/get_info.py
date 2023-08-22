@@ -9,7 +9,7 @@ from wiki_scraping_final import wiki_scrape_bot
 from get_images import get_images, convert_to_jpg
 from final_transfer import update_page, create_page, create_content
 from face_recognition import face_recognition, majority_race_gender
-from add_to_notion import add_text, add_number, add_select, add_multiselect, add_url, add_emoji, add_birthday
+from add_to_notion import add_text, add_number, add_select, add_multiselect, add_url, add_emoji, add_date
 
 #input_name = input_names("Search: ")
 def input_names(input_name):
@@ -123,7 +123,7 @@ def edit_data(individual, pages, info, name):
         if query_name == individual:
             for property in info:
                 if property[0] == 'Birthday':
-                    add_birthday(page_id, "Date", property)
+                    add_date(page_id, "Date", property)
                     birth = property[1]
                 if property[0] == 'Died':
                     update_data = {"Date": {"date": {"start": birth, "end": property[1]}}}

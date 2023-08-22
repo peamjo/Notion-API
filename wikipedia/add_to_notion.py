@@ -1,5 +1,9 @@
 from final_transfer import update_page
 
+def add_title(page_id, value, property):
+    update_data = {value: {"title": [{"text": {"content": property[1]}}]}}
+    update_page(page_id, update_data)
+
 def add_text(page_id, value, property):
     update_data = {value: {"rich_text": [{"text": {"content": property[1]}}]}}
     update_page(page_id, update_data)
@@ -31,6 +35,6 @@ def add_url(page_id, value, property):
     update_data = {value: {"url": property[1]}}
     update_page(page_id, update_data)
 
-def add_birthday(page_id, value, property):
+def add_date(page_id, value, property):
     update_data = {value: {"date": {"start": property[1]}}}
     update_page(page_id, update_data)

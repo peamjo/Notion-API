@@ -46,11 +46,12 @@ def wiki_scrape_bot(url):
             i[1]=i[1].replace(" ","")
             i[1] = wordninja.split(i[1])
             for j in range(len(i[1])):
-                (i[1])[j] = og_list_split.split((i[1])[j])
-                out = map(lambda x:x.capitalize(), (i[1])[j])
-                (i[1])[j] = list(out)
-                (i[1])[j] = (' '.join((i[1])[j]))
-                (i[1])[j] = data_list_exception((i[1])[j])
+                list_property = (i[1])[j]
+                list_property = og_list_split.split(list_property)
+                out = map(lambda x:x.capitalize(), list_property)
+                list_property = list(out)
+                list_property = (' '.join(list_property))
+                (i[1])[j] = data_list_exception(list_property)
 
     print(data_list)
     return (data_list)
