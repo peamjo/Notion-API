@@ -44,10 +44,13 @@ for company in data["production_companies"]:
 for country in data["production_countries"]:
     countries.append(country["name"])
 
+decade = release_date[:3]+"0s"
+
 movie_information.append(["description", movie_description])
 movie_information.append(["genre", genres])
 movie_information.append(["language", spoken_languages])
 movie_information.append(["release date", release_date])
+movie_information.append(["decade", decade])
 movie_information.append(["production companies", production_companies])
 movie_information.append(["total gross", total_gross])
 movie_information.append(["runtime", runtime])
@@ -87,7 +90,7 @@ for crew in crew_list:
         writers.append(crew["name"])
 
 movie_information.append(["actors", actors])
-movie_information.append(["director", directors]) 
+movie_information.append(["directors", directors]) 
 movie_information.append(["writers", writers])
 movie_information.append(["producers", producers])
 movie_information.append(["cinematographers", cinematographers])
@@ -96,3 +99,53 @@ movie_information.append(["editors", editors])
 movie_information.append(["audience score", audience_score])
 
 print(movie_information)
+
+def edit_movie_data():
+    for page in pages:
+        page_id = page["id"]
+        query_name = page["properties"]["Name"]["title"][0]["text"]["content"]
+        if query_name == individual:
+            for property in info:
+                if property[0] == 'date': add_date(page_id, "Date Released", property)
+                if property[0] == 'genre': add_multiselect(page_id, "Genre(s)", property)
+                if property[0] == 'language': add_multiselect(page_id, "Language(s)", property)
+                if property[0] == 'production companies': add_multiselect(page_id, "Production Company", property)
+                if property[0] == 'actors': add_multiselect(page_id, "Starring", property)
+                if property[0] == 'directors': add_multiselect(page_id, "Director(s)", property)
+                if property[0] == 'producers': add_multiselect(page_id, "Producer(s)", property)
+                if property[0] == 'writers': add_multiselect(page_id, "Writer(s)", property)
+                if property[0] == 'cinematographers': add_multiselect(page_id, "Cinematographer(s)", property)
+                if property[0] == 'composers': add_multiselect(page_id, "Composer(s)", property)
+                if property[0] == 'editors': add_multiselect(page_id, "Editor(s)", property)
+                if property[0] == 'total gross': add_number(page_id, "Worldwide Gross", property)
+                if property[0] == 'runtime': add_number(page_id, "Runtime", property)
+                if property[0] == 'audience score': add_number(page_id, "Audience Score (TMDB)", property)
+
+
+def add_or_edit_notion_movies(movies_list):
+    job = []
+    error_list = []
+
+    for movie in movies_list:
+        try:
+            name, url, property_name = input_names(movie)
+            data = wiki_scrape_bot(url)
+            info = get_info(data, name, url)
+            pages = get_pages()
+            exist = False
+            for page in pages:
+                og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
+                if og_name == name:
+                    exist = True
+            if exist == False:
+                create_page(property_name)
+                pages = get_pages()
+            edit_movie_data((info[0])[0], pages, info, name)
+        except KeyboardInterrupt:
+            break
+        except:
+            error_list.append(movie)
+            continue
+    
+    if error_list != []:
+        print("Error List:", error_list)
