@@ -149,7 +149,7 @@ def edit_data(individual, pages, info, name):
             update_data = wiki_summary(name)
             create_content(page_id, update_data)
 
-def add_or_edit_notion(people_list):
+def add_or_edit_notion_wiki(people_list):
     job = []
     error_list = []
 
@@ -193,4 +193,4 @@ def add_or_edit_notion(people_list):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion(["Bruno Mars"])
+add_or_edit_notion_wiki(["Bruno Mars"])
