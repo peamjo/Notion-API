@@ -128,24 +128,24 @@ def edit_data(individual, pages, info, name):
                 if property[0] == 'Died':
                     update_data = {"Date": {"date": {"start": birth, "end": property[1]}}}
                     update_page(page_id, update_data)
-                if property[0] == 'YoB': add_number(page_id, "YoB", property)
-                if property[0] == 'YoD': add_number(page_id, "YoD", property)
-                if property[0] == 'Years active': add_text(page_id, 'Years active', property)
-                if property[0] == 'Country': add_multiselect(page_id,"Country", property)
+                if property[0] == 'YoB': add_number(page, "YoB", property)
+                if property[0] == 'YoD': add_number(page, "YoD", property)
+                if property[0] == 'Years active': add_text(page, 'Years active', property)
+                if property[0] == 'Country': add_multiselect(page,"Country", property)
                 if property[0] == 'City/Region':
                     add_multiselect(page_id,"City/Region", property)
                     city = property[1]
                 if property[0] == 'State':
                     update_data = {"City/Region": {"multi_select": [{"name": city}, {"name": property[1]}]}}
                     update_page(page_id, update_data)
-                if property[0] == 'Gender': add_select(page_id, "Gender", property)
-                if property[0] == 'Ethnicity': add_multiselect(page_id,"Ethnicity", property)
-                if property[0] == 'Flag': add_emoji(page_id, property)
-                if property[0] == 'Occupations': add_multiselect(page_id, "Occupations", property)
-                if property[0] == 'Wiki': add_url(page_id, "Wiki", property)
-                if property[0] == 'Genres (Music)': add_multiselect(page_id, "Genres (Music)", property)
-                if property[0] == 'Instrument(s)': add_multiselect(page_id, "Instrument(s)", property)
-                if property[0] == 'Art Style/Movement': add_multiselect(page_id, "Art Style/Movement", property)
+                if property[0] == 'Gender': add_select(page, "Gender", property)
+                if property[0] == 'Ethnicity': add_multiselect(page,"Ethnicity", property)
+                if property[0] == 'Flag': add_emoji(page, property)
+                if property[0] == 'Occupations': add_multiselect(page, "Occupations", property)
+                if property[0] == 'Wiki': add_url(page, "Wiki", property)
+                if property[0] == 'Genres (Music)': add_multiselect(page, "Genres (Music)", property)
+                if property[0] == 'Instrument(s)': add_multiselect(page, "Instrument(s)", property)
+                if property[0] == 'Art Style/Movement': add_multiselect(page, "Art Style/Movement", property)
             update_data = wiki_summary(name)
             create_content(page_id, update_data)
 

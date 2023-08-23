@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "1b73ca9c-b876-4dc3-9b30-b971e42d01bc",
-            "created_time": "2023-08-23T08:04:00.000Z",
-            "last_edited_time": "2023-08-23T08:04:00.000Z",
+            "id": "b587b4fe-02d2-490c-90ba-760d87b80cb2",
+            "created_time": "2023-08-23T09:39:00.000Z",
+            "last_edited_time": "2023-08-23T09:39:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -22,6 +22,322 @@
             },
             "archived": false,
             "properties": {
+                "Text": {
+                    "id": "%3A%5CU%3D",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Region(s)": {
+                    "id": "%3Af%7Df",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Runtime (mins)": {
+                    "id": "%40QfO",
+                    "type": "number",
+                    "number": 148
+                },
+                "Writer(s)": {
+                    "id": "%40~%3C_",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "c30d00d3-30b4-4744-b5e7-cb10ca584af8",
+                            "name": "Christopher Nolan",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Producer(s)": {
+                    "id": "LM%3CH",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "4b7bdc26-802c-4f56-92d2-6f31c54debc9",
+                            "name": "Christopher Nolan",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "afe6e9bd-babe-45ec-af1f-4307eb562ee0",
+                            "name": "Emma Thomas",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "fccf3095-68e9-4443-803e-bfab97adff07",
+                            "name": "Kanjirô Sakura",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "54420b70-be97-45a1-b9ee-631fddfb774d",
+                            "name": "Yoshikuni Taki",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Production Company": {
+                    "id": "Lqim",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d8b16dec-e830-4ab6-be62-7349c0b825f8",
+                            "name": "Legendary Pictures",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "95f86a6a-d956-4077-be0d-56443e367b01",
+                            "name": "Syncopy",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "c4d593d9-ef48-489d-8bcc-9177013d9cd2",
+                            "name": "Warner Bros. Pictures",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Decade": {
+                    "id": "M%5D%7D%3C",
+                    "type": "select",
+                    "select": {
+                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
+                        "name": "2010s",
+                        "color": "pink"
+                    }
+                },
+                "Language(s)": {
+                    "id": "QlKl",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
+                            "name": "English",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "6c177310-d543-47ef-9c1e-cfaca0c5cdfb",
+                            "name": "French",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "f718ace0-8c0a-4f5d-978c-90edb471373f",
+                            "name": "Japanese",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "b90a2b63-0f63-485a-a85b-71042b5d5242",
+                            "name": "Swahili",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Director(s)": {
+                    "id": "S%5BcC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "c68aaf02-3e0e-420a-92a7-946d5c9d3979",
+                            "name": "Christopher Nolan",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "V%3ERB",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "29f4b48d-86aa-4739-b61c-cc87f605f202",
+                            "name": "Leonardo DiCaprio",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "126010f1-2536-40d8-84b9-b3f3fc26eb5c",
+                            "name": "Joseph Gordon-Levitt",
+                            "color": "red"
+                        },
+                        {
+                            "id": "42579f80-c9a2-4b38-b104-cb81d6af7fb5",
+                            "name": "Ken Watanabe",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "5c0169fc-f963-4cc4-adbf-439cb06916cf",
+                            "name": "Tom Hardy",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "1ef54bfe-ce7a-4838-b465-0ea8e520d677",
+                            "name": "Elliot Page",
+                            "color": "red"
+                        },
+                        {
+                            "id": "a7f16738-9f20-49b8-8f06-f47df19a8e86",
+                            "name": "Dileep Rao",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "65d4dfdc-7d1a-4a98-bbea-f98c02987496",
+                            "name": "Cillian Murphy",
+                            "color": "red"
+                        },
+                        {
+                            "id": "3634b0a7-9256-4be8-9089-bac28fd74dde",
+                            "name": "Tom Berenger",
+                            "color": "default"
+                        },
+                        {
+                            "id": "f81c6ea4-53cb-4bfe-9e28-f7fefa5f7992",
+                            "name": "Marion Cotillard",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "b70b59b4-b7fa-461e-a48b-33c6e1e3a45c",
+                            "name": "Peter Postlethwaite",
+                            "color": "default"
+                        },
+                        {
+                            "id": "e9efe6a4-82c4-43bd-95f2-7e6632a088eb",
+                            "name": "Michael Caine",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "VZeU",
+                    "type": "date",
+                    "date": {
+                        "start": "2010-07-15",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "TMDB Score": {
+                    "id": "WBe%3E",
+                    "type": "number",
+                    "number": 8.364
+                },
+                "Worldwide Gross": {
+                    "id": "WwvX",
+                    "type": "number",
+                    "number": 825532764
+                },
+                "Cinematographer(s)": {
+                    "id": "%5DZv%3E",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "44937902-916c-4cae-9406-bf9d7b6acf69",
+                            "name": "Wally Pfister",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Composer(s)": {
+                    "id": "%5E_%5Cw",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9665c519-e73f-4738-877f-99c10ab35f1a",
+                            "name": "Hans Zimmer",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "URL": {
+                    "id": "cN%60%3A",
+                    "type": "url",
+                    "url": null
+                },
+                "Editor(s)": {
+                    "id": "v%5Bql",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "110d31b4-0523-4f0a-bb3e-d7567ac031e6",
+                            "name": "Lee Smith",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "yffv",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "be80039c-84e9-4763-b4cb-e70fb63a330b",
+                            "name": "Action",
+                            "color": "default"
+                        },
+                        {
+                            "id": "10204708-eedc-4dd7-a8e6-2451ef01655b",
+                            "name": "Science Fiction",
+                            "color": "green"
+                        },
+                        {
+                            "id": "3ba54a4e-f66d-4b1f-ba78-364b799e5e11",
+                            "name": "Adventure",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Inception",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Inception",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Inception-b587b4fe02d2490c90ba760d87b80cb2",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1b73ca9c-b876-4dc3-9b30-b971e42d01bc",
+            "created_time": "2023-08-23T08:04:00.000Z",
+            "last_edited_time": "2023-08-23T08:24:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
+            },
+            "archived": false,
+            "properties": {
+                "Text": {
+                    "id": "%3A%5CU%3D",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Region(s)": {
+                    "id": "%3Af%7Df",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Runtime (mins)": {
                     "id": "%40QfO",
                     "type": "number",
@@ -35,13 +351,7 @@
                 "Producer(s)": {
                     "id": "LM%3CH",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "19910a46-8055-4652-9dd2-2cfe4168f42a",
-                            "name": "Lisa Stewart",
-                            "color": "blue"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Production Company": {
                     "id": "Lqim",
@@ -84,9 +394,9 @@
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "aa237fc0-ac83-42ef-8db8-bdcd6e7cbc20",
-                            "name": "David Soren",
-                            "color": "default"
+                            "id": "a7e86657-be0c-4fb8-868e-d9761d5dbde9",
+                            "name": "Derek Cianfrance",
+                            "color": "red"
                         }
                     ]
                 },
@@ -160,7 +470,7 @@
                         "time_zone": null
                     }
                 },
-                "Audience Score (TMDB)": {
+                "TMDB Score": {
                     "id": "WBe%3E",
                     "type": "number",
                     "number": 6.181
@@ -185,6 +495,11 @@
                     "id": "%5E_%5Cw",
                     "type": "multi_select",
                     "multi_select": []
+                },
+                "URL": {
+                    "id": "cN%60%3A",
+                    "type": "url",
+                    "url": null
                 },
                 "Editor(s)": {
                     "id": "v%5Bql",
@@ -238,7 +553,7 @@
             "object": "page",
             "id": "7e6f9c95-63f5-44d6-9fb0-905ca062ca73",
             "created_time": "2023-08-23T08:03:00.000Z",
-            "last_edited_time": "2023-08-23T08:03:00.000Z",
+            "last_edited_time": "2023-08-23T08:40:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -255,10 +570,20 @@
             },
             "archived": false,
             "properties": {
+                "Text": {
+                    "id": "%3A%5CU%3D",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Region(s)": {
+                    "id": "%3Af%7Df",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Runtime (mins)": {
                     "id": "%40QfO",
                     "type": "number",
-                    "number": null
+                    "number": 92
                 },
                 "Writer(s)": {
                     "id": "%40~%3C_",
@@ -268,67 +593,203 @@
                 "Producer(s)": {
                     "id": "LM%3CH",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "e07bde40-7324-4154-83a0-f535438d0c0d",
+                            "name": "Morgan Spurlock",
+                            "color": "red"
+                        },
+                        {
+                            "id": "bd8b4408-3acd-4368-b640-9f2a4384aa7f",
+                            "name": "Simon Cowell",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "290a77d1-3318-4dc7-84aa-5fd0bdf0df5b",
+                            "name": "Adam Milano",
+                            "color": "default"
+                        },
+                        {
+                            "id": "cfac69f8-bb99-45c4-ba40-6e7afa4b707f",
+                            "name": "Ben Winston",
+                            "color": "gray"
+                        }
+                    ]
                 },
                 "Production Company": {
                     "id": "Lqim",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "df71b4e8-7155-4b9e-9bf8-ac901f8e90a4",
+                            "name": "Sony Pictures",
+                            "color": "red"
+                        },
+                        {
+                            "id": "40ab02f9-9d65-4215-90f2-b1b642c5b1b5",
+                            "name": "TriStar Pictures",
+                            "color": "purple"
+                        }
+                    ]
                 },
                 "Decade": {
                     "id": "M%5D%7D%3C",
                     "type": "select",
-                    "select": null
+                    "select": {
+                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
+                        "name": "2010s",
+                        "color": "pink"
+                    }
                 },
                 "Language(s)": {
                     "id": "QlKl",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
+                            "name": "English",
+                            "color": "orange"
+                        }
+                    ]
                 },
                 "Director(s)": {
                     "id": "S%5BcC",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "7012cd5f-3b18-4aa3-b285-0e38f3812dd6",
+                            "name": "Morgan Spurlock",
+                            "color": "gray"
+                        }
+                    ]
                 },
                 "Starring": {
                     "id": "V%3ERB",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "bd428f7a-e490-47e8-8e97-c874fbda0ad7",
+                            "name": "Harry Styles",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "c324a626-894d-4795-ac61-8b397685c11b",
+                            "name": "Niall Horan",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "b335cb24-781b-44b4-932e-ac07fbb1138e",
+                            "name": "Zayn Malik",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "70e9781f-07db-47b4-903a-f52d6bfc1f39",
+                            "name": "Louis Tomlinson",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "0f1b2d42-2756-4cc0-ba01-ea6b04ad763a",
+                            "name": "Liam Payne",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "7649f32a-c48b-4f50-b1b8-16401a0a7160",
+                            "name": "Simon Cowell",
+                            "color": "red"
+                        },
+                        {
+                            "id": "b19c431f-3583-45c8-8bd7-e62922f44add",
+                            "name": "Martin Scorsese",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "58b442fb-f5dc-4f4f-8f99-a7c300f2354a",
+                            "name": "Chris Rock",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "9bbf72b4-d35f-4ea3-9995-02e277335ea0",
+                            "name": "Jon Shone",
+                            "color": "default"
+                        },
+                        {
+                            "id": "9f23bb6d-44e9-44ac-b73c-01e066e6ed96",
+                            "name": "Dan Richards",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "a9610330-198e-4e6c-abec-9bae4397d4e5",
+                            "name": "Josh Devine",
+                            "color": "blue"
+                        }
+                    ]
                 },
                 "Date Released": {
                     "id": "VZeU",
                     "type": "date",
-                    "date": null
+                    "date": {
+                        "start": "2013-07-29",
+                        "end": null,
+                        "time_zone": null
+                    }
                 },
-                "Audience Score (TMDB)": {
+                "TMDB Score": {
                     "id": "WBe%3E",
                     "type": "number",
-                    "number": null
+                    "number": 8.347
                 },
                 "Worldwide Gross": {
                     "id": "WwvX",
                     "type": "number",
-                    "number": null
+                    "number": 68500000
                 },
                 "Cinematographer(s)": {
                     "id": "%5DZv%3E",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "79679eed-d307-4070-8da4-a0d9a0c25280",
+                            "name": "Neil Harvey",
+                            "color": "default"
+                        }
+                    ]
                 },
                 "Composer(s)": {
                     "id": "%5E_%5Cw",
                     "type": "multi_select",
                     "multi_select": []
                 },
+                "URL": {
+                    "id": "cN%60%3A",
+                    "type": "url",
+                    "url": null
+                },
                 "Editor(s)": {
                     "id": "v%5Bql",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "e0a8fa7f-2016-4ff3-9411-4945c5b6bfc7",
+                            "name": "Wyatt Smith",
+                            "color": "gray"
+                        }
+                    ]
                 },
                 "Genre(s)": {
                     "id": "yffv",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "19a4d6ac-65b9-44c1-bb57-86d8c3d031f1",
+                            "name": "Documentary",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "82f38258-819b-48eb-bdc5-6a45e8b0a5cc",
+                            "name": "Music",
+                            "color": "purple"
+                        }
+                    ]
                 },
                 "Name": {
                     "id": "title",
@@ -378,6 +839,16 @@
             },
             "archived": false,
             "properties": {
+                "Text": {
+                    "id": "%3A%5CU%3D",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Region(s)": {
+                    "id": "%3Af%7Df",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Runtime (mins)": {
                     "id": "%40QfO",
                     "type": "number",
@@ -501,7 +972,7 @@
                         "time_zone": null
                     }
                 },
-                "Audience Score (TMDB)": {
+                "TMDB Score": {
                     "id": "WBe%3E",
                     "type": "number",
                     "number": 7.895
@@ -532,6 +1003,11 @@
                             "color": "brown"
                         }
                     ]
+                },
+                "URL": {
+                    "id": "cN%60%3A",
+                    "type": "url",
+                    "url": null
                 },
                 "Editor(s)": {
                     "id": "v%5Bql",
@@ -618,6 +1094,16 @@
             },
             "archived": false,
             "properties": {
+                "Text": {
+                    "id": "%3A%5CU%3D",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Region(s)": {
+                    "id": "%3Af%7Df",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
                 "Runtime (mins)": {
                     "id": "%40QfO",
                     "type": "number",
@@ -801,7 +1287,7 @@
                         "time_zone": null
                     }
                 },
-                "Audience Score (TMDB)": {
+                "TMDB Score": {
                     "id": "WBe%3E",
                     "type": "number",
                     "number": 6.965
@@ -832,6 +1318,11 @@
                             "color": "blue"
                         }
                     ]
+                },
+                "URL": {
+                    "id": "cN%60%3A",
+                    "type": "url",
+                    "url": null
                 },
                 "Editor(s)": {
                     "id": "v%5Bql",
