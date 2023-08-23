@@ -9,7 +9,7 @@ def add_text(page_id, value, property):
     update_page(page_id, update_data)
 
 def add_number(page_id, value, property):
-    update_data = {value: {"number": int(property[1])}}
+    update_data = {value: {"number": float(property[1])}}
     update_page(page_id, update_data)
 
 def add_select(page_id, value, property):

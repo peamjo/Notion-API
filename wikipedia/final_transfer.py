@@ -3,7 +3,8 @@ from datetime import datetime, timezone
 from import_requests import get_pages
 
 NOTION_TOKEN = "secret_SMfvYsCKecVMjPMQ2KsssmffUnyt7xF5XtMX8xfB2GP"
-DATABASE_ID = "9d6f4d0a5e664f409b12d999414b6986"
+#DATABASE_ID = "9d6f4d0a5e664f409b12d999414b6986"
+DATABASE_ID = "da11a187af89415493a0fd51bcd78d38"
 
 headers = {
     "Authorization": "Bearer " + NOTION_TOKEN,
