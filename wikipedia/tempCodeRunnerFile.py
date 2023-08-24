@@ -1,11 +1,1 @@
-for cast in cast_list:
-    actors.append(cast["name"])
-for crew in crew_list:
-    print(crew["job"])
-    if crew["job"] == 'Director':
-        directors.append(crew["name"])
-        print("yay")
-    if crew["job"] == 'Producer':
-        producers.append(crew["name"])
-    if crew["job"] == 'Director of Photography':
-        cinematographers.append(crew["name"])
+#DATABASE_ID = "2759f521c1594fc5864b55dd85abe85b" #example albums

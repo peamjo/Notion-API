@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "b587b4fe-02d2-490c-90ba-760d87b80cb2",
-            "created_time": "2023-08-23T09:39:00.000Z",
-            "last_edited_time": "2023-08-23T09:39:00.000Z",
+            "id": "0b4045dd-47b0-454b-8874-bcc2f6f0e95f",
+            "created_time": "2023-08-24T08:58:00.000Z",
+            "last_edited_time": "2023-08-24T09:02:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -18,1033 +18,176 @@
             "icon": null,
             "parent": {
                 "type": "database_id",
-                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
             },
             "archived": false,
             "properties": {
-                "Text": {
-                    "id": "%3A%5CU%3D",
-                    "type": "rich_text",
-                    "rich_text": []
-                },
-                "Region(s)": {
-                    "id": "%3Af%7Df",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Runtime (mins)": {
-                    "id": "%40QfO",
-                    "type": "number",
-                    "number": 148
-                },
-                "Writer(s)": {
-                    "id": "%40~%3C_",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "c30d00d3-30b4-4744-b5e7-cb10ca584af8",
-                            "name": "Christopher Nolan",
-                            "color": "purple"
-                        }
-                    ]
-                },
-                "Producer(s)": {
-                    "id": "LM%3CH",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "4b7bdc26-802c-4f56-92d2-6f31c54debc9",
-                            "name": "Christopher Nolan",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "afe6e9bd-babe-45ec-af1f-4307eb562ee0",
-                            "name": "Emma Thomas",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "fccf3095-68e9-4443-803e-bfab97adff07",
-                            "name": "Kanjirô Sakura",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "54420b70-be97-45a1-b9ee-631fddfb774d",
-                            "name": "Yoshikuni Taki",
-                            "color": "brown"
-                        }
-                    ]
-                },
                 "Production Company": {
-                    "id": "Lqim",
+                    "id": "%3BMUb",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "d8b16dec-e830-4ab6-be62-7349c0b825f8",
-                            "name": "Legendary Pictures",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "95f86a6a-d956-4077-be0d-56443e367b01",
-                            "name": "Syncopy",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "c4d593d9-ef48-489d-8bcc-9177013d9cd2",
-                            "name": "Warner Bros. Pictures",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "Decade": {
-                    "id": "M%5D%7D%3C",
-                    "type": "select",
-                    "select": {
-                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
-                        "name": "2010s",
-                        "color": "pink"
-                    }
-                },
-                "Language(s)": {
-                    "id": "QlKl",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
-                            "name": "English",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "6c177310-d543-47ef-9c1e-cfaca0c5cdfb",
-                            "name": "French",
+                            "id": "6733738e-23d2-4500-a079-291a86e58a3f",
+                            "name": "A24",
                             "color": "pink"
                         },
                         {
-                            "id": "f718ace0-8c0a-4f5d-978c-90edb471373f",
-                            "name": "Japanese",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "b90a2b63-0f63-485a-a85b-71042b5d5242",
-                            "name": "Swahili",
-                            "color": "brown"
-                        }
-                    ]
-                },
-                "Director(s)": {
-                    "id": "S%5BcC",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "c68aaf02-3e0e-420a-92a7-946d5c9d3979",
-                            "name": "Christopher Nolan",
-                            "color": "green"
-                        }
-                    ]
-                },
-                "Starring": {
-                    "id": "V%3ERB",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "29f4b48d-86aa-4739-b61c-cc87f605f202",
-                            "name": "Leonardo DiCaprio",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "126010f1-2536-40d8-84b9-b3f3fc26eb5c",
-                            "name": "Joseph Gordon-Levitt",
+                            "id": "2e3f1409-e068-417c-93a6-59998af107a4",
+                            "name": "Bugsy Bell Productions",
                             "color": "red"
                         },
                         {
-                            "id": "42579f80-c9a2-4b38-b104-cb81d6af7fb5",
-                            "name": "Ken Watanabe",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "5c0169fc-f963-4cc4-adbf-439cb06916cf",
-                            "name": "Tom Hardy",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "1ef54bfe-ce7a-4838-b465-0ea8e520d677",
-                            "name": "Elliot Page",
-                            "color": "red"
-                        },
-                        {
-                            "id": "a7f16738-9f20-49b8-8f06-f47df19a8e86",
-                            "name": "Dileep Rao",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "65d4dfdc-7d1a-4a98-bbea-f98c02987496",
-                            "name": "Cillian Murphy",
-                            "color": "red"
-                        },
-                        {
-                            "id": "3634b0a7-9256-4be8-9089-bac28fd74dde",
-                            "name": "Tom Berenger",
+                            "id": "0b0caca0-3c72-49e0-b5c1-4739cd2f2b28",
+                            "name": "Universal Remote",
                             "color": "default"
                         },
                         {
-                            "id": "f81c6ea4-53cb-4bfe-9e28-f7fefa5f7992",
-                            "name": "Marion Cotillard",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "b70b59b4-b7fa-461e-a48b-33c6e1e3a45c",
-                            "name": "Peter Postlethwaite",
-                            "color": "default"
-                        },
-                        {
-                            "id": "e9efe6a4-82c4-43bd-95f2-7e6632a088eb",
-                            "name": "Michael Caine",
-                            "color": "purple"
-                        }
-                    ]
-                },
-                "Date Released": {
-                    "id": "VZeU",
-                    "type": "date",
-                    "date": {
-                        "start": "2010-07-15",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
-                "TMDB Score": {
-                    "id": "WBe%3E",
-                    "type": "number",
-                    "number": 8.364
-                },
-                "Worldwide Gross": {
-                    "id": "WwvX",
-                    "type": "number",
-                    "number": 825532764
-                },
-                "Cinematographer(s)": {
-                    "id": "%5DZv%3E",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "44937902-916c-4cae-9406-bf9d7b6acf69",
-                            "name": "Wally Pfister",
-                            "color": "purple"
-                        }
-                    ]
-                },
-                "Composer(s)": {
-                    "id": "%5E_%5Cw",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "9665c519-e73f-4738-877f-99c10ab35f1a",
-                            "name": "Hans Zimmer",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "URL": {
-                    "id": "cN%60%3A",
-                    "type": "url",
-                    "url": null
-                },
-                "Editor(s)": {
-                    "id": "v%5Bql",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "110d31b4-0523-4f0a-bb3e-d7567ac031e6",
-                            "name": "Lee Smith",
-                            "color": "pink"
-                        }
-                    ]
-                },
-                "Genre(s)": {
-                    "id": "yffv",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "be80039c-84e9-4763-b4cb-e70fb63a330b",
-                            "name": "Action",
-                            "color": "default"
-                        },
-                        {
-                            "id": "10204708-eedc-4dd7-a8e6-2451ef01655b",
-                            "name": "Science Fiction",
+                            "id": "096058d4-a8f5-4711-9ef8-304e60f40efc",
+                            "name": "Domo Arigato Productions",
                             "color": "green"
                         },
                         {
-                            "id": "3ba54a4e-f66d-4b1f-ba78-364b799e5e11",
-                            "name": "Adventure",
-                            "color": "pink"
-                        }
-                    ]
-                },
-                "Name": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "Inception",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "Inception",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/Inception-b587b4fe02d2490c90ba760d87b80cb2",
-            "public_url": null
-        },
-        {
-            "object": "page",
-            "id": "1b73ca9c-b876-4dc3-9b30-b971e42d01bc",
-            "created_time": "2023-08-23T08:04:00.000Z",
-            "last_edited_time": "2023-08-23T08:24:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
-            },
-            "cover": null,
-            "icon": null,
-            "parent": {
-                "type": "database_id",
-                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
-            },
-            "archived": false,
-            "properties": {
-                "Text": {
-                    "id": "%3A%5CU%3D",
-                    "type": "rich_text",
-                    "rich_text": []
-                },
-                "Region(s)": {
-                    "id": "%3Af%7Df",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Runtime (mins)": {
-                    "id": "%40QfO",
-                    "type": "number",
-                    "number": 96
-                },
-                "Writer(s)": {
-                    "id": "%40~%3C_",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Producer(s)": {
-                    "id": "LM%3CH",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Production Company": {
-                    "id": "Lqim",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "dbc6beb0-aca7-4cce-9ee8-9b96119488b1",
-                            "name": "DreamWorks Animation",
+                            "id": "ec19cd5a-f921-495b-b8f5-ea704c2aee76",
+                            "name": "Buji Productions",
                             "color": "gray"
-                        },
-                        {
-                            "id": "812deab4-4ece-4946-b63b-93c43b77fe8b",
-                            "name": "20th Century Fox",
-                            "color": "yellow"
                         }
                     ]
                 },
-                "Decade": {
-                    "id": "M%5D%7D%3C",
-                    "type": "select",
-                    "select": {
-                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
-                        "name": "2010s",
-                        "color": "pink"
-                    }
-                },
-                "Language(s)": {
-                    "id": "QlKl",
+                "Decade(s)": {
+                    "id": "CrPy",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
-                            "name": "English",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "Director(s)": {
-                    "id": "S%5BcC",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "a7e86657-be0c-4fb8-868e-d9761d5dbde9",
-                            "name": "Derek Cianfrance",
+                            "id": "3237c19c-9871-4e54-b35d-a00e143637d2",
+                            "name": "2020s",
                             "color": "red"
                         }
                     ]
                 },
                 "Starring": {
-                    "id": "V%3ERB",
+                    "id": "MuFq",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "ce02b983-09fe-4341-8076-7a726ed49bdf",
-                            "name": "Ryan Reynolds",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "868a7e75-bca3-4bc8-997f-69c157152fa1",
-                            "name": "Paul Giamatti",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "cceb862e-34a9-497e-8453-6463c5e96fb4",
-                            "name": "Michael Peña",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "3c5cb797-6024-4b2c-80e7-4591acb8c1c1",
-                            "name": "Samuel L. Jackson",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "d76d67f9-b4ea-4574-a50f-2989bba914c5",
-                            "name": "Luis Guzmán",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "bf097643-3950-489b-9c5f-e55f74fc0cc7",
-                            "name": "Bill Hader",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "b06e8bbe-d5d8-435c-94e4-a3108e443de4",
-                            "name": "Snoop Dogg",
-                            "color": "red"
-                        },
-                        {
-                            "id": "8e2c5aca-39e1-453a-a4dc-a8158661b361",
-                            "name": "Ben Schwartz",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "44f39f3b-e29e-4358-9357-c6fa8586b756",
-                            "name": "Maya Rudolph",
-                            "color": "default"
-                        },
-                        {
-                            "id": "42233f1a-4289-48be-a656-76c465f0036c",
-                            "name": "Richard Jenkins",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "0b651f95-dcc2-49e7-8ccd-0d28c03df534",
-                            "name": "Ken Jeong",
-                            "color": "yellow"
-                        }
-                    ]
-                },
-                "Date Released": {
-                    "id": "VZeU",
-                    "type": "date",
-                    "date": {
-                        "start": "2013-07-11",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
-                "TMDB Score": {
-                    "id": "WBe%3E",
-                    "type": "number",
-                    "number": 6.181
-                },
-                "Worldwide Gross": {
-                    "id": "WwvX",
-                    "type": "number",
-                    "number": 282570682
-                },
-                "Cinematographer(s)": {
-                    "id": "%5DZv%3E",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "a699d854-95b0-4e62-9b35-5e8bd9fe5b9c",
-                            "name": "Chris Stover",
-                            "color": "red"
-                        }
-                    ]
-                },
-                "Composer(s)": {
-                    "id": "%5E_%5Cw",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "URL": {
-                    "id": "cN%60%3A",
-                    "type": "url",
-                    "url": null
-                },
-                "Editor(s)": {
-                    "id": "v%5Bql",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Genre(s)": {
-                    "id": "yffv",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "432d2b4a-7ca0-4b86-ae32-3d30df0e6d45",
-                            "name": "Animation",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "bb3f1bf2-1cfe-4af1-8b98-56b9e5c95b9c",
-                            "name": "Family",
-                            "color": "yellow"
-                        }
-                    ]
-                },
-                "Name": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "Turbo",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "Turbo",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/Turbo-1b73ca9cb8764dc39b30b971e42d01bc",
-            "public_url": null
-        },
-        {
-            "object": "page",
-            "id": "7e6f9c95-63f5-44d6-9fb0-905ca062ca73",
-            "created_time": "2023-08-23T08:03:00.000Z",
-            "last_edited_time": "2023-08-23T08:40:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "cover": null,
-            "icon": null,
-            "parent": {
-                "type": "database_id",
-                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
-            },
-            "archived": false,
-            "properties": {
-                "Text": {
-                    "id": "%3A%5CU%3D",
-                    "type": "rich_text",
-                    "rich_text": []
-                },
-                "Region(s)": {
-                    "id": "%3Af%7Df",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Runtime (mins)": {
-                    "id": "%40QfO",
-                    "type": "number",
-                    "number": 92
-                },
-                "Writer(s)": {
-                    "id": "%40~%3C_",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Producer(s)": {
-                    "id": "LM%3CH",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "e07bde40-7324-4154-83a0-f535438d0c0d",
-                            "name": "Morgan Spurlock",
-                            "color": "red"
-                        },
-                        {
-                            "id": "bd8b4408-3acd-4368-b640-9f2a4384aa7f",
-                            "name": "Simon Cowell",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "290a77d1-3318-4dc7-84aa-5fd0bdf0df5b",
-                            "name": "Adam Milano",
-                            "color": "default"
-                        },
-                        {
-                            "id": "cfac69f8-bb99-45c4-ba40-6e7afa4b707f",
-                            "name": "Ben Winston",
-                            "color": "gray"
-                        }
-                    ]
-                },
-                "Production Company": {
-                    "id": "Lqim",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "df71b4e8-7155-4b9e-9bf8-ac901f8e90a4",
-                            "name": "Sony Pictures",
-                            "color": "red"
-                        },
-                        {
-                            "id": "40ab02f9-9d65-4215-90f2-b1b642c5b1b5",
-                            "name": "TriStar Pictures",
-                            "color": "purple"
-                        }
-                    ]
-                },
-                "Decade": {
-                    "id": "M%5D%7D%3C",
-                    "type": "select",
-                    "select": {
-                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
-                        "name": "2010s",
-                        "color": "pink"
-                    }
-                },
-                "Language(s)": {
-                    "id": "QlKl",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
-                            "name": "English",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "Director(s)": {
-                    "id": "S%5BcC",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "7012cd5f-3b18-4aa3-b285-0e38f3812dd6",
-                            "name": "Morgan Spurlock",
-                            "color": "gray"
-                        }
-                    ]
-                },
-                "Starring": {
-                    "id": "V%3ERB",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "bd428f7a-e490-47e8-8e97-c874fbda0ad7",
-                            "name": "Harry Styles",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "c324a626-894d-4795-ac61-8b397685c11b",
-                            "name": "Niall Horan",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "b335cb24-781b-44b4-932e-ac07fbb1138e",
-                            "name": "Zayn Malik",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "70e9781f-07db-47b4-903a-f52d6bfc1f39",
-                            "name": "Louis Tomlinson",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "0f1b2d42-2756-4cc0-ba01-ea6b04ad763a",
-                            "name": "Liam Payne",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "7649f32a-c48b-4f50-b1b8-16401a0a7160",
-                            "name": "Simon Cowell",
-                            "color": "red"
-                        },
-                        {
-                            "id": "b19c431f-3583-45c8-8bd7-e62922f44add",
-                            "name": "Martin Scorsese",
+                            "id": "22cb6a17-50b1-468b-874b-ecd48e8cdca6",
+                            "name": "Steven Yeun",
                             "color": "pink"
                         },
                         {
-                            "id": "58b442fb-f5dc-4f4f-8f99-a7c300f2354a",
-                            "name": "Chris Rock",
+                            "id": "5a4d2dc9-996c-49bc-b396-bf45f7b4b42e",
+                            "name": "Ali Wong",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "844b0512-008c-4ed2-b9d3-f2376df946de",
+                            "name": "Joseph Lee",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "ff3db6ad-c55a-4e0f-8167-a04820cecf56",
+                            "name": "Young Mazino",
                             "color": "orange"
                         },
                         {
-                            "id": "9bbf72b4-d35f-4ea3-9995-02e277335ea0",
-                            "name": "Jon Shone",
-                            "color": "default"
+                            "id": "eaf2da2b-cfee-4025-9654-3f0fbb74b2f5",
+                            "name": "David Choe",
+                            "color": "purple"
                         },
                         {
-                            "id": "9f23bb6d-44e9-44ac-b73c-01e066e6ed96",
-                            "name": "Dan Richards",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "a9610330-198e-4e6c-abec-9bae4397d4e5",
-                            "name": "Josh Devine",
-                            "color": "blue"
+                            "id": "5f953723-624d-44a3-9a78-2f5aa0eecbdc",
+                            "name": "Patti Yasutake",
+                            "color": "pink"
                         }
                     ]
                 },
-                "Date Released": {
-                    "id": "VZeU",
-                    "type": "date",
-                    "date": {
-                        "start": "2013-07-29",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
-                "TMDB Score": {
-                    "id": "WBe%3E",
+                "Season(s)": {
+                    "id": "NW%3CO",
                     "type": "number",
-                    "number": 8.347
+                    "number": 1
                 },
-                "Worldwide Gross": {
-                    "id": "WwvX",
-                    "type": "number",
-                    "number": 68500000
-                },
-                "Cinematographer(s)": {
-                    "id": "%5DZv%3E",
+                "Country": {
+                    "id": "%5EWRI",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "79679eed-d307-4070-8da4-a0d9a0c25280",
-                            "name": "Neil Harvey",
-                            "color": "default"
-                        }
-                    ]
-                },
-                "Composer(s)": {
-                    "id": "%5E_%5Cw",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "URL": {
-                    "id": "cN%60%3A",
-                    "type": "url",
-                    "url": null
-                },
-                "Editor(s)": {
-                    "id": "v%5Bql",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "e0a8fa7f-2016-4ff3-9411-4945c5b6bfc7",
-                            "name": "Wyatt Smith",
-                            "color": "gray"
+                            "id": "1b4dfac0-aae8-48c3-a29f-478e89169e76",
+                            "name": "United States of America",
+                            "color": "pink"
                         }
                     ]
                 },
                 "Genre(s)": {
-                    "id": "yffv",
+                    "id": "c%5ECU",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "19a4d6ac-65b9-44c1-bb57-86d8c3d031f1",
-                            "name": "Documentary",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "82f38258-819b-48eb-bdc5-6a45e8b0a5cc",
-                            "name": "Music",
-                            "color": "purple"
-                        }
-                    ]
-                },
-                "Name": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "One Direction: This Is Us",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "One Direction: This Is Us",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/One-Direction-This-Is-Us-7e6f9c9563f544d69fb0905ca062ca73",
-            "public_url": null
-        },
-        {
-            "object": "page",
-            "id": "9867e95b-bd3b-4985-b4e8-36df8c4cfb54",
-            "created_time": "2023-08-23T07:48:00.000Z",
-            "last_edited_time": "2023-08-23T07:54:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
-            },
-            "cover": null,
-            "icon": null,
-            "parent": {
-                "type": "database_id",
-                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
-            },
-            "archived": false,
-            "properties": {
-                "Text": {
-                    "id": "%3A%5CU%3D",
-                    "type": "rich_text",
-                    "rich_text": []
-                },
-                "Region(s)": {
-                    "id": "%3Af%7Df",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Runtime (mins)": {
-                    "id": "%40QfO",
-                    "type": "number",
-                    "number": 129
-                },
-                "Writer(s)": {
-                    "id": "%40~%3C_",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "c985d66b-1934-460a-9edb-d73058512fae",
-                            "name": "Damien Chazelle",
-                            "color": "yellow"
-                        }
-                    ]
-                },
-                "Producer(s)": {
-                    "id": "LM%3CH",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "73bd7930-be12-41dc-8839-2592574bd644",
-                            "name": "Gary Gilbert",
-                            "color": "green"
-                        },
-                        {
-                            "id": "1451d992-17d5-4987-881d-b9086b4edf24",
-                            "name": "Marc Platt",
-                            "color": "default"
-                        },
-                        {
-                            "id": "8dcc4012-7a80-44ee-87ca-15e6bdeee1f7",
-                            "name": "Jordan Horowitz",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "bc6ad8da-35cd-401e-9418-d3a1d1c63383",
-                            "name": "Fred Berger",
-                            "color": "purple"
-                        }
-                    ]
-                },
-                "Production Company": {
-                    "id": "Lqim",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "872f6100-1874-4257-966f-29718291de53",
-                            "name": "Summit Entertainment",
-                            "color": "green"
-                        },
-                        {
-                            "id": "b0555941-690a-4688-ad89-eca6fbe16a16",
-                            "name": "Black Label Media",
-                            "color": "default"
-                        },
-                        {
-                            "id": "24b1817e-41f8-4a41-a25c-f9f0007714b5",
-                            "name": "Gilbert Films",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "f81ae439-1d15-4707-90bb-e3abb4509c2c",
-                            "name": "Impostor Pictures",
-                            "color": "red"
-                        },
-                        {
-                            "id": "724bb1f3-2f22-4556-bad9-7376a8cc5e6d",
-                            "name": "Marc Platt Productions",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "29d5625b-0134-49e2-bdbb-8eb9c3bce1f5",
-                            "name": "Lionsgate",
-                            "color": "green"
-                        }
-                    ]
-                },
-                "Decade": {
-                    "id": "M%5D%7D%3C",
-                    "type": "select",
-                    "select": {
-                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
-                        "name": "2010s",
-                        "color": "pink"
-                    }
-                },
-                "Language(s)": {
-                    "id": "QlKl",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
-                            "name": "English",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "Director(s)": {
-                    "id": "S%5BcC",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "5cf719bf-9d1c-4076-a200-3fb8779afec8",
-                            "name": "Damien Chazelle",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "Starring": {
-                    "id": "V%3ERB",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Date Released": {
-                    "id": "VZeU",
-                    "type": "date",
-                    "date": {
-                        "start": "2016-11-29",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
-                "TMDB Score": {
-                    "id": "WBe%3E",
-                    "type": "number",
-                    "number": 7.895
-                },
-                "Worldwide Gross": {
-                    "id": "WwvX",
-                    "type": "number",
-                    "number": 447407695
-                },
-                "Cinematographer(s)": {
-                    "id": "%5DZv%3E",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "269ddeca-706c-4af8-b808-bbec8c0c3e30",
-                            "name": "Linus Sandgren",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "Composer(s)": {
-                    "id": "%5E_%5Cw",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "7fd8e65b-4b03-4f26-a016-0d094c8eeacc",
-                            "name": "Justin Hurwitz",
-                            "color": "brown"
-                        }
-                    ]
-                },
-                "URL": {
-                    "id": "cN%60%3A",
-                    "type": "url",
-                    "url": null
-                },
-                "Editor(s)": {
-                    "id": "v%5Bql",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "07d871e3-aa8b-457c-b000-a5cd7fdbe9ac",
-                            "name": "Tom Cross",
-                            "color": "default"
-                        }
-                    ]
-                },
-                "Genre(s)": {
-                    "id": "yffv",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "50ee6c3d-5b69-48bd-918b-639c962adc99",
+                            "id": "07a3fb0c-dbd4-440e-bea3-6963b4a0cc1b",
                             "name": "Comedy",
-                            "color": "red"
+                            "color": "blue"
                         },
                         {
-                            "id": "d2d12676-c717-4533-b1f8-bd68196640f8",
+                            "id": "2104c3d0-70a2-49d1-9780-24b4e740af6b",
                             "name": "Drama",
                             "color": "gray"
-                        },
-                        {
-                            "id": "e04b162c-5c3b-482b-a47a-3ab1c403f8c4",
-                            "name": "Romance",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "82f38258-819b-48eb-bdc5-6a45e8b0a5cc",
-                            "name": "Music",
-                            "color": "purple"
                         }
                     ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-04-06",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "82231046-9b65-411d-aa2d-0693f087828c",
+                            "name": "Lee Sung-jin",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        },
+                        {
+                            "id": "99cde57c-ef92-4218-ae57-aaaf478e522d",
+                            "name": "ko",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 10
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ef744c78-2bb6-42ab-a67a-6008fc6ccec2",
+                            "name": "Netflix",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": 30
                 },
                 "Name": {
                     "id": "title",
@@ -1053,7 +196,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "La La Land",
+                                "content": "Beef",
                                 "link": null
                             },
                             "annotations": {
@@ -1064,20 +207,20 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "La La Land",
+                            "plain_text": "Beef",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/La-La-Land-9867e95bbd3b4985b4e836df8c4cfb54",
+            "url": "https://www.notion.so/Beef-0b4045dd47b0454b8874bcc2f6f0e95f",
             "public_url": null
         },
         {
             "object": "page",
-            "id": "ae5ec045-d536-4036-a6a9-8b33a00429e6",
-            "created_time": "2023-08-23T07:45:00.000Z",
-            "last_edited_time": "2023-08-23T08:02:00.000Z",
+            "id": "dc101595-caf6-4d4c-b4f9-ba504860e0e1",
+            "created_time": "2023-08-24T08:57:00.000Z",
+            "last_edited_time": "2023-08-24T08:57:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -1090,271 +233,166 @@
             "icon": null,
             "parent": {
                 "type": "database_id",
-                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
             },
             "archived": false,
             "properties": {
-                "Text": {
-                    "id": "%3A%5CU%3D",
-                    "type": "rich_text",
-                    "rich_text": []
-                },
-                "Region(s)": {
-                    "id": "%3Af%7Df",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Runtime (mins)": {
-                    "id": "%40QfO",
-                    "type": "number",
-                    "number": 140
-                },
-                "Writer(s)": {
-                    "id": "%40~%3C_",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Producer(s)": {
-                    "id": "LM%3CH",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "cae0b366-2dee-45dc-b590-19a36ee2586b",
-                            "name": "Sidney Kimmel",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "779496c1-bb8e-4b94-83fb-2a918c792817",
-                            "name": "Lynette Howell Taylor",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "81b70229-0290-49c9-8978-dbc2c3adeaf6",
-                            "name": "Alex Orlovsky",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "7f057fbb-a2a3-4d0a-be45-45f61c7bb464",
-                            "name": "Jamie Patricof",
-                            "color": "brown"
-                        }
-                    ]
-                },
                 "Production Company": {
-                    "id": "Lqim",
+                    "id": "%3BMUb",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "bb2507a4-44b8-426f-8ab7-42142c00a801",
-                            "name": "Sidney Kimmel Entertainment",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "436b476a-262b-4543-b7df-4ed27e0384d4",
-                            "name": "Electric City Entertainment",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "aa7793ee-11a9-465c-8293-503966d91110",
-                            "name": "Verisimilitude",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "43365d56-ed58-4a9c-a222-fd035eb4e620",
-                            "name": "Hunting Lane Films",
-                            "color": "red"
-                        },
-                        {
-                            "id": "937158d0-8a85-4d5a-899c-4b3b0822a46e",
-                            "name": "Silverwood Films",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "bb11ca0d-05ca-4a79-b942-b24d37add2eb",
-                            "name": "Sierra/Affinity",
+                            "id": "f52eb70e-ba32-4f60-8e2d-c82d15f20a67",
+                            "name": "Fremulon",
                             "color": "brown"
                         },
                         {
-                            "id": "4be05f35-ef0b-4e36-afd8-7a747dbb793c",
-                            "name": "Focus Features",
-                            "color": "blue"
-                        }
-                    ]
-                },
-                "Decade": {
-                    "id": "M%5D%7D%3C",
-                    "type": "select",
-                    "select": {
-                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
-                        "name": "2010s",
-                        "color": "pink"
-                    }
-                },
-                "Language(s)": {
-                    "id": "QlKl",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
-                            "name": "English",
-                            "color": "orange"
+                            "id": "73a3e8f2-18ee-4c3d-8d2a-ea4227e1f0e9",
+                            "name": "3 Arts Entertainment",
+                            "color": "red"
                         },
                         {
-                            "id": "7b5ebf55-7960-415b-8d0f-46dd90d6b537",
-                            "name": "Spanish",
-                            "color": "red"
+                            "id": "820ba3c8-05c5-4513-b81a-4c5cbcb4d561",
+                            "name": "Universal Television",
+                            "color": "green"
                         }
                     ]
                 },
-                "Director(s)": {
-                    "id": "S%5BcC",
+                "Decade(s)": {
+                    "id": "CrPy",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "a7e86657-be0c-4fb8-868e-d9761d5dbde9",
-                            "name": "Derek Cianfrance",
+                            "id": "9ae39762-6427-4079-8f03-9bf883c37154",
+                            "name": "2010s",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "3237c19c-9871-4e54-b35d-a00e143637d2",
+                            "name": "2020s",
                             "color": "red"
                         }
                     ]
                 },
                 "Starring": {
-                    "id": "V%3ERB",
+                    "id": "MuFq",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "1c08263f-74ed-4b79-ad25-271998be0435",
-                            "name": "Ryan Gosling",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "b9745a73-0e09-4020-bc59-60344f34b618",
-                            "name": "Eva Mendes",
-                            "color": "red"
-                        },
-                        {
-                            "id": "af888ec7-24bb-46e7-b652-15cdb2541270",
-                            "name": "Bradley Cooper",
+                            "id": "e016b7b6-eece-4b04-abeb-5ca7bda593cd",
+                            "name": "Kristen Bell",
                             "color": "default"
                         },
                         {
-                            "id": "20b47bd8-252d-4cac-aace-d39a4596fa8a",
-                            "name": "Dane DeHaan",
-                            "color": "pink"
+                            "id": "8c6304b1-0d5c-4ecc-8258-e8e7ca9d9dcc",
+                            "name": "Ted Danson",
+                            "color": "red"
                         },
                         {
-                            "id": "957837b9-eb56-4328-8c21-1d54ccfbf2ed",
-                            "name": "Emory Cohen",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "91520c3f-d7a1-4502-9ef5-60436950579e",
-                            "name": "Rose Byrne",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "b77534d2-bb0a-486b-b2ce-2fc99c2cbafa",
-                            "name": "Mahershala Ali",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "971e0dac-8d8a-4838-8e00-e6e934c4b8f1",
-                            "name": "Bruce Greenwood",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "be042282-e3b0-45ca-9b6c-2620ab6fe4ac",
-                            "name": "Ben Mendelsohn",
+                            "id": "11cca16c-f9c9-4a50-a32d-a7e0e4551f5f",
+                            "name": "William Jackson Harper",
                             "color": "green"
                         },
                         {
-                            "id": "aa71da27-a974-4634-ac19-441e15fbbaa8",
-                            "name": "Harris Yulin",
+                            "id": "de09cdbe-7d03-402e-9119-712b72cbfb13",
+                            "name": "Jameela Jamil",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "7f747a97-b368-4b8f-a92c-653f0ed214da",
+                            "name": "Manny Jacinto",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "edfb66d9-ec96-4469-b2d2-5ab13fbf2d01",
+                            "name": "D'Arcy Carden",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Season(s)": {
+                    "id": "NW%3CO",
+                    "type": "number",
+                    "number": 4
+                },
+                "Country": {
+                    "id": "%5EWRI",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "1b4dfac0-aae8-48c3-a29f-478e89169e76",
+                            "name": "United States of America",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "c%5ECU",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "825ded20-c099-420d-8e57-86aadd7d04fb",
+                            "name": "Sci-Fi & Fantasy",
                             "color": "yellow"
                         },
                         {
-                            "id": "126b345b-8592-45ae-b872-744c392c8616",
-                            "name": "Ray Liotta",
+                            "id": "07a3fb0c-dbd4-440e-bea3-6963b4a0cc1b",
+                            "name": "Comedy",
                             "color": "blue"
                         }
                     ]
                 },
                 "Date Released": {
-                    "id": "VZeU",
+                    "id": "eTOy",
                     "type": "date",
                     "date": {
-                        "start": "2013-03-14",
-                        "end": null,
+                        "start": "2016-09-19",
+                        "end": "2020-01-30",
                         "time_zone": null
                     }
                 },
-                "TMDB Score": {
-                    "id": "WBe%3E",
-                    "type": "number",
-                    "number": 6.965
-                },
-                "Worldwide Gross": {
-                    "id": "WwvX",
-                    "type": "number",
-                    "number": 35485608
-                },
-                "Cinematographer(s)": {
-                    "id": "%5DZv%3E",
+                "Creator(s)": {
+                    "id": "ib_N",
                     "type": "multi_select",
                     "multi_select": [
                         {
-                            "id": "6c59c0b1-0aaa-4745-a841-d78adab1227b",
-                            "name": "Sean Bobbitt",
-                            "color": "green"
-                        }
-                    ]
-                },
-                "Composer(s)": {
-                    "id": "%5E_%5Cw",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "db256d15-4d8f-4083-b5f9-258d4d04bf83",
-                            "name": "Mike Patton",
-                            "color": "blue"
-                        }
-                    ]
-                },
-                "URL": {
-                    "id": "cN%60%3A",
-                    "type": "url",
-                    "url": null
-                },
-                "Editor(s)": {
-                    "id": "v%5Bql",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "760c49a8-4097-4eb5-90f5-75c616bf84c5",
-                            "name": "Jim Helton",
+                            "id": "d98cc52a-eaf4-4ff1-8415-b4ccb675efa0",
+                            "name": "Michael Schur",
                             "color": "purple"
-                        },
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
                         {
-                            "id": "7ef16db6-9dea-4270-b83e-1a69b837ebe5",
-                            "name": "Ron Patane",
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 50
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "cd16a49e-6537-413d-85ec-cd2f74b25bb8",
+                            "name": "NBC",
                             "color": "yellow"
                         }
                     ]
                 },
-                "Genre(s)": {
-                    "id": "yffv",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "d2d12676-c717-4533-b1f8-bd68196640f8",
-                            "name": "Drama",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "350d4fbb-4080-479b-9083-0fd338e69b96",
-                            "name": "Crime",
-                            "color": "blue"
-                        }
-                    ]
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": 22
                 },
                 "Name": {
                     "id": "title",
@@ -1363,7 +401,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "The Place Beyond The Pines",
+                                "content": "The Good Place",
                                 "link": null
                             },
                             "annotations": {
@@ -1374,13 +412,1112 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "The Place Beyond The Pines",
+                            "plain_text": "The Good Place",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/The-Place-Beyond-The-Pines-ae5ec045d5364036a6a98b33a00429e6",
+            "url": "https://www.notion.so/The-Good-Place-dc101595caf64d4cb4f9ba504860e0e1",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "52fc6b27-5a84-4239-ae56-37cd4531c082",
+            "created_time": "2023-08-24T08:56:00.000Z",
+            "last_edited_time": "2023-08-24T08:57:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
+            },
+            "archived": false,
+            "properties": {
+                "Production Company": {
+                    "id": "%3BMUb",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "20f3c0c7-6c92-4f39-932f-10587e416fcb",
+                            "name": "Production I.G",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "90371dd0-956c-431a-a706-89f176ffa86b",
+                            "name": "MAPPA",
+                            "color": "green"
+                        },
+                        {
+                            "id": "5ab14a40-7bde-4c29-a84b-c9dcd854c897",
+                            "name": "WIT STUDIO",
+                            "color": "green"
+                        },
+                        {
+                            "id": "313ac482-308a-478f-b137-54af3a597991",
+                            "name": "Pony Canyon",
+                            "color": "red"
+                        },
+                        {
+                            "id": "92c028b5-ddc6-4d45-86a1-b1e02c3d6f77",
+                            "name": "Techno Sound",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "6ac9dae6-b573-479c-a9cb-bff03779ec48",
+                            "name": "Kodansha",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "85936d14-344a-4278-98d8-98abde10cbe2",
+                            "name": "dentsu",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "351f7b4a-ff17-482a-9696-7e9d65eebc25",
+                            "name": "MBS",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "dce3466c-91cc-4f54-a410-1636c87d6da3",
+                            "name": "Pony Canyon Enterprise",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Decade(s)": {
+                    "id": "CrPy",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9ae39762-6427-4079-8f03-9bf883c37154",
+                            "name": "2010s",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "MuFq",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "efb39006-606c-4411-930e-184a59bd66ff",
+                            "name": "Yuki Kaji",
+                            "color": "default"
+                        },
+                        {
+                            "id": "e9647ae4-4139-4a03-baf1-e8540566dff7",
+                            "name": "Yui Ishikawa",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "2e72f61c-0608-4971-a577-794409dbce90",
+                            "name": "Marina Inoue",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "899234ff-0541-4d1d-b110-75e9557a86f7",
+                            "name": "Kisho Taniyama",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "4e4cecd3-f7e8-482e-91d4-d17178faf8ee",
+                            "name": "Hiro Shimono",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "968f7f35-b412-4ed8-a30c-68f8c03b2d74",
+                            "name": "Yoshimasa Hosoya",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "8f6f844d-375a-46b7-bd04-9715083b18aa",
+                            "name": "Takehito Koyasu",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "ef1437e3-50e9-42a3-8f52-81bf6c52c04b",
+                            "name": "Ayane Sakura",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "35509fe6-b2b2-40f1-b84e-7673606819b5",
+                            "name": "Natsuki Hanae",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Season(s)": {
+                    "id": "NW%3CO",
+                    "type": "number",
+                    "number": 4
+                },
+                "Country": {
+                    "id": "%5EWRI",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "bd46bfc8-e23e-4fd2-b10e-d567e2a1108b",
+                            "name": "Japan",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "c%5ECU",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "825ded20-c099-420d-8e57-86aadd7d04fb",
+                            "name": "Sci-Fi & Fantasy",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "14a637d1-417e-4d61-9a31-991d48519f08",
+                            "name": "Animation",
+                            "color": "green"
+                        },
+                        {
+                            "id": "f006cbce-82d7-4f10-ad9b-c83070f759e0",
+                            "name": "Action & Adventure",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2013-04-07",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "87ca99c9-d228-4d8f-bec5-df259e2f2140",
+                            "name": "ja",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 87
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d2ae63c5-04d6-4a2c-9e48-35c80ad4352c",
+                            "name": "MBS",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "16ea0eb0-9b4c-4961-8fde-a6062bb88f42",
+                            "name": "NHK G",
+                            "color": "red"
+                        },
+                        {
+                            "id": "40a10067-81e2-419b-9a3e-a9b0cc48c49e",
+                            "name": "Tokyo MX",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": 25
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Attack On Titan",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Attack On Titan",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Attack-On-Titan-52fc6b275a844239ae5637cd4531c082",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "733101f7-d280-4849-a7bd-4454f12a664e",
+            "created_time": "2023-08-24T08:54:00.000Z",
+            "last_edited_time": "2023-08-24T08:54:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
+            },
+            "archived": false,
+            "properties": {
+                "Production Company": {
+                    "id": "%3BMUb",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "929cce06-3729-4611-9eb1-bb0415cba9a3",
+                            "name": "Lucasfilm Ltd.",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "7070cf1c-e0e8-40ff-a969-ae173fcd2b90",
+                            "name": "Golem Creations",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "634b91b4-6630-4e29-80cd-c7b538c2ebb9",
+                            "name": "Fairview Entertainment",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Decade(s)": {
+                    "id": "CrPy",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9ae39762-6427-4079-8f03-9bf883c37154",
+                            "name": "2010s",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "3237c19c-9871-4e54-b35d-a00e143637d2",
+                            "name": "2020s",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "MuFq",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "80146637-b797-41e2-9abc-73cd191ccfab",
+                            "name": "Pedro Pascal",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "e3a03b10-c8cb-44e3-b320-129962d9655c",
+                            "name": "Katee Sackhoff",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Season(s)": {
+                    "id": "NW%3CO",
+                    "type": "number",
+                    "number": 3
+                },
+                "Country": {
+                    "id": "%5EWRI",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "1b4dfac0-aae8-48c3-a29f-478e89169e76",
+                            "name": "United States of America",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "c%5ECU",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "825ded20-c099-420d-8e57-86aadd7d04fb",
+                            "name": "Sci-Fi & Fantasy",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "f006cbce-82d7-4f10-ad9b-c83070f759e0",
+                            "name": "Action & Adventure",
+                            "color": "default"
+                        },
+                        {
+                            "id": "2104c3d0-70a2-49d1-9780-24b4e740af6b",
+                            "name": "Drama",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2019-11-12",
+                        "end": "2023-04-19",
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "01e5769b-d795-4a0c-b5bf-402c453f9206",
+                            "name": "Jon Favreau",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 24
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "be75ac44-1504-4ec1-907c-474032184e43",
+                            "name": "Disney+",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": null
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "The Mandalorian",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "The Mandalorian",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/The-Mandalorian-733101f7d2804849a7bd4454f12a664e",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "821eb6d3-d8e8-4d1e-96c4-6a2bab08a0d8",
+            "created_time": "2023-08-24T08:53:00.000Z",
+            "last_edited_time": "2023-08-24T08:53:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
+            },
+            "archived": false,
+            "properties": {
+                "Production Company": {
+                    "id": "%3BMUb",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "929cce06-3729-4611-9eb1-bb0415cba9a3",
+                            "name": "Lucasfilm Ltd.",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Decade(s)": {
+                    "id": "CrPy",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3237c19c-9871-4e54-b35d-a00e143637d2",
+                            "name": "2020s",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "MuFq",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ceb3ae90-4925-48ee-ab8d-dd7aa6bcc745",
+                            "name": "Rosario Dawson",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "26b55249-c462-46d6-9180-ae4dc21942c4",
+                            "name": "Natasha Liu Bordizzo",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "4f904d8e-d471-4342-8079-72b5db8321d2",
+                            "name": "Mary Elizabeth Winstead",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "80cbb02c-78d8-4a20-8d4a-d564d138fc8c",
+                            "name": "Ray Stevenson",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "51c208c3-b60f-4525-888b-eb4409809634",
+                            "name": "Ivanna Sakhno",
+                            "color": "green"
+                        },
+                        {
+                            "id": "a3f0d10d-3553-4ec9-b108-a55aa632fea6",
+                            "name": "Diana Lee Inosanto",
+                            "color": "red"
+                        },
+                        {
+                            "id": "0ed77274-e934-4513-bdb6-72aed3a2d0ce",
+                            "name": "David Tennant",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "6264decd-084a-4f56-9f6d-1708acdf007e",
+                            "name": "Eman Esfandi",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "2fcbaec2-2e3e-4d5f-af3a-1653b0b1047a",
+                            "name": "Lars Mikkelsen",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Season(s)": {
+                    "id": "NW%3CO",
+                    "type": "number",
+                    "number": 1
+                },
+                "Country": {
+                    "id": "%5EWRI",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "1b4dfac0-aae8-48c3-a29f-478e89169e76",
+                            "name": "United States of America",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "c%5ECU",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "825ded20-c099-420d-8e57-86aadd7d04fb",
+                            "name": "Sci-Fi & Fantasy",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "f006cbce-82d7-4f10-ad9b-c83070f759e0",
+                            "name": "Action & Adventure",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2023-08-22",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "91e4cc2d-8478-48e2-8242-adf826ea9561",
+                            "name": "Dave Filoni",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 8
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "be75ac44-1504-4ec1-907c-474032184e43",
+                            "name": "Disney+",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": null
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Ahsoka",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Ahsoka",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Ahsoka-821eb6d3d8e84d1e96c46a2bab08a0d8",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "ad1dff85-914d-43b4-aefc-f74bb346de1c",
+            "created_time": "2023-08-24T08:42:00.000Z",
+            "last_edited_time": "2023-08-24T08:51:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
+            },
+            "archived": false,
+            "properties": {
+                "Production Company": {
+                    "id": "%3BMUb",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "068e1e71-3885-475a-b5c3-3ae2e4de7ffd",
+                            "name": "ABC Studios",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "3f52a537-4de1-4b66-bf79-3c9e2fe4b074",
+                            "name": "Mutant Enemy Productions",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "00d38d0b-cab4-4401-9aa2-2b6c21d8f4dc",
+                            "name": "Marvel Television",
+                            "color": "red"
+                        },
+                        {
+                            "id": "f07b5c64-67d1-47c0-90ea-f4a83956aae1",
+                            "name": "Walt Disney Studios",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "6fb5ffc9-bf7e-4721-8c7f-3877722d1a5b",
+                            "name": "Marvel Entertainment",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Decade(s)": {
+                    "id": "CrPy",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9ae39762-6427-4079-8f03-9bf883c37154",
+                            "name": "2010s",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "3237c19c-9871-4e54-b35d-a00e143637d2",
+                            "name": "2020s",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "MuFq",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "d92df28f-a156-4118-aaf4-8a9feba5b0a8",
+                            "name": "Clark Gregg",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "82030bbe-9481-4082-9c9b-dc738c43d869",
+                            "name": "Ming-Na Wen",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "2cc2a7a1-1706-49e8-beeb-b914e75d7254",
+                            "name": "Chloe Bennet",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "0e5011be-1cf1-4cd8-8276-cba3bac2cc45",
+                            "name": "Elizabeth Henstridge",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "a2482b94-942a-4d98-9d36-09e76ac5cdfc",
+                            "name": "Jeff Ward",
+                            "color": "red"
+                        },
+                        {
+                            "id": "b1b39d8e-f45d-459a-9ef1-6097283c2444",
+                            "name": "Natalia Cordova-Buckley",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "02281c68-4552-42a2-b861-ac8cb5216c6b",
+                            "name": "Henry Simmons",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Season(s)": {
+                    "id": "NW%3CO",
+                    "type": "number",
+                    "number": 7
+                },
+                "Country": {
+                    "id": "%5EWRI",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "1b4dfac0-aae8-48c3-a29f-478e89169e76",
+                            "name": "United States of America",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "c%5ECU",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2104c3d0-70a2-49d1-9780-24b4e740af6b",
+                            "name": "Drama",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "825ded20-c099-420d-8e57-86aadd7d04fb",
+                            "name": "Sci-Fi & Fantasy",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "f006cbce-82d7-4f10-ad9b-c83070f759e0",
+                            "name": "Action & Adventure",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2013-09-24",
+                        "end": "2020-08-12",
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0978925e-3d2d-4b0e-8e87-65b7fd225879",
+                            "name": "Joss Whedon",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "5d491403-2c49-4854-a84d-b4e0b7f5a690",
+                            "name": "Jed Whedon",
+                            "color": "default"
+                        },
+                        {
+                            "id": "81571df4-1c60-41f0-904c-cf78e9fd0bff",
+                            "name": "Maurissa Tancharoen",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 136
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "8a081333-755a-4966-a27e-4641adbf5eca",
+                            "name": "ABC",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": 43
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Agents Of Shield",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Agents Of Shield",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Agents-Of-Shield-ad1dff85914d43b4aefcf74bb346de1c",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "9016f288-5065-4c51-8253-4e8b758c5749",
+            "created_time": "2023-08-24T08:31:00.000Z",
+            "last_edited_time": "2023-08-24T08:52:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
+            },
+            "archived": false,
+            "properties": {
+                "Production Company": {
+                    "id": "%3BMUb",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "a98bdceb-55b0-4706-b5c9-e3b7e9b3dea0",
+                            "name": "Broadway Video",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "828e195c-d4c4-4431-9a11-f5b4a213b0a3",
+                            "name": "Little Stranger",
+                            "color": "default"
+                        },
+                        {
+                            "id": "820ba3c8-05c5-4513-b81a-4c5cbcb4d561",
+                            "name": "Universal Television",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Decade(s)": {
+                    "id": "CrPy",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "06a95610-8010-43f4-be5a-bf34ab470c5a",
+                            "name": "2000s",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "9ae39762-6427-4079-8f03-9bf883c37154",
+                            "name": "2010s",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "MuFq",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "910eebe4-fac6-49ae-a53e-4d7d8498f2e3",
+                            "name": "Tina Fey",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "b7c7a388-392c-4c42-a376-60b7cef16adb",
+                            "name": "Alec Baldwin",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "f51cc307-8c78-46d8-8329-c65aaad6fe4b",
+                            "name": "Tracy Morgan",
+                            "color": "green"
+                        },
+                        {
+                            "id": "74ed2291-b6b5-40ba-aa28-3b810e013412",
+                            "name": "Jane Krakowski",
+                            "color": "default"
+                        },
+                        {
+                            "id": "9144298e-9065-43ab-a7b7-84267401cb57",
+                            "name": "Jack McBrayer",
+                            "color": "red"
+                        },
+                        {
+                            "id": "30df28c2-6021-4012-8143-fbe4acd01803",
+                            "name": "Scott Adsit",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "975af728-68e9-4cef-8551-b84d881ddbb4",
+                            "name": "Judah Friedlander",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "1d69036d-0760-436c-9fb0-3a2acf8289ef",
+                            "name": "Keith Powell",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "94f6625d-2bbe-49b7-8470-f11a0bc0990e",
+                            "name": "Maulik Pancholy",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Season(s)": {
+                    "id": "NW%3CO",
+                    "type": "number",
+                    "number": 7
+                },
+                "Country": {
+                    "id": "%5EWRI",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "1b4dfac0-aae8-48c3-a29f-478e89169e76",
+                            "name": "United States of America",
+                            "color": "pink"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "c%5ECU",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "07a3fb0c-dbd4-440e-bea3-6963b4a0cc1b",
+                            "name": "Comedy",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2006-10-11",
+                        "end": "2013-01-31",
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "012f77ab-82f2-4790-921a-647cf3bda480",
+                            "name": "Tina Fey",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 138
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "cd16a49e-6537-413d-85ec-cd2f74b25bb8",
+                            "name": "NBC",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": 22
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "30 Rock",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "30 Rock",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/30-Rock-9016f28850654c5182534e8b758c5749",
             "public_url": null
         }
     ],

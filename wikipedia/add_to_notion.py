@@ -45,3 +45,7 @@ def add_date(page, value, property):
     if page["properties"][value]["date"] == None:
         update_data = {value: {"date": {"start": property[1]}}}
         update_page(page["id"], update_data)
+
+def add_dates(page, value, property, date):
+    update_data = {value: {"date": {"start": date, "end": property[1]}}}
+    update_page(page["id"], update_data)
