@@ -4,7 +4,7 @@ import string
 from pathlib import Path
 from import_requests import get_pages
 from wikipedia_summary import wiki_summary
-from property_exceptions import city_exceptions
+from property_exceptions import city_exceptions, country_exceptions, job_exception
 from wiki_scraping_final import wiki_scrape_bot
 from get_images import get_images, convert_to_jpg
 from final_transfer import update_page, create_page, create_content
@@ -53,6 +53,7 @@ def get_info(data, name, url):
                 city = city_exceptions(city)
                 state = final_location[1].replace(' ','',1)
                 country = final_location[2].replace(' ','',1)
+                country = country_exceptions(country)
                 info.append(['City/Region', city])
                 info.append(['State', state])
                 info.append(['Country', country])
@@ -63,16 +64,36 @@ def get_info(data, name, url):
                 country = country_exceptions(country)
                 info.append(['City/Region', city])
                 info.append(['Country', country])
-            if len(info)>1:
-                if (info[-1])[1] in ('U.S.', 'US', 'United States'):
-                    (info[-1])[1] = 'USA'
-                    if len(final_location)>2:
-                        for key in us_states:                    
-                            if key == state:
-                                (info[-2])[1] = us_states[key]
-                for key in flags_final:
-                    if flags_final[key] == (info[-1])[1]:
-                        info.append(['Flag', key])
+        if property[0] == "Origin":
+            location = property[1]            
+            final_location = location.split(',')
+            if len(final_location) > 3:
+                final_location.pop(0)
+            if len(final_location) == 3:
+                city = final_location[0]
+                city = city_exceptions(city)
+                state = final_location[1].replace(' ','',1)
+                country = final_location[2].replace(' ','',1)
+                country = country_exceptions(country)
+                info.append(['City/Region', city])
+                info.append(['State', state])
+                info.append(['Country', country])
+            elif len(final_location) == 2:
+                city = final_location[0]
+                city = city_exceptions(city)
+                country = final_location[1].replace(' ','',1)
+                country = country_exceptions(country)
+                info.append(['City/Region', city])
+                info.append(['Country', country])
+        if len(info)>1:
+            if (info[-1])[1] == 'USA':
+                if len(final_location)>2:
+                    for key in us_states:                    
+                        if key == state:
+                            (info[-2])[1] = us_states[key]
+            for key in flags_final:
+                if flags_final[key] == (info[-1])[1]:
+                    info.append(['Flag', key])
         if property[0] in ("Occupations", 'Occupation', "Occupation(s)"):
             info.append(['Occupations', property[1]])
         if property[0] == "Genres":
@@ -123,17 +144,17 @@ def edit_data(individual, pages, info, name):
         if query_name == individual:
             for property in info:
                 if property[0] == 'Birthday':
-                    add_date(page_id, "Date", property)
+                    add_date(page, "Date", property)
                     birth = property[1]
                 if property[0] == 'Died':
                     update_data = {"Date": {"date": {"start": birth, "end": property[1]}}}
-                    update_page(page_id, update_data)
+                    update_page(page, update_data)
                 if property[0] == 'YoB': add_number(page, "YoB", property)
                 if property[0] == 'YoD': add_number(page, "YoD", property)
                 if property[0] == 'Years active': add_text(page, 'Years active', property)
                 if property[0] == 'Country': add_multiselect(page,"Country", property)
                 if property[0] == 'City/Region':
-                    add_multiselect(page_id,"City/Region", property)
+                    add_multiselect(page,"City/Region", property)
                     city = property[1]
                 if property[0] == 'State':
                     update_data = {"City/Region": {"multi_select": [{"name": city}, {"name": property[1]}]}}
@@ -141,7 +162,7 @@ def edit_data(individual, pages, info, name):
                 if property[0] == 'Gender': add_select(page, "Gender", property)
                 if property[0] == 'Ethnicity': add_multiselect(page,"Ethnicity", property)
                 if property[0] == 'Flag': add_emoji(page, property)
-                if property[0] == 'Occupations': add_multiselect(page, "Occupations", property)
+                if property[0] == 'Occupations': add_multiselect(page, "Job(s)", property)
                 if property[0] == 'Wiki': add_url(page, "Wiki", property)
                 if property[0] == 'Genres (Music)': add_multiselect(page, "Genres (Music)", property)
                 if property[0] == 'Instrument(s)': add_multiselect(page, "Instrument(s)", property)
@@ -186,11 +207,11 @@ def add_or_edit_notion_wiki(people_list):
             edit_data((info[0])[0], pages, info, name)
         except KeyboardInterrupt:
             break
-        except:
-            error_list.append(people)
-            continue
+        #except:
+        #    error_list.append(people)
+        #    continue
     
     if error_list != []:
         print("Error List:", error_list)
 
-#add_or_edit_notion_wiki(["Bruno Mars"])
+add_or_edit_notion_wiki(["Arctic Monkeys"])

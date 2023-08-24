@@ -10,6 +10,8 @@ def country_exceptions(country):
         i[1] = "France"
     if country.find("German") != -1:
         i[1] = "Germany"
+    if country in ('U.S.', 'US', 'United States'):
+        country = 'USA'
     return country
 
 def data_list_exception(data):
@@ -25,4 +27,10 @@ def data_list_exception(data):
         data = "Hip Hop"  
     if data in ("Businesswoman", "Businessman", "Businessperson"):
         data = "Business Person"
+    if data in ("Actress"):
+        data = "Actor"
     return(data)
+
+def job_exception(data):
+    if data in ("Actress"):
+        data = "Actor"
