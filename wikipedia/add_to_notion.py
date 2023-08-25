@@ -36,6 +36,11 @@ def add_emoji(page, property):
         update_data = {"emoji": property[1]}
         update_page(page["id"], update_data)
 
+def add_icon_image(page, property):
+    if page["icon"] == None:
+        update_data = {"external": {"url": property[1]}}
+        update_page(page["id"], update_data)
+
 def add_url(page, value, property):
     if page["properties"][value]["url"] == None:
         update_data = {value: {"url": property[1]}}

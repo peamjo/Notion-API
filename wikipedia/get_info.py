@@ -167,8 +167,16 @@ def edit_data(individual, pages, info, name):
                 if property[0] == 'Genres (Music)': add_multiselect(page, "Genres (Music)", property)
                 if property[0] == 'Instrument(s)': add_multiselect(page, "Instrument(s)", property)
                 if property[0] == 'Art Style/Movement': add_multiselect(page, "Art Style/Movement", property)
-            update_data = wiki_summary(name)
-            create_content(page_id, update_data)
+            summary = wiki_summary(name)
+            try:
+                if len(summary) > 1300:
+                    summary = summary[:1300]
+                    last_period = summary.rfind('.')
+                    summary = summary[:last_period+1]
+                update_data = wiki_summary(name)
+                create_content(page_id, update_data)
+            except:
+                pass
 
 def add_or_edit_notion_wiki(people_list):
     job = []

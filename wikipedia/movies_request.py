@@ -5,7 +5,6 @@ from get_info import input_names
 from import_requests import get_pages
 from final_transfer import update_page, create_page, create_content
 
-
 def get_movie_info(movie_name):
     movie_information = [[movie_name]]
     movie = movie_name.replace(" ","+")

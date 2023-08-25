@@ -68,6 +68,14 @@ def get_album(token, album_id):
     json_result = json.loads(result.content)
     return json_result
 
+def get_album_tracks(token, album_id):
+    url = f"https://api.spotify.com/v1/albums/{album_id}/tracks"
+    headers = get_auth_header(token)
+    result = get(url, headers=headers)
+    json_result = json.loads(result.content)
+    return json_result
+
+"""
 token = get_token()
 result = search_for_artist(token, "Taylor Swift")
 artist_id = result["id"]
@@ -81,3 +89,4 @@ result = search_for_album(token, "Get Up")
 album_id = result["id"]
 album = get_album(token, album_id)
 print(album)
+"""

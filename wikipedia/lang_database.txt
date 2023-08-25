@@ -17,7 +17,8 @@ by
 with
 from
 or
-rb
+r
+b
 civilrightsactivist
 politicalactivist
 recordproducer
@@ -65,6 +66,10 @@ mathrock
 postrock
 poppunk
 powerpop
+altpop
+bedroompop
+newjackswing
+teenpop
 this
 they
 be

@@ -42,7 +42,7 @@ def wiki_scrape_bot(url):
                         break
     
     for i in data_list:
-        if i[0] == "Occupations" or i[0] == "Occupation" or i[0] == "Occupation(s)" or i[0] == "Genres" or i[0] == "Instruments" or i[0] == "Instrument(s)" or i[0] == "Movement":
+        if i[0] in ("Occupations", "Occupation", "Occupation(s)", "Genre", "Genres", "Instruments", "Instrument(s)", "Movement"):
             i[1]=i[1].replace(" ","")
             i[1] = wordninja.split(i[1])
             for j in range(len(i[1])):

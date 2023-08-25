@@ -4,11 +4,11 @@ from import_requests import get_pages
 
 NOTION_TOKEN = "secret_SMfvYsCKecVMjPMQ2KsssmffUnyt7xF5XtMX8xfB2GP"
 
-DATABASE_ID = "9d6f4d0a5e664f409b12d999414b6986" #example people
+#DATABASE_ID = "9d6f4d0a5e664f409b12d999414b6986" #example people
 #DATABASE_ID = "da11a187af89415493a0fd51bcd78d38" #example movies
 #DATABASE_ID = "5b64a7e0e6ab4cb8b2844923bedcfc44" #list of movies
 #DATABASE_ID = "42d0dfaed2c7453ab71e078efc252147" #example tv shows
-#DATABASE_ID = "2759f521c1594fc5864b55dd85abe85b" #example albums
+DATABASE_ID = "2759f521c1594fc5864b55dd85abe85b" #example albums
 
 headers = {
     "Authorization": "Bearer " + NOTION_TOKEN,
@@ -28,11 +28,11 @@ def create_page(data: dict):
 def update_page(page_id: str, data: dict):
     url = f"https://api.notion.com/v1/pages/{page_id}"
     for key in data:
-        if key != 'emoji':
-            payload = {"properties": data}
+        if key in ('emoji', 'external'):
+            payload = {"icon": data}
             break
         else:
-            payload = {"icon": data}
+            payload = {"properties": data}
             break
     res = requests.patch(url, json=payload, headers=headers)
     return res
