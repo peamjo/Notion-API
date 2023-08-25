@@ -77,7 +77,7 @@ songs = get_songs_by_artist(token, artist_id)
 #    print(f"{idx + 1}. {song['name']}")
 
 
-result = search_for_album(token, "Made in the A.M.")
+result = search_for_album(token, "Get Up")
 album_id = result["id"]
 album = get_album(token, album_id)
 print(album)

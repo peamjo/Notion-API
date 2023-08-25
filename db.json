@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "5ea0dbe7-b1cb-4ad1-a10e-7ec78efa2e39",
-            "created_time": "2023-08-24T17:00:00.000Z",
-            "last_edited_time": "2023-08-24T17:00:00.000Z",
+            "id": "22643cff-ddd0-476b-8489-5b43ebeae696",
+            "created_time": "2023-08-25T06:25:00.000Z",
+            "last_edited_time": "2023-08-25T06:25:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -25,7 +25,7 @@
                 "Created time": {
                     "id": "%3A%60L%7D",
                     "type": "created_time",
-                    "created_time": "2023-08-24T17:00:00.000Z"
+                    "created_time": "2023-08-25T06:25:00.000Z"
                 },
                 "YoB": {
                     "id": "ECFj",
@@ -88,8 +88,8 @@
                 },
                 "Gender": {
                     "id": "v%5CfL",
-                    "type": "select",
-                    "select": null
+                    "type": "multi_select",
+                    "multi_select": []
                 },
                 "Instrument(s)": {
                     "id": "vaGk",
@@ -113,7 +113,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Arctic Monkeys",
+                                "content": "American Football (band)",
                                 "link": null
                             },
                             "annotations": {
@@ -124,13 +124,409 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Arctic Monkeys",
+                            "plain_text": "American Football (band)",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Arctic-Monkeys-5ea0dbe7b1cb4ad1a10e7ec78efa2e39",
+            "url": "https://www.notion.so/American-Football-band-22643cffddd0476b84895b43ebeae696",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "8ee6b250-63f6-4697-9927-ef34c59c410f",
+            "created_time": "2023-08-25T06:14:00.000Z",
+            "last_edited_time": "2023-08-25T06:14:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🏴󠁧󠁢󠁥󠁮󠁧󠁿"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-25T06:14:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": null
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "24b32801-5407-4fb5-b912-23f867764068",
+                            "name": "England",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/One_Direction"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "2010 to 2016",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "2010 to 2016",
+                            "href": null
+                        }
+                    ]
+                },
+                "Art Style/Movement": {
+                    "id": "cWP%7D",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Looked Into": {
+                    "id": "dnJB",
+                    "type": "status",
+                    "status": {
+                        "id": "82980d2f-e3c8-4683-8408-39d2e52661b5",
+                        "name": "Not started",
+                        "color": "default"
+                    }
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Genres (Music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "8edfcfd4-80b2-45ad-87c7-d1404e88f949",
+                            "name": "Pop",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "72d1f223-5080-403f-8d9b-6f5d6033faf1",
+                            "name": "Pop Rock",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                            "name": "Male",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": null
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "969e0599-f46e-40ef-a840-1e729ae7d107",
+                            "name": " London",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "One Direction",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "One Direction",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/One-Direction-8ee6b25063f646979927ef34c59c410f",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "6cc0495d-7bd2-4f51-978d-f688267bb31a",
+            "created_time": "2023-08-25T06:09:00.000Z",
+            "last_edited_time": "2023-08-25T06:09:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🇦🇺"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "9d6f4d0a-5e66-4f40-9b12-d999414b6986"
+            },
+            "archived": false,
+            "properties": {
+                "Created time": {
+                    "id": "%3A%60L%7D",
+                    "type": "created_time",
+                    "created_time": "2023-08-25T06:09:00.000Z"
+                },
+                "YoB": {
+                    "id": "ECFj",
+                    "type": "number",
+                    "number": null
+                },
+                "Country": {
+                    "id": "Gt%5BC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "bb903f0c-8ca8-48cd-a8e8-1ea3d7f3b832",
+                            "name": "Australia",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Wiki": {
+                    "id": "OZCe",
+                    "type": "url",
+                    "url": "https://en.wikipedia.org/wiki/5_Seconds_Of_Summer"
+                },
+                "YoD": {
+                    "id": "P%3D%60Q",
+                    "type": "number",
+                    "number": null
+                },
+                "Ethnicity": {
+                    "id": "QCv%3D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fbffdc11-0183-4a6d-b2cf-7375ad9e3030",
+                            "name": "White",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Years active": {
+                    "id": "%5E%3EVc",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "2011 to present",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "2011 to present",
+                            "href": null
+                        }
+                    ]
+                },
+                "Art Style/Movement": {
+                    "id": "cWP%7D",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Looked Into": {
+                    "id": "dnJB",
+                    "type": "status",
+                    "status": {
+                        "id": "82980d2f-e3c8-4683-8408-39d2e52661b5",
+                        "name": "Not started",
+                        "color": "default"
+                    }
+                },
+                "Group": {
+                    "id": "jTF%60",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Job(s)": {
+                    "id": "mNBM",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Genres (Music)": {
+                    "id": "t~lk",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "72d1f223-5080-403f-8d9b-6f5d6033faf1",
+                            "name": "Pop Rock",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "8edfcfd4-80b2-45ad-87c7-d1404e88f949",
+                            "name": "Pop",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "70fe23f2-1606-40b7-81b4-d30087dab892",
+                            "name": "Punk",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "2a6b1b66-aaf0-4bd0-8a3d-64cde488edaa",
+                            "name": "Power",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "16c97a2f-82d5-470d-9f80-7df519ba88a0",
+                            "name": "New Wave",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Gender": {
+                    "id": "v%5CfL",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "0ca37441-36af-4b1d-bf37-83d9d705f8f1",
+                            "name": "Male",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Instrument(s)": {
+                    "id": "vaGk",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date": {
+                    "id": "xYFl",
+                    "type": "date",
+                    "date": null
+                },
+                "City/Region": {
+                    "id": "%7CtND",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "7cd145a3-9090-41c4-a571-8e45e3b8019a",
+                            "name": "Sydney",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "0666155f-e862-4147-8343-5cf5d364a3e9",
+                            "name": "New South Wales",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "5 Seconds Of Summer",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "5 Seconds Of Summer",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/5-Seconds-Of-Summer-6cc0495d7bd24f51978df688267bb31a",
             "public_url": null
         }
     ],
