@@ -151,7 +151,7 @@ def edit_movie_data(individual, pages, info, name):
                 create_content(page_id, update_data)
             except:
                 pass
-            with open(str(Path.cwd().joinpath('wikipedia','quoted_emojis.txt')), encoding="utf8") as f:
+            with open(str(Path.cwd().joinpath('wikipedia','emojis.txt')), encoding="utf8") as f:
                 data = f.read()
                 random_emoji=random.randrange(0, len(data))
                 add_emoji(page, [0, data[random_emoji]])
@@ -182,4 +182,4 @@ def add_or_edit_notion_movies(movies_list):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_movies(["The Avengers"])
+add_or_edit_notion_movies(["Elemental"])

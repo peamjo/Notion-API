@@ -1,5 +1,8 @@
 from pathlib import Path
 
+# by Bas van der Linden on StackOverflow
+ #https://stackoverflow.com/questions/74601508/how-to-add-double-quotes-to-a-string-in-text-file
+
 def same_line_quotation():
 # each word is on the same line of the input file, separated by spaces
     text = ""
