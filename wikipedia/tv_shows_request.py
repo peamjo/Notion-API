@@ -4,7 +4,12 @@ from add_to_notion import add_title, add_text, add_number, add_multiselect, add_
 from get_info import input_names
 from import_requests import get_pages
 from final_transfer import update_page, create_page, create_content
+from dotenv import load_dotenv
+import os
+from property_exceptions import country_exceptions
 
+load_dotenv()
+database_id = os.getenv("EXAMPLE_TV_SHOWS_DATABASE_ID")
 
 def get_tv_show_info(tv_show_name):
     tv_show_information = [[tv_show_name]]
@@ -57,6 +62,7 @@ def get_tv_show_info(tv_show_name):
     for company in data["production_companies"]:
         production_companies.append(company["name"])
     for country in data["production_countries"]:
+        country["name"] = country_exceptions(country["name"])
         countries.append(country["name"])
     for channel in data["networks"]:
         channels.append(channel["name"])
@@ -122,15 +128,15 @@ def add_or_edit_notion_tv(tv_show_list):
         try:
             name, url, property_name = input_names(tv)
             info = get_tv_show_info(tv)
-            pages = get_pages()
+            pages = get_pages(database_id)
             exist = False
             for page in pages:
                 og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
                 if og_name == name:
                     exist = True
             if exist == False:
-                create_page(property_name)
-                pages = get_pages()
+                create_page(property_name, database_id)
+                pages = get_pages(database_id)
             edit_tv_show_data((info[0])[0], pages, info, name)
         except KeyboardInterrupt:
             break
@@ -141,4 +147,4 @@ def add_or_edit_notion_tv(tv_show_list):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_tv(["Beef"])
+add_or_edit_notion_tv(["Luke Cage"])

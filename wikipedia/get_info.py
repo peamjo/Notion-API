@@ -3,6 +3,8 @@ import json
 import string
 from pathlib import Path
 from import_requests import get_pages
+from dotenv import load_dotenv
+import os
 from wikipedia_summary import wiki_summary
 from property_exceptions import city_exceptions, country_exceptions, job_exception
 from wiki_scraping_final import wiki_scrape_bot
@@ -10,6 +12,9 @@ from get_images import get_images, convert_to_jpg
 from final_transfer import update_page, create_page, create_content
 from face_recognition import face_recognition, majority_race_gender
 from add_to_notion import add_text, add_number, add_select, add_multiselect, add_url, add_emoji, add_date
+
+load_dotenv()
+database_id = os.getenv("EXAMPLE_PEOPLE_DATABASE_ID")
 
 #input_name = input_names("Search: ")
 def input_names(input_name):
@@ -164,7 +169,7 @@ def edit_data(individual, pages, info, name):
                 if property[0] == 'Flag': add_emoji(page, property)
                 if property[0] == 'Occupations': add_multiselect(page, "Job(s)", property)
                 if property[0] == 'Wiki': add_url(page, "Wiki", property)
-                if property[0] == 'Genres (Music)': add_multiselect(page, "Genres (Music)", property)
+                if property[0] == 'Genres (Music)': add_multiselect(page, "Genre (Music)", property)
                 if property[0] == 'Instrument(s)': add_multiselect(page, "Instrument(s)", property)
                 if property[0] == 'Art Style/Movement': add_multiselect(page, "Art Style/Movement", property)
             summary = wiki_summary(name)
@@ -203,23 +208,23 @@ def add_or_edit_notion_wiki(people_list):
             info.append(["Gender", gender])
             info.append(["Ethnicity", ethnicity])
             print("Final List: ", info)
-            pages = get_pages()
+            pages = get_pages(database_id)
             exist = False
             for page in pages:
                 og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
                 if og_name == name:
                     exist = True
             if exist == False:
-                create_page(property_name)
-                pages = get_pages()
+                create_page(property_name, database_id)
+                pages = get_pages(database_id)
             edit_data((info[0])[0], pages, info, name)
         except KeyboardInterrupt:
             break
-        except:
-            error_list.append(people)
-            continue
+        #except:
+        #    error_list.append(people)
+        #    continue
     
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_wiki(["American Football (band)"])
+#add_or_edit_notion_wiki(["Trevor Wallace"])

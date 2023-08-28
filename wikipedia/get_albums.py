@@ -16,12 +16,12 @@ import base64
 from requests import post, get
 from music_request import get_token, get_album, search_for_album, get_album_tracks
 
+load_dotenv()
+database_id = os.getenv("EXAMPLE_ALBUMS_DATABASE_ID")
+
 #input_name = input_names("Search: ")
 def input_names(input_name):
-    if input_name[:2] != "DJ":
-        name = string.capwords(input_name)
-    else:
-        name = "DJ " + string.capwords(input_name).split(" ",1)[1]
+    name = input_name
     lists = name.split()
     word = "_".join(lists)
     url = "https://en.wikipedia.org/wiki/" + word
@@ -94,8 +94,8 @@ def add_or_edit_notion_wiki(people_list, artist=[""]):
             name, url = input_names(people)
             og_url = url
             data=[]
-            if artist == [""]:
-                data = wiki_scrape_bot(url)
+            data = wiki_scrape_bot(url)
+            print(url)
             if data == []:
                 url = r"https://en.wikipedia.org/wiki/"+people+"_("+artist[counter].replace(" ","_")+"_album)"
                 data = wiki_scrape_bot(url)
@@ -116,15 +116,15 @@ def add_or_edit_notion_wiki(people_list, artist=[""]):
             "Name": {"title": [{"text": {"content": album_name}}]},
             }
             print("Final List: ", info)
-            pages = get_pages()
+            pages = get_pages(database_id)
             exist = False
             for page in pages:
                 og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
                 if og_name == album_name:
                     exist = True
             if exist == False:
-                create_page(property_name)
-                pages = get_pages()
+                create_page(property_name, database_id)
+                pages = get_pages(database_id)
             edit_data(album_name, pages, info, url)
         except KeyboardInterrupt:
             break
@@ -135,4 +135,4 @@ def add_or_edit_notion_wiki(people_list, artist=[""]):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_wiki(["My World"],["Aespa"])
+add_or_edit_notion_wiki(["Unorthodox Jukebox"],["Bruno Mars"])

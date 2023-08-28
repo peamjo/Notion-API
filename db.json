@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "a49f9998-9245-4a17-b144-7b5c233bf08d",
-            "created_time": "2023-08-25T17:07:00.000Z",
-            "last_edited_time": "2023-08-25T17:07:00.000Z",
+            "id": "5e7d1709-d51b-4cd2-a85f-c50cdc75aeef",
+            "created_time": "2023-08-28T16:55:00.000Z",
+            "last_edited_time": "2023-08-28T16:55:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -18,197 +18,89 @@
             "icon": null,
             "parent": {
                 "type": "database_id",
-                "database_id": "2759f521-c159-4fc5-864b-55dd85abe85b"
+                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
             },
             "archived": false,
             "properties": {
-                "Producer(s)": {
-                    "id": "IjcT",
+                "Region(s)": {
+                    "id": "%3Af%7Df",
                     "type": "multi_select",
                     "multi_select": []
                 },
-                "Artist(s)": {
-                    "id": "Pd%7Cb",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Wiki": {
-                    "id": "Tlbr",
-                    "type": "url",
-                    "url": null
-                },
-                "Recorded": {
-                    "id": "W%3C%3AX",
-                    "type": "rich_text",
-                    "rich_text": []
-                },
-                "Label(s)": {
-                    "id": "ijMB",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Track(s)": {
-                    "id": "j%3DHH",
+                "Runtime (mins)": {
+                    "id": "%40QfO",
                     "type": "number",
                     "number": null
                 },
-                "Release Date": {
-                    "id": "nhTz",
+                "Writer(s)": {
+                    "id": "%40~%3C_",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Producer(s)": {
+                    "id": "LM%3CH",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Production Company": {
+                    "id": "Lqim",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Decade": {
+                    "id": "M%5D%7D%3C",
+                    "type": "select",
+                    "select": null
+                },
+                "Language(s)": {
+                    "id": "QlKl",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Director(s)": {
+                    "id": "S%5BcC",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Starring": {
+                    "id": "V%3ERB",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date Released": {
+                    "id": "VZeU",
                     "type": "date",
                     "date": null
                 },
-                "Genre(s)": {
-                    "id": "%7BVQc",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Length (mins)": {
-                    "id": "%7B%5DxX",
+                "TMDB Score": {
+                    "id": "WBe%3E",
                     "type": "number",
                     "number": null
                 },
-                "Name": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "MY WORLD - The 3rd Mini Album",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "MY WORLD - The 3rd Mini Album",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/MY-WORLD-The-3rd-Mini-Album-a49f999892454a17b1447b5c233bf08d",
-            "public_url": null
-        },
-        {
-            "object": "page",
-            "id": "57c0d0c8-4551-423a-ac9c-878a80153494",
-            "created_time": "2023-08-25T17:03:00.000Z",
-            "last_edited_time": "2023-08-25T17:03:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "cover": null,
-            "icon": {
-                "type": "external",
-                "external": {
-                    "url": "https://i.scdn.co/image/ab67616d0000b273ce7d499847da02a9cbd1c084"
-                }
-            },
-            "parent": {
-                "type": "database_id",
-                "database_id": "2759f521-c159-4fc5-864b-55dd85abe85b"
-            },
-            "archived": false,
-            "properties": {
-                "Producer(s)": {
-                    "id": "IjcT",
+                "Worldwide Gross": {
+                    "id": "WwvX",
+                    "type": "number",
+                    "number": null
+                },
+                "Cinematographer(s)": {
+                    "id": "%5DZv%3E",
                     "type": "multi_select",
                     "multi_select": []
                 },
-                "Artist(s)": {
-                    "id": "Pd%7Cb",
+                "Composer(s)": {
+                    "id": "%5E_%5Cw",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "748c7eb0-c907-4c69-972a-7fe07c8e305b",
-                            "name": "Maroon 5",
-                            "color": "green"
-                        }
-                    ]
+                    "multi_select": []
                 },
-                "Wiki": {
-                    "id": "Tlbr",
-                    "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/Overexposed_(Maroon_5_album)"
-                },
-                "Recorded": {
-                    "id": "W%3C%3AX",
-                    "type": "rich_text",
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "Mid 2011 to Early 2012",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "Mid 2011 to Early 2012",
-                            "href": null
-                        }
-                    ]
-                },
-                "Label(s)": {
-                    "id": "ijMB",
+                "Editor(s)": {
+                    "id": "v%5Bql",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "dd2527ce-b1e5-471b-997c-9290bda3fa58",
-                            "name": "Interscope Records*",
-                            "color": "gray"
-                        }
-                    ]
-                },
-                "Track(s)": {
-                    "id": "j%3DHH",
-                    "type": "number",
-                    "number": 15
-                },
-                "Release Date": {
-                    "id": "nhTz",
-                    "type": "date",
-                    "date": {
-                        "start": "2012-01-01",
-                        "end": null,
-                        "time_zone": null
-                    }
+                    "multi_select": []
                 },
                 "Genre(s)": {
-                    "id": "%7BVQc",
+                    "id": "yffv",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "34a65f6c-a7f4-4c4f-9c27-95fe109d2151",
-                            "name": "Pop",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "76e6f06c-6836-4000-b419-202ecb31e402",
-                            "name": "Pop Rock",
-                            "color": "red"
-                        }
-                    ]
-                },
-                "Length (mins)": {
-                    "id": "%7B%5DxX",
-                    "type": "number",
-                    "number": 42.1
+                    "multi_select": []
                 },
                 "Name": {
                     "id": "title",
@@ -217,7 +109,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Overexposed (Deluxe)",
+                                "content": "Guy Ritchie's The Covenant",
                                 "link": null
                             },
                             "annotations": {
@@ -228,13 +120,13 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Overexposed (Deluxe)",
+                            "plain_text": "Guy Ritchie's The Covenant",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Overexposed-Deluxe-57c0d0c84551423aac9c878a80153494",
+            "url": "https://www.notion.so/Guy-Ritchie-s-The-Covenant-5e7d1709d51b4cd2a85fc50cdc75aeef",
             "public_url": null
         }
     ],

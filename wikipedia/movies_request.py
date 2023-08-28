@@ -4,6 +4,13 @@ from add_to_notion import add_title, add_text, add_number, add_multiselect, add_
 from get_info import input_names
 from import_requests import get_pages
 from final_transfer import update_page, create_page, create_content
+from dotenv import load_dotenv
+import os
+from wikipedia_summary import wiki_summary
+from property_exceptions import movie_country_exceptions
+
+load_dotenv()
+database_id = os.getenv("EXAMPLE_MOVIES_DATABASE_ID")
 
 def get_movie_info(movie_name):
     movie_information = [[movie_name]]
@@ -42,6 +49,7 @@ def get_movie_info(movie_name):
     for spoken_language in data["spoken_languages"]:
         spoken_languages.append(spoken_language["english_name"])
     for region in data["production_countries"]:
+        region["name"] = movie_country_exceptions(region["name"])
         regions.append(region["name"])
     for genre in data["genres"]:
         genres.append(genre["name"])
@@ -130,6 +138,16 @@ def edit_movie_data(individual, pages, info, name):
                 if property[0] == 'total gross': add_number(page, "Worldwide Gross", property)
                 if property[0] == 'runtime': add_number(page, "Runtime (mins)", property)
                 if property[0] == 'audience score': add_number(page, "TMDB Score", property)
+            summary = wiki_summary(name)
+            try:
+                if len(summary) > 1300:
+                    summary = summary[:1300]
+                    last_period = summary.rfind('.')
+                    summary = summary[:last_period+1]
+                update_data = summary
+                create_content(page_id, update_data)
+            except:
+                pass
 
 def add_or_edit_notion_movies(movies_list):
     error_list = []
@@ -138,23 +156,23 @@ def add_or_edit_notion_movies(movies_list):
         try:
             name, url, property_name = input_names(movie)
             info = get_movie_info(movie)
-            pages = get_pages()
+            pages = get_pages(database_id)
             exist = False
             for page in pages:
                 og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
                 if og_name == name:
                     exist = True
             if exist == False:
-                create_page(property_name)
-                pages = get_pages()
+                create_page(property_name, database_id)
+                pages = get_pages(database_id)
             edit_movie_data((info[0])[0], pages, info, name)
         except KeyboardInterrupt:
             break
         #except:
         #    error_list.append(movie)
-        #    continue
+        #   continue
     
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_movies(["Interstellar"])
+add_or_edit_notion_movies(["Guy Ritchie's The Covenant"])

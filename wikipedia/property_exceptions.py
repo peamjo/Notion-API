@@ -4,14 +4,29 @@ def city_exceptions(city):
     return city
 
 def country_exceptions(country):
-    if country.find("Japan") != -1:
+    if country in ("Japan"):
         country = "Japan"
-    if country.find("French") != -1:
-        i[1] = "France"
-    if country.find("German") != -1:
-        i[1] = "Germany"
-    if country in ('U.S.', 'US', 'United States'):
+    if country in ("French"):
+        country = "France"
+    if country in ("German"):
+        country = "Germany"
+    if country in ('U.S.', 'US', 'United States', 'United States of America'):
         country = 'USA'
+    if country in ('U.K.', 'UK', 'United Kingdom'):
+        country = 'UK'
+    return country
+
+def movie_country_exceptions(country):
+    if country in ("Japan"):
+        country = "Japan"
+    if country in ("French"):
+        country = "France"
+    if country in ("German"):
+        country = "Germany"
+    if country in ('U.S.', 'US', 'United States', 'United States of America'):
+        country = 'Hollywood'
+    if country in ('U.K.', 'UK'):
+        country = 'United Kingdom'
     return country
 
 def data_list_exception(data):
