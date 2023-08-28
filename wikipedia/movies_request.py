@@ -1,6 +1,6 @@
 import requests
 import json
-from add_to_notion import add_title, add_text, add_number, add_multiselect, add_date, add_select
+from add_to_notion import add_title, add_text, add_number, add_multiselect, add_date, add_select, add_emoji
 from get_info import input_names
 from import_requests import get_pages
 from final_transfer import update_page, create_page, create_content
@@ -8,6 +8,9 @@ from dotenv import load_dotenv
 import os
 from wikipedia_summary import wiki_summary
 from property_exceptions import movie_country_exceptions
+from pathlib import Path
+import random
+import emoji
 
 load_dotenv()
 database_id = os.getenv("EXAMPLE_MOVIES_DATABASE_ID")
@@ -148,6 +151,10 @@ def edit_movie_data(individual, pages, info, name):
                 create_content(page_id, update_data)
             except:
                 pass
+            with open(str(Path.cwd().joinpath('wikipedia','quoted_emojis.txt')), encoding="utf8") as f:
+                data = f.read()
+                random_emoji=random.randrange(0, len(data))
+                add_emoji(page, [0, data[random_emoji]])
 
 def add_or_edit_notion_movies(movies_list):
     error_list = []
@@ -168,11 +175,11 @@ def add_or_edit_notion_movies(movies_list):
             edit_movie_data((info[0])[0], pages, info, name)
         except KeyboardInterrupt:
             break
-        #except:
-        #    error_list.append(movie)
-        #   continue
+        except:
+            error_list.append(movie)
+            continue
     
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_movies(["Guy Ritchie's The Covenant"])
+add_or_edit_notion_movies(["The Avengers"])

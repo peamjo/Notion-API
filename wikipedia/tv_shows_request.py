@@ -1,12 +1,16 @@
 import requests
 import json
-from add_to_notion import add_title, add_text, add_number, add_multiselect, add_date, add_select, add_dates
+from add_to_notion import add_title, add_text, add_number, add_multiselect, add_date, add_select, add_dates, add_emoji
 from get_info import input_names
 from import_requests import get_pages
 from final_transfer import update_page, create_page, create_content
 from dotenv import load_dotenv
 import os
+from wikipedia_summary import wiki_summary
 from property_exceptions import country_exceptions
+from pathlib import Path
+import random
+import emoji
 
 load_dotenv()
 database_id = os.getenv("EXAMPLE_TV_SHOWS_DATABASE_ID")
@@ -101,25 +105,39 @@ def get_tv_show_info(tv_show_name):
 
 def edit_tv_show_data(individual, pages, info, name):
     for page in pages:
-            page_id = page["id"]
-            query_name = page["properties"]["Name"]["title"][0]["text"]["content"]
-            if query_name == individual:
-                for property in info:
-                    if property[0] == 'showrunner': add_multiselect(page, "Creator(s)", property)                   
-                    if property[0] == 'channels': add_multiselect(page, "Channel(s)", property)
-                    if property[0] == 'decades': add_multiselect(page, "Decade(s)", property)
-                    if property[0] == 'genres': add_multiselect(page, "Genre(s)", property)
-                    if property[0] == 'languages': add_multiselect(page, "Language(s)", property)
-                    if property[0] == 'countries': add_multiselect(page, "Country", property)
-                    if property[0] == 'production companies': add_multiselect(page, "Production Company", property)
-                    if property[0] == 'actors': add_multiselect(page, "Starring", property)
-                    if property[0] == 'runtime': add_number(page, "Runtime (mins)", property)
-                    if property[0] == 'season(s)': add_number(page, "Season(s)", property)
-                    if property[0] == 'episode(s)': add_number(page, "Episode(s)", property)
-                    if property[0] == 'first episode': 
-                        add_date(page, "Date Released", property) 
-                        date = property[1]
-                    if property[0] == 'last episode': add_dates(page, "Date Released", property, date)
+        page_id = page["id"]
+        query_name = page["properties"]["Name"]["title"][0]["text"]["content"]
+        if query_name == individual:
+            for property in info:
+                if property[0] == 'showrunner': add_multiselect(page, "Creator(s)", property)                   
+                if property[0] == 'channels': add_multiselect(page, "Channel(s)", property)
+                if property[0] == 'decades': add_multiselect(page, "Decade(s)", property)
+                if property[0] == 'genres': add_multiselect(page, "Genre(s)", property)
+                if property[0] == 'languages': add_multiselect(page, "Language(s)", property)
+                if property[0] == 'countries': add_multiselect(page, "Country", property)
+                if property[0] == 'production companies': add_multiselect(page, "Production Company", property)
+                if property[0] == 'actors': add_multiselect(page, "Starring", property)
+                if property[0] == 'runtime': add_number(page, "Runtime (mins)", property)
+                if property[0] == 'season(s)': add_number(page, "Season(s)", property)
+                if property[0] == 'episode(s)': add_number(page, "Episode(s)", property)
+                if property[0] == 'first episode': 
+                    add_date(page, "Date Released", property) 
+                    date = property[1]
+                if property[0] == 'last episode': add_dates(page, "Date Released", property, date)
+            summary = wiki_summary(name)    
+            try:
+                if len(summary) > 1300:
+                    summary = summary[:1300]
+                    last_period = summary.rfind('.')
+                    summary = summary[:last_period+1]
+                update_data = summary
+                create_content(page_id, update_data)
+            except:
+                pass
+            with open(str(Path.cwd().joinpath('wikipedia','quoted_emojis.txt')), encoding="utf8") as f:
+                data = f.read()
+                random_emoji=random.randrange(0, len(data))
+                add_emoji(page, [0, data[random_emoji]])
 
 def add_or_edit_notion_tv(tv_show_list):
     error_list = []
@@ -147,4 +165,4 @@ def add_or_edit_notion_tv(tv_show_list):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_tv(["Luke Cage"])
+add_or_edit_notion_tv(["Jessica Jones"])

@@ -3,9 +3,222 @@
     "results": [
         {
             "object": "page",
-            "id": "5e7d1709-d51b-4cd2-a85f-c50cdc75aeef",
-            "created_time": "2023-08-28T16:55:00.000Z",
-            "last_edited_time": "2023-08-28T16:55:00.000Z",
+            "id": "82002b4f-61ee-45aa-9933-e949ae651b7c",
+            "created_time": "2023-08-28T19:03:00.000Z",
+            "last_edited_time": "2023-08-28T19:22:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": null,
+            "icon": {
+                "type": "emoji",
+                "emoji": "🧱"
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
+            },
+            "archived": false,
+            "properties": {
+                "Production Company": {
+                    "id": "%3BMUb",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "8d361e7f-5182-480a-ab4d-efa5d75250a4",
+                            "name": "Tall Girls Productions",
+                            "color": "default"
+                        },
+                        {
+                            "id": "068e1e71-3885-475a-b5c3-3ae2e4de7ffd",
+                            "name": "ABC Studios",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "00d38d0b-cab4-4401-9aa2-2b6c21d8f4dc",
+                            "name": "Marvel Television",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Decade(s)": {
+                    "id": "CrPy",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9ae39762-6427-4079-8f03-9bf883c37154",
+                            "name": "2010s",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "MuFq",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "a4e74967-3506-40e3-807a-03d154aea7a6",
+                            "name": "Krysten Ritter",
+                            "color": "green"
+                        },
+                        {
+                            "id": "b9c43dd4-62ca-4bf0-87cc-2cae659631b0",
+                            "name": "Rachael Taylor",
+                            "color": "red"
+                        },
+                        {
+                            "id": "df185a8e-0822-45a3-a18c-f64c94156b8b",
+                            "name": "Eka Darville",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "365a42b2-ff08-4df7-8365-35f8219c7255",
+                            "name": "Benjamin Walker",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "3eed0d0d-c39a-4044-b608-0cc6be0a77e1",
+                            "name": "Sarita Choudhury",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "5f4ec828-e591-41d8-8b6f-381f0d4499dd",
+                            "name": "Jeremy Bobb",
+                            "color": "red"
+                        },
+                        {
+                            "id": "6aaea9ea-2852-40f6-b44c-87d7e45403bb",
+                            "name": "Tiffany Mack",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "ed418e4e-8a71-4fb9-8caf-7694c1a29c5a",
+                            "name": "Carrie-Anne Moss",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Season(s)": {
+                    "id": "NW%3CO",
+                    "type": "number",
+                    "number": 3
+                },
+                "Country": {
+                    "id": "%5EWRI",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "fa524fee-d041-4001-8760-97dcc508d92e",
+                            "name": "USA",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Genre(s)": {
+                    "id": "c%5ECU",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "825ded20-c099-420d-8e57-86aadd7d04fb",
+                            "name": "Sci-Fi & Fantasy",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "2104c3d0-70a2-49d1-9780-24b4e740af6b",
+                            "name": "Drama",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2015-11-20",
+                        "end": "2019-06-14",
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "9f896ef9-504d-4fa3-aff7-0b86f032d661",
+                            "name": "Melissa Rosenberg",
+                            "color": "red"
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 39
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ef744c78-2bb6-42ab-a67a-6008fc6ccec2",
+                            "name": "Netflix",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": 52
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Jessica Jones",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Jessica Jones",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Jessica-Jones-82002b4f61ee45aa9933e949ae651b7c",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "1cd8f418-bb99-436f-9e43-f55e94c73adb",
+            "created_time": "2023-08-28T18:49:00.000Z",
+            "last_edited_time": "2023-08-28T18:57:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -18,89 +231,161 @@
             "icon": null,
             "parent": {
                 "type": "database_id",
-                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
+                "database_id": "42d0dfae-d2c7-453a-b71e-078efc252147"
             },
             "archived": false,
             "properties": {
-                "Region(s)": {
-                    "id": "%3Af%7Df",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Runtime (mins)": {
-                    "id": "%40QfO",
-                    "type": "number",
-                    "number": null
-                },
-                "Writer(s)": {
-                    "id": "%40~%3C_",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Producer(s)": {
-                    "id": "LM%3CH",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
                 "Production Company": {
-                    "id": "Lqim",
+                    "id": "%3BMUb",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "00d38d0b-cab4-4401-9aa2-2b6c21d8f4dc",
+                            "name": "Marvel Television",
+                            "color": "red"
+                        },
+                        {
+                            "id": "068e1e71-3885-475a-b5c3-3ae2e4de7ffd",
+                            "name": "ABC Studios",
+                            "color": "pink"
+                        }
+                    ]
                 },
-                "Decade": {
-                    "id": "M%5D%7D%3C",
-                    "type": "select",
-                    "select": null
-                },
-                "Language(s)": {
-                    "id": "QlKl",
+                "Decade(s)": {
+                    "id": "CrPy",
                     "type": "multi_select",
-                    "multi_select": []
-                },
-                "Director(s)": {
-                    "id": "S%5BcC",
-                    "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "9ae39762-6427-4079-8f03-9bf883c37154",
+                            "name": "2010s",
+                            "color": "brown"
+                        }
+                    ]
                 },
                 "Starring": {
-                    "id": "V%3ERB",
+                    "id": "MuFq",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "33abc83a-53c7-4f43-a2a7-37a849476138",
+                            "name": "Mike Colter",
+                            "color": "default"
+                        },
+                        {
+                            "id": "4bf5d79c-b6e6-4d86-ad52-475e11486e2a",
+                            "name": "Alfre Woodard",
+                            "color": "green"
+                        },
+                        {
+                            "id": "7147dcff-d941-42e2-84dd-0eab1221b4ab",
+                            "name": "Simone Missick",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "858e4607-3c7e-4f8b-bd10-3a137fa0ef95",
+                            "name": "Theo Rossi",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "5afd451e-750b-44ea-bee9-4f6a8c2e7a3f",
+                            "name": "Mustafa Shakir",
+                            "color": "blue"
+                        }
+                    ]
                 },
-                "Date Released": {
-                    "id": "VZeU",
-                    "type": "date",
-                    "date": null
-                },
-                "TMDB Score": {
-                    "id": "WBe%3E",
+                "Season(s)": {
+                    "id": "NW%3CO",
                     "type": "number",
-                    "number": null
+                    "number": 2
                 },
-                "Worldwide Gross": {
-                    "id": "WwvX",
-                    "type": "number",
-                    "number": null
-                },
-                "Cinematographer(s)": {
-                    "id": "%5DZv%3E",
+                "Country": {
+                    "id": "%5EWRI",
                     "type": "multi_select",
-                    "multi_select": []
-                },
-                "Composer(s)": {
-                    "id": "%5E_%5Cw",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Editor(s)": {
-                    "id": "v%5Bql",
-                    "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "fa524fee-d041-4001-8760-97dcc508d92e",
+                            "name": "USA",
+                            "color": "default"
+                        }
+                    ]
                 },
                 "Genre(s)": {
-                    "id": "yffv",
+                    "id": "c%5ECU",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "2104c3d0-70a2-49d1-9780-24b4e740af6b",
+                            "name": "Drama",
+                            "color": "gray"
+                        },
+                        {
+                            "id": "825ded20-c099-420d-8e57-86aadd7d04fb",
+                            "name": "Sci-Fi & Fantasy",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "f006cbce-82d7-4f10-ad9b-c83070f759e0",
+                            "name": "Action & Adventure",
+                            "color": "default"
+                        },
+                        {
+                            "id": "aa547806-f035-47d3-bfba-a80010879b43",
+                            "name": "Crime",
+                            "color": "purple"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "eTOy",
+                    "type": "date",
+                    "date": {
+                        "start": "2016-09-30",
+                        "end": "2018-06-22",
+                        "time_zone": null
+                    }
+                },
+                "Creator(s)": {
+                    "id": "ib_N",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e09c6511-7875-428e-9017-61f43b77c6ca",
+                            "name": "Cheo Hodari Coker",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Language(s)": {
+                    "id": "lXu%7D",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "2c6206bc-11c1-4007-84a0-8562202d92c5",
+                            "name": "en",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Episode(s)": {
+                    "id": "ovmi",
+                    "type": "number",
+                    "number": 26
+                },
+                "Channel(s)": {
+                    "id": "%7BEf%3F",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "ef744c78-2bb6-42ab-a67a-6008fc6ccec2",
+                            "name": "Netflix",
+                            "color": "brown"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%7DsYw",
+                    "type": "number",
+                    "number": 46
                 },
                 "Name": {
                     "id": "title",
@@ -109,7 +394,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Guy Ritchie's The Covenant",
+                                "content": "Luke Cage",
                                 "link": null
                             },
                             "annotations": {
@@ -120,13 +405,13 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Guy Ritchie's The Covenant",
+                            "plain_text": "Luke Cage",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Guy-Ritchie-s-The-Covenant-5e7d1709d51b4cd2a85fc50cdc75aeef",
+            "url": "https://www.notion.so/Luke-Cage-1cd8f418bb99436f9e43f55e94c73adb",
             "public_url": null
         }
     ],
