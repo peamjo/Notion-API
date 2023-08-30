@@ -1,4 +1,4 @@
-from final_transfer import update_page
+from final_transfer import update_page, update_cover_page
 
 def add_title(page, value, property):
     update_data = {value: {"title": [{"text": {"content": property[1]}}]}}
@@ -40,6 +40,11 @@ def add_icon_image(page, property):
     if page["icon"] == None:
         update_data = {"external": {"url": property[1]}}
         update_page(page["id"], update_data)
+
+def add_cover_image(page, property):
+    if page["cover"] == None:
+        update_data = {"external": {"url": property[1]}}
+        update_cover_page(page["id"], update_data)
 
 def add_url(page, value, property):
     if page["properties"][value]["url"] == None:

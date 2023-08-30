@@ -1,23 +1,27 @@
-import re
+import base64
 import json
+import os
+import re
 import string
 from pathlib import Path
-from import_requests import get_pages
-from wikipedia_summary import wiki_summary
-from property_exceptions import city_exceptions, country_exceptions, job_exception
-from wiki_scraping_final import wiki_scrape_bot
-from get_images import get_images, convert_to_jpg
-from final_transfer import update_page, create_page, create_content
-from face_recognition import face_recognition, majority_race_gender
-from add_to_notion import add_text, add_number, add_select, add_multiselect, add_url, add_icon_image, add_date
-from dotenv import load_dotenv
-import os
-import base64
-from requests import post, get
-from music_request import get_token, get_album, search_for_album, get_album_tracks
 
-load_dotenv()
-database_id = os.getenv("EXAMPLE_ALBUMS_DATABASE_ID")
+from add_to_notion import (add_date, add_icon_image, add_multiselect,
+                           add_number, add_select, add_text, add_url)
+from dotenv import load_dotenv
+from face_recognition import face_recognition, majority_race_gender
+from final_transfer import create_content, create_page, update_page
+from get_images import convert_to_jpg, get_images
+from get_info import get_location
+from import_requests import get_pages
+from music_request import (get_album, get_album_tracks, get_token,
+                           search_for_album)
+from notion_functions import *
+from property_exceptions import (city_exceptions, country_exceptions,
+                                 job_exception)
+from requests import get, post
+from wiki_scraping_final import wiki_scrape_bot
+from wikipedia_summary import wiki_summary
+
 
 #input_name = input_names("Search: ")
 def input_names(input_name):
@@ -86,6 +90,8 @@ def edit_data(individual, pages, info, url):
                         create_content(page_id, update_data)
 
 def add_or_edit_notion_wiki(people_list, artist=[""]):
+    load_dotenv()
+    database_id = os.getenv("EXAMPLE_ALBUMS_DATABASE_ID")
     job = []
     error_list = []
 

@@ -18,8 +18,7 @@ def convert_to_jpg(name):
     for filename in os.listdir(directory):
         f = os.path.join(directory, filename)
         f_split = (os.path.join(directory, filename)).split(".")
-        jpg = ".jpg"
-        os.rename(f, f_split[0]+jpg)
+        os.rename(f, f_split[0]+".jpg")
 
 
 # def convert_to_jpg(name):

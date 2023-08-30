@@ -36,7 +36,15 @@ def different_line_quotation():
     updated_text = ",\n".join(updated_words)
 
     # write to some file
-    with open(str(Path.cwd().joinpath('wikipedia','final_emojis.txt')), 'w') as ofile:
+    with open(str(Path.cwd().joinpath('wikipedia','final_emojis.txt')), 'w', encoding="utf8") as ofile:
         ofile.write(updated_text)
 
-same_line_quotation()
+def remove_spaces():
+    text = ""
+    with open(str(Path.cwd().joinpath('wikipedia','emojis.txt')), 'r', encoding="utf8") as ifile:
+        text = ifile.readline()
+        updated_text = text.replace(" ", "")
+    with open(str(Path.cwd().joinpath('wikipedia','no_space_emojis.txt')), 'w', encoding="utf8") as ofile:
+        ofile.write(updated_text)
+
+remove_spaces()

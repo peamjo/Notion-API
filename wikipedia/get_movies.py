@@ -1,19 +1,21 @@
-import requests
 import json
-from add_to_notion import add_title, add_text, add_number, add_multiselect, add_date, add_select, add_emoji
+import os
+import random
+from pathlib import Path
+
+import emoji
+import requests
+from add_to_notion import (add_cover_image, add_date, add_emoji,
+                           add_icon_image, add_multiselect, add_number,
+                           add_select, add_text, add_title)
+from dotenv import load_dotenv
+from final_transfer import create_content, create_page, update_page
 from get_info import input_names
 from import_requests import get_pages
-from final_transfer import update_page, create_page, create_content
-from dotenv import load_dotenv
-import os
-from wikipedia_summary import wiki_summary
+from notion_functions import *
 from property_exceptions import movie_country_exceptions
-from pathlib import Path
-import random
-import emoji
+from wikipedia_summary import wiki_summary
 
-load_dotenv()
-database_id = os.getenv("EXAMPLE_MOVIES_DATABASE_ID")
 
 def get_movie_info(movie_name):
     movie_information = [[movie_name]]
@@ -23,7 +25,7 @@ def get_movie_info(movie_name):
 
     headers = {
         "accept": "application/json",
-        "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NTdkMzM4MTQ3ZDc2NDk0NzI0MWI0NWU4ODhkYTdmMyIsInN1YiI6IjY0ZTQ3OTIxZTBjYTdmMDBlMzQ5NWVkYyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.TpJ9RDJ5qQmjDzDFp_Y9x1JDFrSFgvt4PJIY5mYQabU"
+        "Authorization": rf"Bearer {client_id_and_secret}"
     }
 
     response = requests.get(get_id_url, headers=headers)
@@ -48,6 +50,8 @@ def get_movie_info(movie_name):
     release_date = data["release_date"]
     total_gross = data["revenue"]
     runtime = data["runtime"]
+    backdrop_url = 'https://image.tmdb.org/t/p/original'+data["backdrop_path"]
+    poster_url = 'https://image.tmdb.org/t/p/w342/'+data["poster_path"]
     audience_score = data["vote_average"]
     for spoken_language in data["spoken_languages"]:
         spoken_languages.append(spoken_language["english_name"])
@@ -72,6 +76,8 @@ def get_movie_info(movie_name):
     movie_information.append(["production companies", production_companies])
     movie_information.append(["total gross", total_gross])
     movie_information.append(["runtime", runtime])
+    movie_information.append(["backdrop_url", backdrop_url])
+    movie_information.append(["poster_url", poster_url])
 
     get_credits = rf"https://api.themoviedb.org/3/movie/{movie_id}/credits"
     response = requests.get(get_credits, headers=headers)
@@ -141,7 +147,21 @@ def edit_movie_data(individual, pages, info, name):
                 if property[0] == 'total gross': add_number(page, "Worldwide Gross", property)
                 if property[0] == 'runtime': add_number(page, "Runtime (mins)", property)
                 if property[0] == 'audience score': add_number(page, "TMDB Score", property)
-            summary = wiki_summary(name)
+                if property[0] == 'description': create_content(page_id, property[1])
+                if property[0] == 'backdrop_url': 
+                    try:
+                        add_cover_image(page, property)
+                    except:
+                        pass
+                if property[0] == 'poster_url':
+                    try:
+                        add_icon_image(page, property)
+                    except:
+                        with open(str(Path.cwd().joinpath('wikipedia','no_space_emojis.txt')), encoding="utf8") as f:
+                            data = f.read()
+                            random_emoji=random.randrange(0, len(data))
+                            add_emoji(page, [0, data[random_emoji]])
+            summary = wiki_summary(name)    
             try:
                 if len(summary) > 1300:
                     summary = summary[:1300]
@@ -151,12 +171,11 @@ def edit_movie_data(individual, pages, info, name):
                 create_content(page_id, update_data)
             except:
                 pass
-            with open(str(Path.cwd().joinpath('wikipedia','emojis.txt')), encoding="utf8") as f:
-                data = f.read()
-                random_emoji=random.randrange(0, len(data))
-                add_emoji(page, [0, data[random_emoji]])
 
 def add_or_edit_notion_movies(movies_list):
+    load_dotenv()
+    database_id = os.getenv("EXAMPLE_MOVIES_DATABASE_ID")
+    client_id_and_secret = os.getenv("TMDB_CLIENT_ID_AND_SECRET")
     error_list = []
 
     for movie in movies_list:
@@ -182,4 +201,4 @@ def add_or_edit_notion_movies(movies_list):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_movies(["Elemental"])
+add_or_edit_notion_movies(["Inception"])

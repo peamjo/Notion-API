@@ -33,6 +33,13 @@ def update_page(page_id: str, data: dict):
     res = requests.patch(url, json=payload, headers=HEADERS)
     return res
 
+def update_cover_page(page_id: str, data: dict):
+    url = f"https://api.notion.com/v1/pages/{page_id}"
+    for key in data:
+        payload = {"cover": data}
+    res = requests.patch(url, json=payload, headers=HEADERS)
+    return res
+
 def create_content(page_id: str, data: str):
     url = f"https://api.notion.com/v1/blocks/{page_id}/children"
     payload = {
