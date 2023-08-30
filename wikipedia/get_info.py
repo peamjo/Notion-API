@@ -24,11 +24,11 @@ def get_info(data_from_wiki, person_name, url):
 
     for counter, property in enumerate(data_from_wiki):
         if property[0] == "Died":
-            death_date = split_brackets(property)
+            death_date = split_brackets(property[1])
             person_info_list.append(['Died', death_date])
             person_info_list.append(['YoD', death_date.split("-",1)[0]])
         if property[0] == "Born":
-            birth_date = split_brackets(property)
+            birth_date = split_brackets(property[1])
             if (data_from_wiki[counter+1])[0] == "Died":
                 find_digit = re.findall(r'\d', property[1])
                 last_num = find_digit[-1]
@@ -68,7 +68,7 @@ def get_info(data_from_wiki, person_name, url):
         if property[0] == "Movement":
             person_info_list.append(['Art Style/Movement', property[1]])
         if property[0] in ("Years active", "Turned pro"):
-            property[1]= split_hyphens(property)
+            property[1]= split_hyphens(property[1])
             person_info_list.append(['Years active', property[1]])
         if property[0] == "Retired":
             person_info_list.append(['Retired', property[1]])
@@ -85,8 +85,8 @@ def get_gender_and_ethnicity(person):
         ethnicity_for_each_pic_list.append(ethnicity_count)
     return (gender_for_each_pic_list, ethnicity_for_each_pic_list)
 
-def edit_person_data(pages, person_info_list, person_name):
-    for page in pages:
+def edit_person_data(notion_pages, person_name, person_info_list):
+    for page in notion_pages:
         page_id = page["id"]
         query_name = page["properties"]["Name"]["title"][0]["text"]["content"]
         if query_name == person_name:
@@ -133,16 +133,16 @@ def edit_person_data(pages, person_info_list, person_name):
 def add_or_edit_notion_person(people_list):
     load_dotenv()
     database_id = os.getenv("EXAMPLE_PEOPLE_DATABASE_ID")
-    job = []
+    jobs = []
     error_list = []
 
     for person in people_list:
         try:
-            person_name, url, person_property_name = process_names(person)
+            person_name, url, person_property_name = process_input(person)
             data_from_wiki = wiki_scrape_bot(url)
             person_info_list = get_info(data_from_wiki, person_name, url)
-            if job != []:
-                add_or_check_jobs(person_info_list, job)
+            if jobs != []:
+                add_or_check_jobs_list(person_info_list, jobs)
             get_images(person_name)
             convert_to_jpg(person_name)
             gender_for_each_pic_list, ethnicity_for_each_pic_list = get_gender_and_ethnicity(person_name)
@@ -150,13 +150,13 @@ def add_or_edit_notion_person(people_list):
             person_info_list.append(["Gender", gender])
             person_info_list.append(["Ethnicity", ethnicity])
             print("Final List: ", person_info_list)
-            pages = add_or_check_pages(database_id, person_property_name, person_name)
-            edit_person_data(pages, person_info_list, person_name)
+            notion_pages = add_or_check_pages(database_id, person_name, person_property_name)
+            edit_person_data(notion_pages, person_name, person_info_list)
         except KeyboardInterrupt:
             break
-        #except:
-        #    error_list.append(person)
-        #    continue
+        except:
+            error_list.append(person)
+            continue
     
     if error_list != []:
         print("Error List:", error_list)

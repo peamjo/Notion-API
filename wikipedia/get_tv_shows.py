@@ -10,15 +10,14 @@ from add_to_notion import (add_cover_image, add_date, add_dates, add_emoji,
                            add_select, add_text, add_title)
 from dotenv import load_dotenv
 from final_transfer import create_content, create_page, update_page
-from get_info import input_names
 from import_requests import get_pages
 from iso639 import languages
 from notion_functions import *
 from property_exceptions import country_exceptions
 from wikipedia_summary import wiki_summary
 
-
 def get_tv_show_info(tv_show_name):
+    client_id_and_secret = os.getenv("TMDB_CLIENT_ID_AND_SECRET")
     tv_show_information = [[tv_show_name]]
     tv = tv_show_name.replace(" ","+")
 
@@ -163,12 +162,11 @@ def edit_tv_show_data(individual, pages, info, name):
 def add_or_edit_notion_tv(tv_show_list):
     load_dotenv()
     database_id = os.getenv("EXAMPLE_TV_SHOWS_DATABASE_ID")
-    client_id_and_secret = os.getenv("TMDB_CLIENT_ID_AND_SECRET")
     error_list = []
 
     for tv in tv_show_list:
         try:
-            name, url, property_name = input_names(tv)
+            name, url, property_name = process_input(tv)
             info = get_tv_show_info(tv)
             pages = get_pages(database_id)
             exist = False
@@ -182,9 +180,9 @@ def add_or_edit_notion_tv(tv_show_list):
             edit_tv_show_data((info[0])[0], pages, info, name)
         except KeyboardInterrupt:
             break
-        #except:
-        #    error_list.append(tv)
-        #    continue
+        except:
+            error_list.append(tv)
+            continue
     
     if error_list != []:
         print("Error List:", error_list)

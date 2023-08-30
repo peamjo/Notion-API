@@ -5,26 +5,26 @@ import re
 import string
 from pathlib import Path
 
-from add_to_notion import (add_date, add_icon_image, add_multiselect,
-                           add_number, add_select, add_text, add_url)
+from add_to_notion import (add_cover_image, add_date, add_icon_image,
+                           add_multiselect, add_number, add_select, add_text,
+                           add_url)
 from dotenv import load_dotenv
 from face_recognition import face_recognition, majority_race_gender
 from final_transfer import create_content, create_page, update_page
 from get_images import convert_to_jpg, get_images
-from get_info import get_location
 from import_requests import get_pages
 from music_request import (get_album, get_album_tracks, get_token,
                            search_for_album)
-from notion_functions import *
 from property_exceptions import (city_exceptions, country_exceptions,
                                  job_exception)
 from requests import get, post
 from wiki_scraping_final import wiki_scrape_bot
 from wikipedia_summary import wiki_summary
+from notion_functions import *
 
 
 #input_name = input_names("Search: ")
-def input_names(input_name):
+def process_input(input_name):
     name = input_name
     lists = name.split()
     word = "_".join(lists)
@@ -46,6 +46,7 @@ def get_info(data, name, url):
     result = search_for_album(token, name)
     album_id = result["id"]
     album = get_album(token, album_id)
+
     info.append(['Wiki', url])
     info.append(['Artist(s)', album["artists"][0]["name"]])
     info.append(['Icon Image', album["images"][0]["url"]])
@@ -66,7 +67,9 @@ def edit_data(individual, pages, info, url):
         query_name = page["properties"]["Name"]["title"][0]["text"]["content"]
         if query_name == individual:
             for property in info:
-                if property[0] == 'Icon Image': add_icon_image(page, property)
+                if property[0] == 'Icon Image': 
+                    add_icon_image(page, property)
+                    add_cover_image(page, property)
                 if property[0] == 'Recorded': add_text(page, "Recorded", property)
                 if property[0] == 'Wiki': add_url(page, "Wiki", property)
                 if property[0] == 'Genre(s)': add_multiselect(page, "Genre(s)", property)
@@ -97,11 +100,10 @@ def add_or_edit_notion_wiki(people_list, artist=[""]):
 
     for counter, people in enumerate(people_list):
         try:
-            name, url = input_names(people)
+            name, url = process_input(people)
             og_url = url
-            data=[]
+            data = []
             data = wiki_scrape_bot(url)
-            print(url)
             if data == []:
                 url = r"https://en.wikipedia.org/wiki/"+people+"_("+artist[counter].replace(" ","_")+"_album)"
                 data = wiki_scrape_bot(url)
@@ -122,23 +124,15 @@ def add_or_edit_notion_wiki(people_list, artist=[""]):
             "Name": {"title": [{"text": {"content": album_name}}]},
             }
             print("Final List: ", info)
-            pages = get_pages(database_id)
-            exist = False
-            for page in pages:
-                og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
-                if og_name == album_name:
-                    exist = True
-            if exist == False:
-                create_page(property_name, database_id)
-                pages = get_pages(database_id)
+            pages = add_or_check_pages(database_id, album_name, property_name)
             edit_data(album_name, pages, info, url)
         except KeyboardInterrupt:
             break
-        #except:
-        #    error_list.append(people)
-        #    continue
+        except:
+            error_list.append(people)
+            continue
     
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_wiki(["Unorthodox Jukebox"],["Bruno Mars"])
+add_or_edit_notion_wiki(["24K Magic"],["Bruno Mars"])

@@ -1,23 +1,19 @@
-import json
-import os
-import random
-from pathlib import Path
-
-import emoji
 import requests
-from add_to_notion import (add_cover_image, add_date, add_emoji,
-                           add_icon_image, add_multiselect, add_number,
-                           add_select, add_text, add_title)
-from dotenv import load_dotenv
-from final_transfer import create_content, create_page, update_page
-from get_info import input_names
+import json
+from add_to_notion import add_title, add_text, add_number, add_multiselect, add_date, add_select, add_emoji, add_icon_image, add_cover_image
 from import_requests import get_pages
-from notion_functions import *
-from property_exceptions import movie_country_exceptions
+from final_transfer import update_page, create_page, create_content
+from dotenv import load_dotenv
+import os
 from wikipedia_summary import wiki_summary
-
+from property_exceptions import movie_country_exceptions
+from pathlib import Path
+import random
+import emoji
+from notion_functions import *
 
 def get_movie_info(movie_name):
+    client_id_and_secret = os.getenv("TMDB_CLIENT_ID_AND_SECRET")
     movie_information = [[movie_name]]
     movie = movie_name.replace(" ","+")
 
@@ -175,12 +171,11 @@ def edit_movie_data(individual, pages, info, name):
 def add_or_edit_notion_movies(movies_list):
     load_dotenv()
     database_id = os.getenv("EXAMPLE_MOVIES_DATABASE_ID")
-    client_id_and_secret = os.getenv("TMDB_CLIENT_ID_AND_SECRET")
     error_list = []
 
     for movie in movies_list:
         try:
-            name, url, property_name = input_names(movie)
+            name, url, property_name = process_input(movie)
             info = get_movie_info(movie)
             pages = get_pages(database_id)
             exist = False

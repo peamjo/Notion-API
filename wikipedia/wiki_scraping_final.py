@@ -53,5 +53,4 @@ def wiki_scrape_bot(url):
                 list_property = (' '.join(list_property))
                 (i[1])[j] = data_list_exception(list_property)
 
-    print(data_list)
     return (data_list)
