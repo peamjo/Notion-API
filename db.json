@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "53227ca8-c62b-4726-b553-0fad08beba66",
-            "created_time": "2023-08-30T18:46:00.000Z",
-            "last_edited_time": "2023-08-30T18:46:00.000Z",
+            "id": "5a9d731e-4d47-4b3e-b253-25cd89071e12",
+            "created_time": "2023-08-30T18:54:00.000Z",
+            "last_edited_time": "2023-08-30T18:54:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
@@ -14,18 +14,8 @@
                 "object": "user",
                 "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
             },
-            "cover": {
-                "type": "external",
-                "external": {
-                    "url": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5"
-                }
-            },
-            "icon": {
-                "type": "external",
-                "external": {
-                    "url": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5"
-                }
-            },
+            "cover": null,
+            "icon": null,
             "parent": {
                 "type": "database_id",
                 "database_id": "2759f521-c159-4fc5-864b-55dd85abe85b"
@@ -40,97 +30,42 @@
                 "Artist(s)": {
                     "id": "Pd%7Cb",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "892c87c7-9be1-4032-b074-3fbaa7c4118b",
-                            "name": "Bruno Mars",
-                            "color": "orange"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Wiki": {
                     "id": "Tlbr",
                     "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/24K_Magic_(album)"
+                    "url": null
                 },
                 "Recorded": {
                     "id": "W%3C%3AX",
                     "type": "rich_text",
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "2015 to 2016",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "2015 to 2016",
-                            "href": null
-                        }
-                    ]
+                    "rich_text": []
                 },
                 "Label(s)": {
                     "id": "ijMB",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "5a66fbad-deaa-41d3-a8a6-6855c53460e8",
-                            "name": "Atlantic Records",
-                            "color": "pink"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Track(s)": {
                     "id": "j%3DHH",
                     "type": "number",
-                    "number": 9
+                    "number": null
                 },
                 "Release Date": {
                     "id": "nhTz",
                     "type": "date",
-                    "date": {
-                        "start": "2016-11-17",
-                        "end": null,
-                        "time_zone": null
-                    }
+                    "date": null
                 },
                 "Genre(s)": {
                     "id": "%7BVQc",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "0382f142-0325-4e2f-b328-d3f23431e7a2",
-                            "name": "R&B",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "bdd88354-be89-4915-855a-5e7ffb083422",
-                            "name": "Funk",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "34a65f6c-a7f4-4c4f-9c27-95fe109d2151",
-                            "name": "Pop",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "c101931a-ca3e-4976-bd6b-dbf2dd510604",
-                            "name": "New Jack Swing",
-                            "color": "blue"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Length (mins)": {
                     "id": "%7B%5DxX",
                     "type": "number",
-                    "number": 33.28
+                    "number": null
                 },
                 "Name": {
                     "id": "title",
@@ -156,165 +91,7 @@
                     ]
                 }
             },
-            "url": "https://www.notion.so/24K-Magic-53227ca8c62b4726b5530fad08beba66",
-            "public_url": null
-        },
-        {
-            "object": "page",
-            "id": "13fcb200-3614-4b9a-8bf6-741eaa4ba968",
-            "created_time": "2023-08-30T18:45:00.000Z",
-            "last_edited_time": "2023-08-30T18:46:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
-            },
-            "cover": {
-                "type": "external",
-                "external": {
-                    "url": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5"
-                }
-            },
-            "icon": {
-                "type": "external",
-                "external": {
-                    "url": "https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5"
-                }
-            },
-            "parent": {
-                "type": "database_id",
-                "database_id": "2759f521-c159-4fc5-864b-55dd85abe85b"
-            },
-            "archived": false,
-            "properties": {
-                "Producer(s)": {
-                    "id": "IjcT",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Artist(s)": {
-                    "id": "Pd%7Cb",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "892c87c7-9be1-4032-b074-3fbaa7c4118b",
-                            "name": "Bruno Mars",
-                            "color": "orange"
-                        }
-                    ]
-                },
-                "Wiki": {
-                    "id": "Tlbr",
-                    "type": "url",
-                    "url": "https://en.wikipedia.org/wiki/24K_Magic_(album)"
-                },
-                "Recorded": {
-                    "id": "W%3C%3AX",
-                    "type": "rich_text",
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "2015 to 2016",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "2015 to 2016",
-                            "href": null
-                        }
-                    ]
-                },
-                "Label(s)": {
-                    "id": "ijMB",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "5a66fbad-deaa-41d3-a8a6-6855c53460e8",
-                            "name": "Atlantic Records",
-                            "color": "pink"
-                        }
-                    ]
-                },
-                "Track(s)": {
-                    "id": "j%3DHH",
-                    "type": "number",
-                    "number": 9
-                },
-                "Release Date": {
-                    "id": "nhTz",
-                    "type": "date",
-                    "date": {
-                        "start": "2016-11-17",
-                        "end": null,
-                        "time_zone": null
-                    }
-                },
-                "Genre(s)": {
-                    "id": "%7BVQc",
-                    "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "0382f142-0325-4e2f-b328-d3f23431e7a2",
-                            "name": "R&B",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "bdd88354-be89-4915-855a-5e7ffb083422",
-                            "name": "Funk",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "34a65f6c-a7f4-4c4f-9c27-95fe109d2151",
-                            "name": "Pop",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "c101931a-ca3e-4976-bd6b-dbf2dd510604",
-                            "name": "New Jack Swing",
-                            "color": "blue"
-                        }
-                    ]
-                },
-                "Length (mins)": {
-                    "id": "%7B%5DxX",
-                    "type": "number",
-                    "number": 33.28
-                },
-                "Name": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "24K Magic",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "24K Magic",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/24K-Magic-13fcb20036144b9a8bf6741eaa4ba968",
+            "url": "https://www.notion.so/24K-Magic-5a9d731e4d474b3eb25325cd89071e12",
             "public_url": null
         }
     ],

@@ -92,6 +92,26 @@ def edit_data(individual, pages, info, url):
                         update_data = str(property[1]).replace("[","").replace("]","").replace("'","").replace('"',"").replace(", ",f"\n")
                         create_content(page_id, update_data)
 
+def check_for_wiki_url(url, people, artist, counter):
+    og_url = url
+    data = []
+    data = wiki_scrape_bot(url)
+    if data == []:
+        url = r"https://en.wikipedia.org/wiki/"+people+"_("+artist[counter].replace(" ","_")+"_album)"
+        data = wiki_scrape_bot(url)
+    if data == []:
+        url = r"https://en.wikipedia.org/wiki/"+people+"_("+artist[counter].replace(" ","_")+"_EP)"
+        data = wiki_scrape_bot(url)
+    if data == []:
+        url = og_url + "_(album)"
+        data = wiki_scrape_bot(url)
+    if data == []:
+        url = og_url + "_(EP)"
+        data = wiki_scrape_bot(url)
+    if data == []:
+        return og_url, data
+    return url, data
+
 def add_or_edit_notion_wiki(people_list, artist=[""]):
     load_dotenv()
     database_id = os.getenv("EXAMPLE_ALBUMS_DATABASE_ID")
@@ -101,21 +121,7 @@ def add_or_edit_notion_wiki(people_list, artist=[""]):
     for counter, people in enumerate(people_list):
         try:
             name, url = process_input(people)
-            og_url = url
-            data = []
-            data = wiki_scrape_bot(url)
-            if data == []:
-                url = r"https://en.wikipedia.org/wiki/"+people+"_("+artist[counter].replace(" ","_")+"_album)"
-                data = wiki_scrape_bot(url)
-            if data == []:
-                url = r"https://en.wikipedia.org/wiki/"+people+"_("+artist[counter].replace(" ","_")+"_EP)"
-                data = wiki_scrape_bot(url)
-            if data == []:
-                url = og_url + "_(album)"
-                data = wiki_scrape_bot(url)
-            if data == []:
-                url = og_url + "_(EP)"
-                data = wiki_scrape_bot(url)
+            url, data = check_for_wiki_url(url, people, artist, counter)
             if artist[counter] != "":
                 name = name + " (" + artist[counter] + ")"
             info = get_info(data, name, url)
@@ -128,9 +134,9 @@ def add_or_edit_notion_wiki(people_list, artist=[""]):
             edit_data(album_name, pages, info, url)
         except KeyboardInterrupt:
             break
-        except:
-            error_list.append(people)
-            continue
+        #except:
+        #    error_list.append(people)
+        #   continue
     
     if error_list != []:
         print("Error List:", error_list)
