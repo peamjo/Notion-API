@@ -1,5 +1,4 @@
 from final_transfer import update_page, update_cover_page
-from final_transfer import create_content
 from wikipedia_summary import wiki_summary
 
 def add_title(page, property, data):

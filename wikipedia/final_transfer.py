@@ -14,9 +14,9 @@ HEADERS = {
     "Notion-Version": "2022-06-28",
 }
 
-def create_page(data: dict, cover_data, icon_data, database_id):
+def create_page(data: dict, cover_data, icon_data, database_id, content):
     create_url = "https://api.notion.com/v1/pages"
-    payload = {"parent": {"database_id": database_id}, "cover": cover_data, "icon": icon_data, "properties": data}
+    payload = {"parent": {"database_id": database_id}, "cover": cover_data, "icon": icon_data, "properties": data, "children": [content]}
     res = requests.post(create_url, headers=HEADERS, json=payload)
     # print(res.status_code)
     return res
@@ -39,23 +39,6 @@ def update_cover_page(page_id: str, data: dict):
         payload = {"cover": data}
     res = requests.patch(url, json=payload, headers=HEADERS)
     return res
-
-def create_content(page_id: str, data: str):
-    url = f"https://api.notion.com/v1/blocks/{page_id}/children"
-    payload = {
-        "children": [
-            {
-                "object": "block",
-                "type": "paragraph",
-                "paragraph": {
-                    "rich_text": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": data,}}]}}]}
-    res = requests.patch(url, json=payload, headers=HEADERS)
-    return res
-
 
 def date_to_yob(page):
     props = page["properties"]

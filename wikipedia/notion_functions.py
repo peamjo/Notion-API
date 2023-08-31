@@ -7,7 +7,7 @@ from pathlib import Path
 from new_add_to_notion import (add_date, add_emoji, add_multiselect, add_number,
                            add_select, add_text, add_url)
 from face_recognition import face_recognition, majority_race_gender
-from final_transfer import create_content, create_page, update_page
+from final_transfer import create_page, update_page
 from get_images import convert_to_jpg, get_images
 from import_requests import get_pages
 from property_exceptions import (city_exceptions, country_exceptions,

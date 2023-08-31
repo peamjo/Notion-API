@@ -1,5 +1,4 @@
 from final_transfer import update_page, update_cover_page
-from final_transfer import create_content
 from wikipedia_summary import wiki_summary
 
 def create_title(property, data, creation_data):
@@ -69,14 +68,26 @@ def create_cover_image(data):
     creation_data = update_data[1:len(update_data)-1]
     return creation_data
 
-def create_summary(page, name):
+def create_summary(name, description="There is no summary available"):
     summary = wiki_summary(name)
     try:
         if len(summary) > 1300:
             summary = summary[:1300]
             last_period = summary.rfind('.')
             summary = summary[:last_period+1]
-        update_data = summary
-        create_content(page["id"], update_data)
+        summary = summary + "\n" + description
     except:
-        pass
+        summary = description
+    update_data = str({
+        "children": [
+        {
+            "object": "block",
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": summary}}]}}]})
+    creation_data = update_data[14:len(update_data)-2]
+    return creation_data

@@ -8,7 +8,7 @@ from pathlib import Path
 import emoji
 import requests
 from dotenv import load_dotenv
-from final_transfer import create_content, create_page, update_page
+from final_transfer import create_page, update_page
 from import_requests import get_pages
 from new_add_to_notion import *
 from new_create_notion import *
@@ -115,7 +115,7 @@ def get_info_and_create_movie(movie_name, database_id):
 
     creation_data = "{"+ creation_data[:len(creation_data)-1] +"}"
     creation_data = ast.literal_eval(creation_data)
-    print(creation_data)
+    #print(creation_data)
 
     icon_data = "{" + icon_data.replace("'",'"') + "}"
     icon_data = json.loads(icon_data)
@@ -123,10 +123,10 @@ def get_info_and_create_movie(movie_name, database_id):
     cover_data = "{" + cover_data.replace("'",'"') + "}"
     cover_data = json.loads(cover_data)
 
-    page = create_page(creation_data, cover_data, icon_data, database_id)
-    print(page)
-    #create_content(page["id"], movie_description)
-    #add_summary(page, movie_name)
+    summary = create_summary(movie_name, movie_description)
+    summary = ast.literal_eval(summary)
+
+    create_page(creation_data, cover_data, icon_data, database_id, summary)
 
 
 def add_or_edit_notion_movies(movies_list):
@@ -156,4 +156,4 @@ def add_or_edit_notion_movies(movies_list):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_movies(["The Big Short"])
+add_or_edit_notion_movies(["Barbie"])
