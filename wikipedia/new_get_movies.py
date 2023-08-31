@@ -1,6 +1,8 @@
+import ast
 import json
 import os
 import random
+import re
 from pathlib import Path
 
 import emoji
@@ -9,16 +11,15 @@ from dotenv import load_dotenv
 from final_transfer import create_content, create_page, update_page
 from import_requests import get_pages
 from new_add_to_notion import *
+from new_create_notion import *
 from notion_functions import *
 from property_exceptions import movie_country_exceptions
 from wikipedia_summary import wiki_summary
 
 
-def get_and_add_movie_info(movie_name, pages):
-    for page in pages:
-        if movie_name == page["properties"]["Name"]["title"][0]["text"]["content"]:
-            page = page
-            break
+def get_info_and_create_movie(movie_name, database_id):
+    creation_data = ""
+
     client_id_and_secret = os.getenv("TMDB_CLIENT_ID_AND_SECRET")
     
     movie_for_url = movie_name.replace(" ","+")
@@ -91,31 +92,41 @@ def get_and_add_movie_info(movie_name, pages):
             editors.append(crew["name"])
         if crew["job"] == 'Writer':
             writers.append(crew["name"])
-
-    movie_information = [[title] + ["directors", directors] + ["genres", genres] + ["writers", writers] + ["producers", producers] + ["cinematographers", cinematographers] + ["actors", actors] + ["release date", release_date] + ["decade", decade] + ["editors", editors] + ["regions", regions] + ["composers", composers] + ["languages", spoken_languages] + ["production companies", production_companies] + ["total gross", total_gross] + ["runtime", runtime] + ["audience score", audience_score] + ["poster_url", poster_url] + ["backdrop_url", backdrop_url] + ["description", movie_description]]
-
-    print(movie_information)
     
-    add_multiselect(page, "Director(s)", directors)
-    add_multiselect(page, "Genre(s)", genres)
-    add_multiselect(page, "Writer(s)", writers)
-    add_multiselect(page, "Producer(s)", producers)
-    add_multiselect(page, "Cinematographer(s)", cinematographers)
-    add_multiselect(page, "Starring", actors)
-    add_date(page, "Date Released", release_date)
-    add_select(page, "Decade", decade)
-    add_multiselect(page, "Editor(s)", editors)
-    add_multiselect(page, "Region(s)", regions)
-    add_multiselect(page, "Composer(s)", composers)
-    add_multiselect(page, "Language(s)", spoken_languages)
-    add_multiselect(page, "Production Company", production_companies)
-    add_number(page, "Worldwide Gross", total_gross)
-    add_number(page, "Runtime (mins)", runtime)
-    add_number(page, "TMDB Score", audience_score)
-    add_icon_image(page, poster_url)
-    add_cover_image(page, backdrop_url)
-    create_content(page["id"], movie_description)
-    add_summary(page, movie_name)
+    creation_data = create_title("Name", title, creation_data)
+    creation_data = create_multiselect("Director(s)", directors, creation_data)
+    creation_data = create_multiselect("Genre(s)", genres, creation_data)
+    creation_data = create_multiselect("Writer(s)", writers, creation_data)
+    creation_data = create_multiselect("Producer(s)", producers, creation_data)
+    creation_data = create_multiselect("Cinematographer(s)", cinematographers, creation_data)
+    creation_data = create_multiselect("Starring", actors, creation_data)
+    creation_data = create_date("Date Released", release_date, creation_data)
+    creation_data = create_select("Decade", decade, creation_data)
+    creation_data = create_multiselect("Editor(s)", editors, creation_data)
+    creation_data = create_multiselect("Region(s)", regions, creation_data)
+    creation_data = create_multiselect("Composer(s)", composers, creation_data)
+    creation_data = create_multiselect("Language(s)", spoken_languages, creation_data)
+    creation_data = create_multiselect("Production Company", production_companies, creation_data)
+    creation_data = create_number("Worldwide Gross", total_gross, creation_data)
+    creation_data = create_number("Runtime (mins)", runtime, creation_data)
+    creation_data = create_number("TMDB Score", audience_score, creation_data)
+    icon_data = create_icon_image(poster_url)
+    cover_data = create_cover_image(backdrop_url)
+
+    creation_data = "{"+ creation_data[:len(creation_data)-1] +"}"
+    creation_data = ast.literal_eval(creation_data)
+    print(creation_data)
+
+    icon_data = "{" + icon_data.replace("'",'"') + "}"
+    icon_data = json.loads(icon_data)
+
+    cover_data = "{" + cover_data.replace("'",'"') + "}"
+    cover_data = json.loads(cover_data)
+
+    page = create_page(creation_data, cover_data, icon_data, database_id)
+    print(page)
+    #create_content(page["id"], movie_description)
+    #add_summary(page, movie_name)
 
 
 def add_or_edit_notion_movies(movies_list):
@@ -127,21 +138,22 @@ def add_or_edit_notion_movies(movies_list):
     for movie in movies_list:
         try:
             name, url, property_name = process_input(movie)
+            load_pages(database_id, topic)
             with open(str(Path.cwd().joinpath(topic+'-db.json')), encoding="utf8") as file:
                 movies_pages = json.loads(file.read())["results"]
             movie_exist = check_pages(database_id, movies_pages, name, property_name, topic)
             if movie_exist == False:
-                #create_movie_page
+                get_info_and_create_movie(movie, database_id)
             else:
+                pass
                 #update_movie_page
-            get_and_add_movie_info(movie, movies_pages)
         except KeyboardInterrupt:
             break
-        #except:
-        #    error_list.append(movie)
-        #    continue
+        except:
+            error_list.append(movie)
+            continue
     
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_movies(["Ant-Man"])
+add_or_edit_notion_movies(["The Big Short"])

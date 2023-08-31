@@ -14,9 +14,9 @@ HEADERS = {
     "Notion-Version": "2022-06-28",
 }
 
-def create_page(data: dict, database_id):
+def create_page(data: dict, cover_data, icon_data, database_id):
     create_url = "https://api.notion.com/v1/pages"
-    payload = {"parent": {"database_id": database_id}, "properties": data}
+    payload = {"parent": {"database_id": database_id}, "cover": cover_data, "icon": icon_data, "properties": data}
     res = requests.post(create_url, headers=HEADERS, json=payload)
     # print(res.status_code)
     return res
