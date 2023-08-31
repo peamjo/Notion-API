@@ -1,4 +1,6 @@
 from final_transfer import update_page, update_cover_page
+from final_transfer import create_content
+from wikipedia_summary import wiki_summary
 
 def add_title(page, property, data):
     update_data = {property: {"title": [{"text": {"content": data}}]}}
@@ -20,16 +22,19 @@ def add_select(page, property, data):
         update_page(page["id"], update_data)
 
 def add_multiselect(page, property, data):
-    if page["properties"][property]["multi_select"] == []:
-        property_list = []
-        if isinstance(data[1], list):
-            for j in data[1]:
-                j = {"name": j}
-                property_list.append(j)
-            update_data = {property: {"multi_select": property_list}}
-        else:
-            update_data = {property: {"multi_select": [{"name": data[1]}]}}
-        update_page(page["id"], update_data)
+    try:
+        if page["properties"][property]["multi_select"] == []:
+            property_list = []
+            if isinstance(data, list):
+                for j in data:
+                    j = {"name": j}
+                    property_list.append(j)
+                update_data = {property: {"multi_select": property_list}}
+            else:
+                update_data = {property: {"multi_select": [{"name": data}]}}
+            update_page(page["id"], update_data)
+    except:
+        pass
 
 def add_emoji(page, data):
     if page["icon"] == None:
@@ -59,3 +64,15 @@ def add_date(page, property, data):
 def add_dates(page, property, data, date):
     update_data = {property: {"date": {"start": date, "end": data}}}
     update_page(page["id"], update_data)
+
+def add_summary(page, name):
+    summary = wiki_summary(name)
+    try:
+        if len(summary) > 1300:
+            summary = summary[:1300]
+            last_period = summary.rfind('.')
+            summary = summary[:last_period+1]
+        update_data = summary
+        create_content(page["id"], update_data)
+    except:
+        pass

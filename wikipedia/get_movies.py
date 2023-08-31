@@ -177,15 +177,7 @@ def add_or_edit_notion_movies(movies_list):
         try:
             name, url, property_name = process_input(movie)
             info = get_movie_info(movie)
-            pages = get_pages(database_id)
-            exist = False
-            for page in pages:
-                og_name = page["properties"]["Name"]["title"][0]["text"]["content"]
-                if og_name == name:
-                    exist = True
-            if exist == False:
-                create_page(property_name, database_id)
-                pages = get_pages(database_id)
+            pages = add_or_check_pages(database_id, name, property_name)
             edit_movie_data((info[0])[0], pages, info, name)
         except KeyboardInterrupt:
             break
@@ -196,4 +188,4 @@ def add_or_edit_notion_movies(movies_list):
     if error_list != []:
         print("Error List:", error_list)
 
-add_or_edit_notion_movies(["Inception"])
+add_or_edit_notion_movies(["Southpaw"])

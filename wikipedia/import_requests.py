@@ -4,16 +4,15 @@ from datetime import datetime, timezone
 from dotenv import load_dotenv
 import os
 
-load_dotenv()
-notion_token = os.getenv("NOTION_TOKEN")
+def get_pages(database_id, topic, num_pages=None):
+    load_dotenv()
+    notion_token = os.getenv("NOTION_TOKEN")
 
-HEADERS = {
-    "Authorization": "Bearer " + notion_token,
-    "Content-Type": "application/json",
-    "Notion-Version": "2022-06-28",
-}
-
-def get_pages(database_id, num_pages=None):
+    HEADERS = {
+        "Authorization": "Bearer " + notion_token,
+        "Content-Type": "application/json",
+        "Notion-Version": "2022-06-28",
+    }
     url = f"https://api.notion.com/v1/databases/{database_id}/query"
 
     get_all = num_pages is None
@@ -24,7 +23,7 @@ def get_pages(database_id, num_pages=None):
 
     data = response.json()
 
-    with open('db.json', 'w', encoding='utf8') as f:
+    with open(topic+'-db.json', 'w', encoding='utf8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
     results = data["results"]
