@@ -44,7 +44,12 @@ def data_list_exception(data):
         data = "Business Person"
     if data in ("Actress"):
         data = "Actor"
-    return(data)
+    return data
+
+def language_exceptions(data):
+    if data == "No Language":
+        data = "Silent"
+    return data
 
 def job_exception(data):
     if data in ("Actress"):

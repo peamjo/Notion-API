@@ -13,7 +13,7 @@ from face_recognition import face_recognition, majority_race_gender
 from final_transfer import create_content, create_page, update_page
 from get_images import convert_to_jpg, get_images
 from import_requests import get_pages
-from music_request import (get_album, get_album_tracks, get_token,
+from spotify_request import (get_album, get_album_tracks, get_token,
                            search_for_album)
 from property_exceptions import (city_exceptions, country_exceptions,
                                  job_exception)

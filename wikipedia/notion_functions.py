@@ -4,8 +4,7 @@ import re
 import string
 from pathlib import Path
 
-from new_add_to_notion import (add_date, add_emoji, add_multiselect, add_number,
-                           add_select, add_text, add_url)
+from edit_overwrite_notion import *
 from face_recognition import face_recognition, majority_race_gender
 from final_transfer import create_page, update_page
 from get_images import convert_to_jpg, get_images
@@ -62,17 +61,13 @@ def add_or_check_jobs_list(list, jobs):
     if counter == len(list):
         list.append(['Occupations', jobs])
 
-def check_pages(database_id, notion_pages, processsed_input, property_input, topic):
+def check_pages(database_id, notion_pages, processsed_input, topic):
     exist = False
     for page in notion_pages:
         existing_page_name = page["properties"]["Name"]["title"][0]["text"]["content"]
         if existing_page_name == processsed_input:
             exist = True
     return exist
-
-def load_pages(database_id, topic):
-    notion_pages = get_pages(database_id, topic)
-    return notion_pages
 
 def get_location(list, final_location):
     if len(final_location) > 3:

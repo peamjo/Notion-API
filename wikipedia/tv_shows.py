@@ -18,10 +18,11 @@ from wikipedia_summary import wiki_summary
 
 def get_tv_show_info(tv_show_name):
     client_id_and_secret = os.getenv("TMDB_CLIENT_ID_AND_SECRET")
+    api_key = os.getenv("TMDB_API_KEY")
     tv_show_information = [[tv_show_name]]
     tv = tv_show_name.replace(" ","+")
 
-    get_id_url = rf'https://api.themoviedb.org/3/search/tv?query={tv}&api_key=557d338147d764947241b45e888da7f3'
+    get_id_url = rf'https://api.themoviedb.org/3/search/tv?query={tv}&api_key={api_key}'
 
     headers = {
         "accept": "application/json",
@@ -35,7 +36,7 @@ def get_tv_show_info(tv_show_name):
         tv_id = page["id"]
         break
 
-    get_description = rf'https://api.themoviedb.org/3/tv/{tv_id}?api_key=557d338147d764947241b45e888da7f3'
+    get_description = rf'https://api.themoviedb.org/3/tv/{tv_id}?api_key={api_key}'
     response = requests.get(get_description, headers=headers)
     data = response.json()
     print(data)
