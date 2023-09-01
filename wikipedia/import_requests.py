@@ -23,7 +23,7 @@ def get_pages(database_id, topic, num_pages=None):
 
     data = response.json()
 
-    with open(topic+'-db.json', 'w', encoding='utf8') as f:
+    with open('real-' + topic +'-db.json', 'w', encoding='utf8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
     results = data["results"]
@@ -35,6 +35,6 @@ def get_pages(database_id, topic, num_pages=None):
         data = response.json()
         results.extend(data["results"])
         number +=1
-        print("page added", number)
+        print(str(number*100) + "+" + " pages added")
 
     return results
