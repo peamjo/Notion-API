@@ -89,8 +89,8 @@ def create_movie(movie_name, database_id, description_data, cast_crew_data):
     for cast in cast_list:
         actors.append(cast["name"])
         actors_and_characters += (f"{cast['name']} as {cast['character']}\n")
-        counter += 1
-        if counter == 11:
+        counter += 11
+        if counter == 1:
             break
     for crew in crew_list:
         if crew["job"] == 'Director':
@@ -134,15 +134,16 @@ def create_movie(movie_name, database_id, description_data, cast_crew_data):
         composers = create_media_block(movie_name, "")
     
     template = details_plot_blocks[1:len(details_plot_blocks)-1] + ", " + summary + ", " + cast_and_characters_block + ", " + actors_and_characters + ", " + cinematography_block + ", " + cinematographers + ", " + music_block + ", " + composers + ", " + quotes_overall_blocks[1:len(quotes_overall_blocks)-1]
-    print(template)
+    #print(template)
 
     template = ast.literal_eval(template)
 
     create_page(creation_data, cover_data, icon_data, database_id, template)    
 
-def edit_movie(movie, description_data, cast_crew_data):
+def edit_movie(movie, movie_name, database_id, description_data, cast_crew_data, topic):
 
     genres, spoken_languages, regions, production_companies, countries, actors, directors, producers, cinematographers, composers, editors, writers = ([] for i in range(12))
+    actors_and_characters = ""
     
     title = description_data["title"]
     movie_description = description_data["overview"].replace("/","")
@@ -172,6 +173,7 @@ def edit_movie(movie, description_data, cast_crew_data):
 
     for cast in cast_list:
         actors.append(cast["name"])
+        actors_and_characters += (f"{cast['name']} as {cast['character']}\n")
         counter += 1
         if counter == 11:
             break
@@ -190,11 +192,11 @@ def edit_movie(movie, description_data, cast_crew_data):
             writers.append(crew["name"])
 
     overwrite_multiselect(movie, "Director(s)", directors)
+    overwrite_multiselect(movie, "Starring", actors)
     overwrite_multiselect(movie, "Genre(s)", genres)
     overwrite_multiselect(movie, "Writer(s)", writers)
     overwrite_multiselect(movie, "Producer(s)", producers)
     overwrite_multiselect(movie, "Cinematographer(s)", cinematographers)
-    overwrite_multiselect(movie, "Starring", actors)
     overwrite_date(movie, "Date Released", release_date)
     overwrite_select(movie, "Decade", decade)
     overwrite_multiselect(movie, "Editor(s)", editors)
@@ -209,8 +211,29 @@ def edit_movie(movie, description_data, cast_crew_data):
     icon_data = overwrite_icon_image(movie, poster_url)
     cover_data = overwrite_cover_image(movie, backdrop_url)
 
-    #summary = create_media_block(movie_name, movie_description)
-    #summary = ast.literal_eval(summary)
+    summary = create_media_block(movie_name, movie_description)
+    actors_and_characters = create_media_block(movie_name, actors_and_characters[:len(actors_and_characters)-1])
+    if cinematographers != []:
+        cinematographers = create_media_block(movie_name, "by " + ", ".join(cinematographers))
+    else:
+        cinematographers = create_media_block(movie_name, "")
+    if composers != []:
+        composers = create_media_block(movie_name, "by "+", ".join(composers))
+    else:
+        composers = create_media_block(movie_name, "")
+    
+    template = details_plot_blocks[1:len(details_plot_blocks)-1] + ", " + summary + ", " + cast_and_characters_block + ", " + actors_and_characters + ", " + cinematography_block + ", " + cinematographers + ", " + music_block + ", " + composers + ", " + quotes_overall_blocks[1:len(quotes_overall_blocks)-1]
+    print(template)
+
+    summary = ast.literal_eval(summary)
+    template = ast.literal_eval(template)
+
+    content = get_content(movie["id"], topic)
+
+    if content == []:
+        populate_content(movie["id"], database_id, template)
+    else:
+        populate_content(movie["id"], database_id, [summary])
 
 def populate_movie(movie, movie_name, database_id, description_data, cast_crew_data, topic):
 
@@ -312,10 +335,10 @@ def add_movies_to_notion(movies_list):
     topic = "movies"
 
     for movie in movies_list:
-       # try:
+        try:
             name, url, property_name = process_input(movie)
-            get_pages(database_id, topic)
-            with open(str(Path.cwd().joinpath(topic+'-db.json')), encoding="utf8") as file:
+            #get_pages(database_id, topic)
+            with open(str(Path.cwd().joinpath(topic +'-db.json')), encoding="utf8") as file:
                 movies_pages = json.loads(file.read())["results"]
             movie_exist = check_pages(database_id, movies_pages, movie, topic)
             if movie_exist == False:
@@ -324,9 +347,9 @@ def add_movies_to_notion(movies_list):
                 print(f"{movie} has been added to the database")
             else:
                 print(f"{movie} already exists in the database")
-      #  except KeyboardInterrupt:
+        except KeyboardInterrupt:
             break
-      #  except:
+        except:
             error_list.append(movie)
             continue
     
@@ -340,7 +363,7 @@ def edit_existing_movies_in_notion():
     error_list = []
     topic = "movies"
 
-    get_pages(database_id, topic)
+    #get_pages(database_id, topic)
     with open(str(Path.cwd().joinpath('real-' + topic + '-db.json')), encoding="utf8") as file:
         movies_pages = json.loads(file.read())["results"]
     for movie in movies_pages:
@@ -348,18 +371,22 @@ def edit_existing_movies_in_notion():
             movie_name = movie["properties"]["Name"]["title"][0]["text"]["content"]
             description_data, cast_crew_data = get_movie_info(movie_name, database_id)
             try:
-                #edit_movie(movie, description_data, cast_crew_data)
-                populate_movie(movie, movie_name, database_id, description_data, cast_crew_data, topic)
+                edit_movie(movie, movie_name, database_id, description_data, cast_crew_data, topic)
+                #populate_movie(movie, movie_name, database_id, description_data, cast_crew_data, topic)
                 print(f"{movie_name} has been edited")
             except Exception as error:
                 error_list.append(movie_name)
                 print(f"{movie_name} editing failed")
                 print("An exception occurred:", error)
         except Exception as error:
-            not_found_list.append(movie_name)
-            print(f"{movie_name} could not be found")
-            print("An exception occurred:", error)
-    
+            try:
+                not_found_list.append(movie_name)
+                print(f"{movie_name} could not be found")
+                print("An exception occurred:", error)
+            except:
+                print("Empty Page")
+
+
     if error_list != []:
         print("Error List:", error_list)
 
@@ -367,7 +394,7 @@ def edit_existing_movies_in_notion():
         print("Not Found List:", not_found_list)
 
 start = time.time()
-#add_movies_to_notion(["Toy Story 2"])
+#add_movies_to_notion(["I Origins"])
 edit_existing_movies_in_notion()
 end = time.time()
 

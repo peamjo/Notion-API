@@ -3,9 +3,9 @@
     "results": [
         {
             "object": "page",
-            "id": "e6a3f1c9-89b4-4077-9e88-c92abdc2c4f3",
-            "created_time": "2023-09-01T12:54:00.000Z",
-            "last_edited_time": "2023-09-01T12:54:00.000Z",
+            "id": "d36a6ceb-3f5a-46a0-b7b1-75b59b6de310",
+            "created_time": "2023-09-01T19:26:00.000Z",
+            "last_edited_time": "2023-09-01T19:29:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
@@ -14,8 +14,18 @@
                 "object": "user",
                 "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
             },
-            "cover": null,
-            "icon": null,
+            "cover": {
+                "type": "external",
+                "external": {
+                    "url": "https://image.tmdb.org/t/p/original/bMPeULSWPNh7R8ab1mNPSS5DMO0.jpg"
+                }
+            },
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://image.tmdb.org/t/p/w342//lDM8fxNsu8oYRmM66kZrLQnPNyw.jpg"
+                }
+            },
             "parent": {
                 "type": "database_id",
                 "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
@@ -25,77 +35,175 @@
                 "Region(s)": {
                     "id": "%3Af%7Df",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "e6b9af87-da08-469e-89e3-023edbb03ff4",
+                            "name": "France",
+                            "color": "yellow"
+                        }
+                    ]
                 },
                 "Runtime (mins)": {
                     "id": "%40QfO",
                     "type": "number",
-                    "number": null
+                    "number": 83
                 },
                 "Writer(s)": {
                     "id": "%40~%3C_",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "af084603-9ee4-4871-bf3d-5535b0e3ca3d",
+                            "name": "Raphael Cluzel",
+                            "color": "red"
+                        }
+                    ]
                 },
                 "Producer(s)": {
                     "id": "LM%3CH",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "c7c74fdb-ea3b-4df4-a5dc-2b69c140d0f4",
+                            "name": "Henri Rollin",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "2de9e5a4-669f-4c11-981f-9d414a52fe02",
+                            "name": "Jean-Claude Delayre",
+                            "color": "pink"
+                        }
+                    ]
                 },
                 "Production Company": {
                     "id": "Lqim",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "c47421d9-b649-48fc-a611-1eda922b5db6",
+                            "name": "Ministère de la culture",
+                            "color": "default"
+                        }
+                    ]
                 },
                 "Decade": {
                     "id": "M%5D%7D%3C",
                     "type": "select",
-                    "select": null
+                    "select": {
+                        "id": "e3758f41-fff7-4191-b581-e47a9f4d206f",
+                        "name": "1980s",
+                        "color": "default"
+                    }
                 },
                 "Language(s)": {
                     "id": "QlKl",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "6c177310-d543-47ef-9c1e-cfaca0c5cdfb",
+                            "name": "French",
+                            "color": "pink"
+                        }
+                    ]
                 },
                 "Director(s)": {
                     "id": "S%5BcC",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "a3ef9b94-0728-4515-b4d4-4d456df72802",
+                            "name": "René Laloux",
+                            "color": "gray"
+                        }
+                    ]
                 },
                 "Starring": {
                     "id": "V%3ERB",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "ff6bf760-2d59-41a6-a0f7-6762736976a1",
+                            "name": "Olivier Cruveiller",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "f21b7224-adf1-484b-ac6f-1a5d6880d041",
+                            "name": "Zaïra Benbadis",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "fc06a682-a052-4949-a592-6c7a9df92cbc",
+                            "name": "Claude Degliame",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "4388b466-c0e2-4950-860c-988692c2197a",
+                            "name": "Jean-Pierre Jorris",
+                            "color": "red"
+                        },
+                        {
+                            "id": "d91ebc3f-55da-4619-8226-3bbf9989a0a5",
+                            "name": "Dominique Collignon-Maurin",
+                            "color": "orange"
+                        }
+                    ]
                 },
                 "Date Released": {
                     "id": "VZeU",
                     "type": "date",
-                    "date": null
+                    "date": {
+                        "start": "1987-12-11",
+                        "end": null,
+                        "time_zone": null
+                    }
                 },
                 "TMDB Score": {
                     "id": "WBe%3E",
                     "type": "number",
-                    "number": null
+                    "number": 7.023
                 },
                 "Worldwide Gross": {
                     "id": "WwvX",
                     "type": "number",
-                    "number": null
+                    "number": 0
                 },
                 "Cinematographer(s)": {
                     "id": "%5DZv%3E",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "64e0332c-dfd8-4b0b-9d25-222c06417c89",
+                            "name": "Pierre Biecher",
+                            "color": "default"
+                        }
+                    ]
                 },
                 "Composer(s)": {
                     "id": "%5E_%5Cw",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "d50d3845-bd76-4b25-b275-121e140ee6e2",
+                            "name": "Gabriel Yared",
+                            "color": "red"
+                        },
+                        {
+                            "id": "6539959e-591a-4bc6-8730-2409c32c3625",
+                            "name": "Christian Zanessi",
+                            "color": "green"
+                        }
+                    ]
                 },
                 "Editor(s)": {
                     "id": "v%5Bql",
                     "type": "multi_select",
-                    "multi_select": []
+                    "multi_select": [
+                        {
+                            "id": "7290785f-52b5-4d31-a191-b6f33eaf1d81",
+                            "name": "Christine Pansu",
+                            "color": "purple"
+                        }
+                    ]
                 },
                 "Genre(s)": {
                     "id": "yffv",
@@ -109,7 +217,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Sword of the Stranger",
+                                "content": "Gandahar",
                                 "link": null
                             },
                             "annotations": {
@@ -120,141 +228,13 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Sword of the Stranger",
+                            "plain_text": "Gandahar",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Sword-of-the-Stranger-e6a3f1c989b440779e88c92abdc2c4f3",
-            "public_url": null
-        },
-        {
-            "object": "page",
-            "id": "ecdb1f64-d1a0-4b62-a63d-976151e8ef09",
-            "created_time": "2023-09-01T12:54:00.000Z",
-            "last_edited_time": "2023-09-01T12:54:00.000Z",
-            "created_by": {
-                "object": "user",
-                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
-            },
-            "last_edited_by": {
-                "object": "user",
-                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
-            },
-            "cover": null,
-            "icon": null,
-            "parent": {
-                "type": "database_id",
-                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
-            },
-            "archived": false,
-            "properties": {
-                "Region(s)": {
-                    "id": "%3Af%7Df",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Runtime (mins)": {
-                    "id": "%40QfO",
-                    "type": "number",
-                    "number": null
-                },
-                "Writer(s)": {
-                    "id": "%40~%3C_",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Producer(s)": {
-                    "id": "LM%3CH",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Production Company": {
-                    "id": "Lqim",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Decade": {
-                    "id": "M%5D%7D%3C",
-                    "type": "select",
-                    "select": null
-                },
-                "Language(s)": {
-                    "id": "QlKl",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Director(s)": {
-                    "id": "S%5BcC",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Starring": {
-                    "id": "V%3ERB",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Date Released": {
-                    "id": "VZeU",
-                    "type": "date",
-                    "date": null
-                },
-                "TMDB Score": {
-                    "id": "WBe%3E",
-                    "type": "number",
-                    "number": null
-                },
-                "Worldwide Gross": {
-                    "id": "WwvX",
-                    "type": "number",
-                    "number": null
-                },
-                "Cinematographer(s)": {
-                    "id": "%5DZv%3E",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Composer(s)": {
-                    "id": "%5E_%5Cw",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Editor(s)": {
-                    "id": "v%5Bql",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Genre(s)": {
-                    "id": "yffv",
-                    "type": "multi_select",
-                    "multi_select": []
-                },
-                "Name": {
-                    "id": "title",
-                    "type": "title",
-                    "title": [
-                        {
-                            "type": "text",
-                            "text": {
-                                "content": "Cars 2",
-                                "link": null
-                            },
-                            "annotations": {
-                                "bold": false,
-                                "italic": false,
-                                "strikethrough": false,
-                                "underline": false,
-                                "code": false,
-                                "color": "default"
-                            },
-                            "plain_text": "Cars 2",
-                            "href": null
-                        }
-                    ]
-                }
-            },
-            "url": "https://www.notion.so/Cars-2-ecdb1f64d1a04b62a63d976151e8ef09",
+            "url": "https://www.notion.so/Gandahar-d36a6ceb3f5a46a0b7b175b59b6de310",
             "public_url": null
         }
     ],

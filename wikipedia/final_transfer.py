@@ -18,19 +18,21 @@ def create_page(data: dict, cover_data, icon_data, database_id, content):
     create_url = "https://api.notion.com/v1/pages"
     payload = {"parent": {"database_id": database_id}, "cover": cover_data, "icon": icon_data, "properties": data, "children": content}
     res = requests.post(create_url, headers=HEADERS, json=payload)
-    # print(res.status_code)
+    print("Create Page",res.status_code, res.text)
     return res
 
 def populate_page_data(page_id: str, data: dict, cover_data, icon_data):
     url = f"https://api.notion.com/v1/pages/{page_id}"
     payload = {"cover": cover_data, "icon": icon_data, "properties": data}
     res = requests.patch(url, headers=HEADERS, json=payload)
+    print("Populate Page Data", res.status_code, res.text)
     return res
 
 def populate_content(page_id: str, database_id, content):
     url = f"https://api.notion.com/v1/blocks/{page_id}/children"
     payload = {"children": content}
     res = requests.patch(url, headers=HEADERS, json=payload)
+    print("Populate Content", res.status_code, res.text)
     return res
 
 def update_page(page_id: str, data: dict):
@@ -43,6 +45,7 @@ def update_page(page_id: str, data: dict):
             payload = {"properties": data}
             break
     res = requests.patch(url, json=payload, headers=HEADERS)
+    print("Update Page", res.status_code, res.text)
     return res
 
 def update_cover_page(page_id: str, data: dict):
@@ -50,6 +53,7 @@ def update_cover_page(page_id: str, data: dict):
     for key in data:
         payload = {"cover": data}
     res = requests.patch(url, json=payload, headers=HEADERS)
+    print("Update Cover Page", res.status_code, res.text)
     return res
 
 def date_to_yob(page):
