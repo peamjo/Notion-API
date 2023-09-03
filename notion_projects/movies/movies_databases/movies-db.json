@@ -1,0 +1,416 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "a63e0ba0-7d8d-4cde-a863-2a252504d895",
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
+            },
+            "cover": null,
+            "icon": null,
+            "parent": {
+                "type": "database_id",
+                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
+            },
+            "archived": false,
+            "properties": {
+                "Region(s)": {
+                    "id": "%3Af%7Df",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Runtime (mins)": {
+                    "id": "%40QfO",
+                    "type": "number",
+                    "number": null
+                },
+                "Writer(s)": {
+                    "id": "%40~%3C_",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Producer(s)": {
+                    "id": "LM%3CH",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Production Company": {
+                    "id": "Lqim",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Decade": {
+                    "id": "M%5D%7D%3C",
+                    "type": "select",
+                    "select": null
+                },
+                "Language(s)": {
+                    "id": "QlKl",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Director(s)": {
+                    "id": "S%5BcC",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Starring": {
+                    "id": "V%3ERB",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Date Released": {
+                    "id": "VZeU",
+                    "type": "date",
+                    "date": null
+                },
+                "TMDB Score": {
+                    "id": "WBe%3E",
+                    "type": "number",
+                    "number": null
+                },
+                "Worldwide Gross": {
+                    "id": "WwvX",
+                    "type": "number",
+                    "number": null
+                },
+                "Cinematographer(s)": {
+                    "id": "%5DZv%3E",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Composer(s)": {
+                    "id": "%5E_%5Cw",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Editor(s)": {
+                    "id": "v%5Bql",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Genre(s)": {
+                    "id": "yffv",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Ong-Bak",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Ong-Bak",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Ong-Bak-a63e0ba07d8d4cdea8632a252504d895",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70",
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "cover": {
+                "type": "external",
+                "external": {
+                    "url": "https://image.tmdb.org/t/p/original/3G1Q5xF40HkUBJXxt2DQgQzKTp5.jpg"
+                }
+            },
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://image.tmdb.org/t/p/w342//4j0PNHkMr5ax3IA8tjtxcmPU3QT.jpg"
+                }
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
+            },
+            "archived": false,
+            "properties": {
+                "Region(s)": {
+                    "id": "%3Af%7Df",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "3777a911-cdb4-4c5d-86a4-ecbbf4715c61",
+                            "name": "Hollywood",
+                            "color": "yellow"
+                        }
+                    ]
+                },
+                "Runtime (mins)": {
+                    "id": "%40QfO",
+                    "type": "number",
+                    "number": 102
+                },
+                "Writer(s)": {
+                    "id": "%40~%3C_",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Producer(s)": {
+                    "id": "LM%3CH",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "22fe71c8-d1a2-4bbc-b985-531dc9b72413",
+                            "name": "Clark Spencer",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "b3632bd9-6af9-45e7-9e01-e01e85de63ed",
+                            "name": "Yvett Merino Flores",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Production Company": {
+                    "id": "Lqim",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "74219469-18fe-4bf8-b86f-abe8a4f3eb8d",
+                            "name": "Walt Disney Animation Studios",
+                            "color": "red"
+                        },
+                        {
+                            "id": "e592eb03-c673-4319-b550-d52caccda45a",
+                            "name": "Walt Disney Pictures",
+                            "color": "gray"
+                        }
+                    ]
+                },
+                "Decade": {
+                    "id": "M%5D%7D%3C",
+                    "type": "select",
+                    "select": {
+                        "id": "295d7d35-aaf8-4686-a324-34dc8e18cf36",
+                        "name": "2020s",
+                        "color": "purple"
+                    }
+                },
+                "Language(s)": {
+                    "id": "QlKl",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "7b5ebf55-7960-415b-8d0f-46dd90d6b537",
+                            "name": "Spanish",
+                            "color": "red"
+                        },
+                        {
+                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
+                            "name": "English",
+                            "color": "orange"
+                        }
+                    ]
+                },
+                "Director(s)": {
+                    "id": "S%5BcC",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "90987b44-15a3-4da8-a5f9-e73610e210ad",
+                            "name": "Byron Howard",
+                            "color": "pink"
+                        },
+                        {
+                            "id": "9929a474-118e-4a2b-8985-e0a83e9be3d7",
+                            "name": "Jared Bush",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Starring": {
+                    "id": "V%3ERB",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "6eb5f1f1-fc2e-4b48-b02a-4a980786eccb",
+                            "name": "Stephanie Beatriz",
+                            "color": "green"
+                        },
+                        {
+                            "id": "24b203a2-d77e-4548-81af-4bee394b2179",
+                            "name": "María Cecilia Botero",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "e3058380-83d5-47ad-be9c-7a6769559ead",
+                            "name": "John Leguizamo",
+                            "color": "green"
+                        },
+                        {
+                            "id": "7c322c14-0897-4ecb-bd68-0a20dc849b2f",
+                            "name": "Diane Guerrero",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "a1a2652f-ac1b-4957-924d-697ff28bbab4",
+                            "name": "Jessica Darrow",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "40387a71-62af-46ae-b204-e59108492ec6",
+                            "name": "Carolina Gaitán",
+                            "color": "blue"
+                        },
+                        {
+                            "id": "12f5dfde-6cd0-4d4f-8012-270ec56d0401",
+                            "name": "Angie Cepeda",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "6ba5413d-18b0-4171-a87d-f41a7dcdefcf",
+                            "name": "Ravi Cabot-Conyers",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "66d5e521-9b59-4dc3-b472-759eae7e9ff0",
+                            "name": "Mauro Castillo",
+                            "color": "purple"
+                        },
+                        {
+                            "id": "7d24a4b1-1101-4d5f-bbda-07524eeeabbf",
+                            "name": "Rhenzy Feliz",
+                            "color": "orange"
+                        },
+                        {
+                            "id": "2f71b33b-7d2b-41cc-9330-c62b85146fcf",
+                            "name": "Wilmer Valderrama",
+                            "color": "default"
+                        }
+                    ]
+                },
+                "Date Released": {
+                    "id": "VZeU",
+                    "type": "date",
+                    "date": {
+                        "start": "2021-10-13",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "TMDB Score": {
+                    "id": "WBe%3E",
+                    "type": "number",
+                    "number": 7.632
+                },
+                "Worldwide Gross": {
+                    "id": "WwvX",
+                    "type": "number",
+                    "number": 253000000
+                },
+                "Cinematographer(s)": {
+                    "id": "%5DZv%3E",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Composer(s)": {
+                    "id": "%5E_%5Cw",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "e0289549-366e-4d00-bf9c-5743ec53a8b2",
+                            "name": "Germaine Franco",
+                            "color": "blue"
+                        }
+                    ]
+                },
+                "Editor(s)": {
+                    "id": "v%5Bql",
+                    "type": "multi_select",
+                    "multi_select": []
+                },
+                "Genre(s)": {
+                    "id": "yffv",
+                    "type": "multi_select",
+                    "multi_select": [
+                        {
+                            "id": "432d2b4a-7ca0-4b86-ae32-3d30df0e6d45",
+                            "name": "Animation",
+                            "color": "brown"
+                        },
+                        {
+                            "id": "50ee6c3d-5b69-48bd-918b-639c962adc99",
+                            "name": "Comedy",
+                            "color": "red"
+                        },
+                        {
+                            "id": "bb3f1bf2-1cfe-4af1-8b98-56b9e5c95b9c",
+                            "name": "Family",
+                            "color": "yellow"
+                        },
+                        {
+                            "id": "229edab9-8c26-48de-adfe-87dcecdbec39",
+                            "name": "Fantasy",
+                            "color": "green"
+                        }
+                    ]
+                },
+                "Name": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Encanto",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Encanto",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Encanto-e6efbfa3717c43f88e4ec36d45646f70",
+            "public_url": null
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {}
+}

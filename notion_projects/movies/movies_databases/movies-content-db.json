@@ -1,0 +1,564 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "block",
+            "id": "8971da6a-3e99-4295-98f3-1cfe074dfbeb",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Movie History/Details",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "yellow"
+                        },
+                        "plain_text": "Movie History/Details",
+                        "href": null
+                    }
+                ],
+                "is_toggleable": false,
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "0054357b-e3e5-44fb-b562-97170eef6b6e",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [],
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "5cd6d2a7-d812-489b-b1c4-0f795d7c43e1",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Plot",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "green"
+                        },
+                        "plain_text": "Plot",
+                        "href": null
+                    }
+                ],
+                "is_toggleable": false,
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "a571e36e-7e9e-4908-a89b-08a09d59fdda",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family—every child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family's last hope.",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "default"
+                        },
+                        "plain_text": "The tale of an extraordinary family, the Madrigals, who live hidden in the mountains of Colombia, in a magical house, in a vibrant town, in a wondrous, charmed place called an Encanto. The magic of the Encanto has blessed every child in the family—every child except one, Mirabel. But when she discovers that the magic surrounding the Encanto is in danger, Mirabel decides that she, the only ordinary Madrigal, might just be her exceptional family's last hope.",
+                        "href": null
+                    }
+                ],
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "4f392b6c-60c9-4392-a5da-b2da6a15119b",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Cast and Characters",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "pink"
+                        },
+                        "plain_text": "Cast and Characters",
+                        "href": null
+                    }
+                ],
+                "is_toggleable": false,
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "18be8355-8c73-44d8-b5d0-a503c99152b1",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Stephanie Beatriz as Mirabel Madrigal (voice)\nMaría Cecilia Botero as Abuela Alma Madrigal (voice)\nJohn Leguizamo as Bruno Madrigal (voice)\nDiane Guerrero as Isabela Madrigal (voice)\nJessica Darrow as Luisa Madrigal (voice)\nCarolina Gaitán as Pepa Madrigal (voice)\nAngie Cepeda as Julieta Madrigal  (voice)\nRavi Cabot-Conyers as Antonio Madrigal (voice)\nMauro Castillo as Félix Madrigal (voice)\nRhenzy Feliz as Camilo Madrigal (voice)\nWilmer Valderrama as Agustín Madrigal (voice)",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "default"
+                        },
+                        "plain_text": "Stephanie Beatriz as Mirabel Madrigal (voice)\nMaría Cecilia Botero as Abuela Alma Madrigal (voice)\nJohn Leguizamo as Bruno Madrigal (voice)\nDiane Guerrero as Isabela Madrigal (voice)\nJessica Darrow as Luisa Madrigal (voice)\nCarolina Gaitán as Pepa Madrigal (voice)\nAngie Cepeda as Julieta Madrigal  (voice)\nRavi Cabot-Conyers as Antonio Madrigal (voice)\nMauro Castillo as Félix Madrigal (voice)\nRhenzy Feliz as Camilo Madrigal (voice)\nWilmer Valderrama as Agustín Madrigal (voice)",
+                        "href": null
+                    }
+                ],
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "1b56bcc3-d3f2-43ca-894d-66aee82f4bc1",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Cinematography",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "gray"
+                        },
+                        "plain_text": "Cinematography",
+                        "href": null
+                    }
+                ],
+                "is_toggleable": false,
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "b896a90d-e5fe-4e65-ac9b-2d2ac7b6a3a0",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "default"
+                        },
+                        "plain_text": "",
+                        "href": null
+                    }
+                ],
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "05c24491-c077-4ba9-998d-67a42b4e7070",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Music/Film Score",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "blue"
+                        },
+                        "plain_text": "Music/Film Score",
+                        "href": null
+                    }
+                ],
+                "is_toggleable": false,
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "32782420-48c9-42c0-aa5c-a10b1e99d01d",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "by Germaine Franco",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "default"
+                        },
+                        "plain_text": "by Germaine Franco",
+                        "href": null
+                    }
+                ],
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "632c5652-4691-4c13-85a4-3f02e2b0e23f",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Quotes",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "purple"
+                        },
+                        "plain_text": "Quotes",
+                        "href": null
+                    }
+                ],
+                "is_toggleable": false,
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "7aee09d6-79e1-417a-a6b1-97effe7d03a7",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [],
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "201fcb8c-03c2-4fa3-9001-14e8b4b40511",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "heading_2",
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "type": "text",
+                        "text": {
+                            "content": "Overall",
+                            "link": null
+                        },
+                        "annotations": {
+                            "bold": false,
+                            "italic": false,
+                            "strikethrough": false,
+                            "underline": false,
+                            "code": false,
+                            "color": "brown"
+                        },
+                        "plain_text": "Overall",
+                        "href": null
+                    }
+                ],
+                "is_toggleable": false,
+                "color": "default"
+            }
+        },
+        {
+            "object": "block",
+            "id": "498e1dbc-e61f-4c96-ad2e-5e9fa4a3c763",
+            "parent": {
+                "type": "page_id",
+                "page_id": "e6efbfa3-717c-43f8-8e4e-c36d45646f70"
+            },
+            "created_time": "2023-09-03T11:38:00.000Z",
+            "last_edited_time": "2023-09-03T11:38:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+            },
+            "has_children": false,
+            "archived": false,
+            "type": "paragraph",
+            "paragraph": {
+                "rich_text": [],
+                "color": "default"
+            }
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "block",
+    "block": {}
+}

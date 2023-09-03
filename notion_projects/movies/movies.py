@@ -190,7 +190,7 @@ def create_movies_in_notion(movies_list):
     topic = "movies"
 
     get_pages(database_id, topic)
-    with open(str(Path.cwd().joinpath('notion_projects', 'movies', topic +'-db.json')), encoding="utf8") as file:
+    with open(str(Path.cwd().joinpath('notion_projects', 'movies', 'movies_databases', topic +'-db.json')), encoding="utf8") as file:
         movies_pages = json.loads(file.read())["results"]
     
     for movie_name in movies_list:
@@ -221,7 +221,7 @@ def populate_existing_movies_in_notion():
     topic = "movies"
 
     get_pages(database_id, topic)
-    with open(str(Path.cwd().joinpath('notion_projects', 'movies', topic + '-db.json')), encoding="utf8") as file:
+    with open(str(Path.cwd().joinpath('notion_projects', 'movies', 'movies_databases', topic + '-db.json')), encoding="utf8") as file:
         movies_pages = json.loads(file.read())["results"]
     
     for movie_page in movies_pages:
