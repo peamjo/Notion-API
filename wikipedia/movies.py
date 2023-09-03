@@ -249,12 +249,10 @@ def populate_existing_movies_in_notion():
     if not_found_list != []:
         print("Not Found List:", not_found_list)
 
-def runner():
-    start = time.time()
-    #create_movies_in_notion(["Cars", "Cars 2", "How to Train Your Dragon 2"])
-    populate_existing_movies_in_notion()
-    end = time.time()
 
-    print(f"Time taken to run the code was {end-start} seconds")
+start = time.time()
+#create_movies_in_notion(["Cars", "Cars 2", "How to Train Your Dragon 2"])
+populate_existing_movies_in_notion()
+end = time.time()
 
-runner()
+print(f"Time taken to run the code was {end-start} seconds")

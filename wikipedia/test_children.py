@@ -23,4 +23,4 @@ not_found_list=[]
 error_list = []
 topic = "movies"
 
-get_content("db808f70-1ed5-416f-9c1a-7a8be5f08baa", topic)
+get_content("552ec313-21da-4c98-b1ad-d7dc2f3bd7ec", topic)
