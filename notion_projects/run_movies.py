@@ -7,7 +7,7 @@ from notion_manipulation.import_contents import get_content
 
 
 def create_movies():
-    create_movies_in_notion(["Ant-Man"])
+    create_movies_in_notion(["Coco"])
 
 def populate_movies():
     populate_existing_movies_in_notion()

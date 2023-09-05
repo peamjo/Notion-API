@@ -68,7 +68,7 @@ def create_cover_image(data):
     creation_data = update_data[1:len(update_data)-1]
     return creation_data
 
-def create_media_block(name, description):
+def create_paragraph_block(description):
     update_data = str({
         "children": [
         {
@@ -77,6 +77,23 @@ def create_media_block(name, description):
                     {
                         "text": {
                             "content": description}}]}}]})
+    creation_data = update_data[14:len(update_data)-2]
+    return creation_data
+
+def create_h2_block(description, color):
+    update_data = str({
+        "children": [
+        {
+            "heading_2": {
+                "rich_text": [
+                    {
+                        "text": {
+                            "content": description,
+                            },
+                        "annotations": {
+                                "color": color,
+                            }
+                            }]}}]})
     creation_data = update_data[14:len(update_data)-2]
     return creation_data
 

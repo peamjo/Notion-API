@@ -12,9 +12,11 @@ from dotenv import load_dotenv
 from movies.movie_summary_template import *
 from notion_manipulation.create_notion import *
 from notion_manipulation.edit_overwrite_notion import *
-from notion_manipulation.final_transfer import (create_page, populate_content,
+from notion_manipulation.final_transfer import (create_page, delete_content,
+                                                populate_content,
+                                                populate_content_after_block,
                                                 populate_page_data,
-                                                update_page, delete_content)
+                                                update_content, update_page)
 from notion_manipulation.import_contents import get_content
 from notion_manipulation.import_requests import get_pages
 from notion_manipulation.notion_functions import *
@@ -59,8 +61,7 @@ def get_movie_info(movie_name, database_id):
 
 def process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic):
 
-    genres, spoken_languages, regions, production_companies, countries, actors, directors, producers, cinematographers, composers, editors, writers = ([] for i in range(12))
-    actors_and_characters = ""
+    genres, spoken_languages, regions, production_companies, countries, actors, directors, producers, cinematographers, composers, editors, writers, actors_and_characters = ([] for i in range(13))
     
     title = description_data["title"]
     movie_description = description_data["overview"].replace("/","")
@@ -88,9 +89,12 @@ def process_movie_info(movie_name, database_id, description_data, cast_crew_data
     crew_list = cast_crew_data["crew"]
     counter = 0
 
+    casts_and_characters_block = ""
+
     for cast in cast_list:
         actors.append(cast["name"])
-        actors_and_characters += (f"{cast['name']} as {cast['character']}\n")
+        actors_and_characters.append(f"{cast['name']} as {cast['character']}")
+        casts_and_characters_block += f"{cast['name']} as {cast['character']}\n"
         counter += 1
         if counter == 11:
             break
@@ -126,80 +130,97 @@ def process_movie_info(movie_name, database_id, description_data, cast_crew_data
     cover_data = "{" + cover_data.replace("'",'"') + "}"
     cover_data = json.loads(cover_data)
 
-    summary = create_media_block(movie_name, movie_description)
-    actors_and_characters = create_media_block(movie_name, actors_and_characters[:len(actors_and_characters)-1])
+    summary = create_paragraph_block(movie_description)
+
+    casts_and_characters_blocks_to_add = []
+
+    for actor_and_character in actors_and_characters: 
+        casts_and_characters_blocks_to_add.append(create_paragraph_block(actor_and_character))
+
+    casts_and_characters_blocks_to_add_string = ', '.join(casts_and_characters_blocks_to_add)
+
     if cinematographers != []:
-        cinematographers = create_media_block(movie_name, "by " + ", ".join(cinematographers))
+        cinematographers = create_paragraph_block("by " + ", ".join(cinematographers))
     else:
-        cinematographers = create_media_block(movie_name, "")
+        cinematographers = create_paragraph_block("")
     if composers != []:
-        composers = create_media_block(movie_name, "by "+", ".join(composers))
+        composers = create_paragraph_block("by "+", ".join(composers))
     else:
-        composers = create_media_block(movie_name, "")
+        composers = create_paragraph_block("")
     
-    template = details_plot_blocks[1:len(details_plot_blocks)-1] + ", " + summary + ", " + cast_and_characters_block + ", " + actors_and_characters + ", " + cinematography_block + ", " + cinematographers + ", " + music_block + ", " + composers + ", " + quotes_overall_blocks[1:len(quotes_overall_blocks)-1]
+
+    template = details_plot_blocks[1:len(details_plot_blocks)-1] + ", " + summary + ", " + cast_and_characters_block + ", " + casts_and_characters_blocks_to_add_string + ", " + cinematography_block + ", " + cinematographers + ", " + music_block + ", " + composers + ", " + quotes_overall_blocks[1:len(quotes_overall_blocks)-1]
     #print(template)
     
     summary = ast.literal_eval(summary)
     template = ast.literal_eval(template)
     
-    return movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template
+    return movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template, casts_and_characters_blocks_to_add, cinematographers, composers
+
+def edit_existing_movie_data(movie_page, movie_description, existing_content, template, summary, casts_and_characters_blocks_to_add, cinematographers, composers):
+    #if existing_content[0]["type"] == "heading_2":
+    if existing_content[0]["heading_2"]["rich_text"][0]["text"]["content"] == "History":
+        for i in range(len(existing_content)):
+            if existing_content[i]["type"] == "heading_2":
+                if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "History":
+                        update_content(existing_content[i]["id"], ast.literal_eval(create_h2_block("Movie History/Details", "yellow")))
+                if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Plot":
+                        update_content(existing_content[i]["id"], ast.literal_eval(create_h2_block("Plot", "green")))
+                        plot_block = i
+                if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Cast and Characters":
+                        update_content(existing_content[i]["id"], ast.literal_eval(create_h2_block("Cast and Characters", "pink")))
+                        cast_and_characters_block = i
+                if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Cinematography":
+                        update_content(existing_content[i]["id"], ast.literal_eval(create_h2_block("Cinematography", "gray")))
+                        cinematography_block = i
+                if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Music Score":
+                        update_content(existing_content[i]["id"], ast.literal_eval(create_h2_block("Music/Film Score", "blue")))
+                        music_block = i
+                if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Quote":
+                        update_content(existing_content[i]["id"], ast.literal_eval(create_h2_block("Quotes", "purple")))
+                if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Overall":
+                        update_content(existing_content[i]["id"], ast.literal_eval(create_h2_block("Overall", "brown")))
+                        overall_block = i
+        
+
+        if existing_content[plot_block+1]["type"] == "paragraph":
+            if existing_content[plot_block+1]["paragraph"]["rich_text"] == []:
+                update_content(existing_content[plot_block+1]["id"], summary) 
+        
+        for cast in reversed(casts_and_characters_blocks_to_add):
+            populate_content_after_block(movie_page["id"], [ast.literal_eval(cast)], existing_content[cast_and_characters_block]["id"])
+
+        if existing_content[cinematography_block+1]["type"] == "paragraph" and existing_content[cinematography_block+1]["paragraph"]["rich_text"] == [] and cinematographers != create_paragraph_block(""):
+            populate_content_after_block(movie_page["id"], [ast.literal_eval(cinematographers)], existing_content[cinematography_block]["id"])
+
+        if existing_content[music_block+1]["type"] == "paragraph" and existing_content[music_block+1]["paragraph"]["rich_text"] == [] and composers != create_paragraph_block(""):
+            populate_content_after_block(movie_page["id"], [ast.literal_eval(composers)], existing_content[music_block]["id"])
+
+        try:
+            extra_plot_limit = len(existing_content)-overall_block   
+            for i in range(1,extra_plot_limit):
+                if existing_content[overall_block+i]["type"] == "paragraph":
+                    if existing_content[overall_block+i]["paragraph"]["rich_text"][0]["text"]["content"] == movie_description:
+                        delete_content(existing_content[overall_block+i]["id"])
+        except:
+            pass
+
+    else:
+        populate_content(movie_page["id"], template)
 
 def fast_create_movie(movie_data_string, cover_data, icon_data, database_id, template):
     create_page(movie_data_string, cover_data, icon_data, database_id, template)    
 
-def fast_populate_movie(movie_page, movie_data_string, cover_data, icon_data, template, summary, movie_description, topic):    
+def fast_populate_movie(movie_page, movie_data_string, cover_data, icon_data, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers):    
     existing_content = get_content(movie_page["id"], topic)
     if existing_content == []:
         populate_page_data(movie_page["id"], movie_data_string, cover_data, icon_data)
         populate_content(movie_page["id"], template)
     else:
         populate_page_data(movie_page["id"], movie_data_string, cover_data, icon_data)
-        if existing_content[0]["type"] == "heading_2":
-            for i in range(len(existing_content)):
-                if existing_content[i]["type"] == "heading_2":
-                    if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "History":
-                            existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] = "Movie History/Details"
-                            existing_content[i]["heading_2"]["rich_text"][0]["annotations"]["color"] = "yellow"
-                    if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Plot":
-                            existing_content[i]["heading_2"]["rich_text"][0]["annotations"]["color"] = "green"
-                            plot_block = i
-                    if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Cast and Characters":
-                            existing_content[i]["heading_2"]["rich_text"][0]["annotations"]["color"] = "pink"
-                    if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Cinematography":
-                            existing_content[i]["heading_2"]["rich_text"][0]["annotations"]["color"] = "gray"
-                    if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Music Score":
-                            existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] = "Music/Film Score"
-                            existing_content[i]["heading_2"]["rich_text"][0]["annotations"]["color"] = "blue"
-                    if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Quote":
-                            existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] = "Quotes"
-                            existing_content[i]["heading_2"]["rich_text"][0]["annotations"]["color"] = "purple"
-                    if existing_content[i]["heading_2"]["rich_text"][0]["text"]["content"] == "Overall":
-                            existing_content[i]["heading_2"]["rich_text"][0]["annotations"]["color"] = "brown"
-                            overall_block = i
-            
-            for block in existing_content:
-                delete_content(block["id"])
+        edit_existing_movie_data(movie_page, movie_description, existing_content, template, summary, casts_and_characters_blocks_to_add, cinematographers, composers)
 
-            try:
-                if existing_content[plot_block+1]["type"] == "paragraph":
-                    if existing_content[plot_block+1]["paragraph"]["rich_text"] == []:
-                        existing_content[plot_block+1] = summary
-                extra_plot_limit = len(existing_content)-overall_block   
-                for i in range(1,extra_plot_limit):
-                    if existing_content[overall_block+i]["type"] == "paragraph":
-                        if existing_content[overall_block+i]["paragraph"]["rich_text"][0]["text"]["content"] == movie_description:
-                            existing_content[overall_block+i]["paragraph"]["rich_text"] = []
-            except:
-                pass
-
-            #print(existing_content)
-            populate_content(movie_page["id"], existing_content)
-
-        else:
-            populate_content(movie_page["id"], template)
-
-def slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_description, topic):
+def slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers):
     overwrite_multiselect(movie_page, "Director(s)", movie_data_dict.get("Director(s)"))
     overwrite_multiselect(movie_page, "Starring", movie_data_dict.get("Starring"))
     overwrite_multiselect(movie_page, "Genre(s)", movie_data_dict.get("Genre(s)"))
@@ -223,7 +244,7 @@ def slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_de
     if existing_content == []:
         populate_content(movie_page["id"], template)
     else:
-        populate_content(movie_page["id"], [summary])
+        edit_existing_movie_data(movie_page, movie_description, existing_content, template, summary, casts_and_characters_blocks_to_add, cinematographers, composers)
 
 def create_movies_in_notion(movies_list):
     load_dotenv()
@@ -240,7 +261,7 @@ def create_movies_in_notion(movies_list):
             movie_exist = check_pages(database_id, movies_pages, movie_name, topic)
             if movie_exist == False:
                 description_data, cast_crew_data = get_movie_info(movie_name, database_id)
-                movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
+                movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template, casts_and_characters_blocks_to_add = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
                 fast_create_movie(movie_data_string, cover_data, icon_data, database_id, template)
                 print(f"{movie_name} has been added to the database")
             else:
@@ -267,15 +288,15 @@ def populate_existing_movies_in_notion():
         movies_pages = json.loads(file.read())["results"]
     
     for movie_page in movies_pages:
-        try:
+        #try:
             movie_name = movie_page["properties"]["Name"]["title"][0]["text"]["content"]
             description_data, cast_crew_data = get_movie_info(movie_name, database_id)
-            try:
-                movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
-                fast_populate_movie(movie_page, movie_data_string, cover_data, icon_data, template, summary, movie_description, topic)
-                #slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_description, topic)
-                print(f"{movie_name} has been edited")
-            except Exception as error:
+        #    try:
+            movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template, casts_and_characters_blocks_to_add, cinematographers, composers = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
+            fast_populate_movie(movie_page, movie_data_string, cover_data, icon_data, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers)
+            #slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers)
+            print(f"{movie_name} has been edited")
+            """except Exception as error:
                 error_list.append(movie_name)
                 print(f"{movie_name} editing failed")
                 print("An exception occurred:", error)
@@ -285,7 +306,7 @@ def populate_existing_movies_in_notion():
                 print(f"{movie_name} could not be found")
                 print("An exception occurred:", error)
             except:
-                print("Empty Page")
+                print("Empty Page")"""
 
 
     if error_list != []:

@@ -4,6 +4,7 @@ from notion_manipulation.import_requests import get_pages
 from dotenv import load_dotenv
 import os
 import base64
+import sys
 
 load_dotenv()
 notion_token = os.getenv("NOTION_TOKEN")
@@ -18,34 +19,41 @@ def create_page(data: dict, cover_data, icon_data, database_id, content):
     create_url = "https://api.notion.com/v1/pages"
     payload = {"parent": {"database_id": database_id}, "cover": cover_data, "icon": icon_data, "properties": data, "children": content}
     res = requests.post(create_url, headers=HEADERS, json=payload)
-    #print("Create Page",res.status_code, res.text)
+    #print("Create Page:",res.status_code, res.text)
     return res
 
 def populate_page_data(page_id: str, data: dict, cover_data, icon_data):
     url = f"https://api.notion.com/v1/pages/{page_id}"
     payload = {"cover": cover_data, "icon": icon_data, "properties": data}
     res = requests.patch(url, headers=HEADERS, json=payload)
-    #print("Populate Page Data", res.status_code, res.text)
+    #print("Populate Page Data:", res.status_code, res.text)
     return res
 
-def populate_content(block_id: str, content):
-    url = f"https://api.notion.com/v1/blocks/{block_id}/children"
+def populate_content(page_id: str, content):
+    url = f"https://api.notion.com/v1/blocks/{page_id}/children"
     payload = {"children": content}
     res = requests.patch(url, headers=HEADERS, json=payload)
-    #print("Populate Content", res.status_code, res.text)
+    print("Populate Content:", res.status_code, res.text)
     return res
 
-def update_content(block_id: str):
+def populate_content_after_block(page_id: str, content, block_id):
+    url = f"https://api.notion.com/v1/blocks/{page_id}/children"
+    payload = {"children": content, "after": block_id}
+    res = requests.patch(url, headers=HEADERS, json=payload)
+    #print("Populate Content After Block:", res.status_code, res.text)
+    return res
+
+def update_content(block_id: str, content):
     url = f"https://api.notion.com/v1/blocks/{block_id}/"
-    payload = {"children": content}
+    payload = content
     res = requests.patch(url, headers=HEADERS, json=payload)
-    print("Update Content", res.status_code, res.text)
+    #print("Update Content:", res.status_code, res.text)
     return res
 
 def delete_content(block_id: str):
     url = f"https://api.notion.com/v1/blocks/{block_id}/"
     res = requests.delete(url, headers=HEADERS)
-    #print("Delete Content", res.status_code, res.text)
+    #print("Delete Content:", res.status_code, res.text)
     return res
 
 def update_page(page_id: str, data: dict):
