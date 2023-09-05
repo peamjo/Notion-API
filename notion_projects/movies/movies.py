@@ -288,15 +288,15 @@ def populate_existing_movies_in_notion():
         movies_pages = json.loads(file.read())["results"]
     
     for movie_page in movies_pages:
-        #try:
+        try:
             movie_name = movie_page["properties"]["Name"]["title"][0]["text"]["content"]
             description_data, cast_crew_data = get_movie_info(movie_name, database_id)
-        #    try:
-            movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template, casts_and_characters_blocks_to_add, cinematographers, composers = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
-            fast_populate_movie(movie_page, movie_data_string, cover_data, icon_data, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers)
-            #slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers)
-            print(f"{movie_name} has been edited")
-            """except Exception as error:
+            try:
+                movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template, casts_and_characters_blocks_to_add, cinematographers, composers = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
+                fast_populate_movie(movie_page, movie_data_string, cover_data, icon_data, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers)
+                #slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_description, topic, casts_and_characters_blocks_to_add, cinematographers, composers)
+                print(f"{movie_name} has been edited")
+            except Exception as error:
                 error_list.append(movie_name)
                 print(f"{movie_name} editing failed")
                 print("An exception occurred:", error)
@@ -306,7 +306,7 @@ def populate_existing_movies_in_notion():
                 print(f"{movie_name} could not be found")
                 print("An exception occurred:", error)
             except:
-                print("Empty Page")"""
+                print("Empty Page")
 
 
     if error_list != []:
