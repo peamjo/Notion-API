@@ -3,29 +3,19 @@
     "results": [
         {
             "object": "page",
-            "id": "6885527e-3124-4a3d-bc73-819bc52cde1c",
-            "created_time": "2023-09-05T12:18:00.000Z",
-            "last_edited_time": "2023-09-05T12:39:00.000Z",
+            "id": "d972d0d5-94dc-4ecd-b745-05729d2148e1",
+            "created_time": "2023-09-11T09:42:00.000Z",
+            "last_edited_time": "2023-09-11T09:42:00.000Z",
             "created_by": {
                 "object": "user",
-                "id": "bafa7d12-fbf3-43bd-ab56-db793570b5e1"
+                "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
             },
             "last_edited_by": {
                 "object": "user",
                 "id": "ec4f178f-b17a-4a2d-8f97-972073085c9b"
             },
-            "cover": {
-                "type": "external",
-                "external": {
-                    "url": "https://image.tmdb.org/t/p/original/askg3SMvhqEl4OL52YuvdtY40Yb.jpg"
-                }
-            },
-            "icon": {
-                "type": "external",
-                "external": {
-                    "url": "https://image.tmdb.org/t/p/w342//gGEsBPAijhVUFoiNpgZXqRVWJt2.jpg"
-                }
-            },
+            "cover": null,
+            "icon": null,
             "parent": {
                 "type": "database_id",
                 "database_id": "da11a187-af89-4154-93a0-fd51bcd78d38"
@@ -35,18 +25,12 @@
                 "Region(s)": {
                     "id": "%3Af%7Df",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "3777a911-cdb4-4c5d-86a4-ecbbf4715c61",
-                            "name": "Hollywood",
-                            "color": "yellow"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Runtime (mins)": {
                     "id": "%40QfO",
                     "type": "number",
-                    "number": 105
+                    "number": null
                 },
                 "Writer(s)": {
                     "id": "%40~%3C_",
@@ -56,224 +40,67 @@
                 "Producer(s)": {
                     "id": "LM%3CH",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "239ccb31-22ac-465c-a924-721044e440c1",
-                            "name": "Darla K. Anderson",
-                            "color": "pink"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Production Company": {
                     "id": "Lqim",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "b03b1830-78ee-4888-98ed-33de855dbfa0",
-                            "name": "Pixar",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "e592eb03-c673-4319-b550-d52caccda45a",
-                            "name": "Walt Disney Pictures",
-                            "color": "gray"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Decade": {
                     "id": "M%5D%7D%3C",
                     "type": "select",
-                    "select": {
-                        "id": "e7ac2dea-c49c-4f27-b0bd-31bee5a22974",
-                        "name": "2010s",
-                        "color": "pink"
-                    }
+                    "select": null
                 },
                 "Language(s)": {
                     "id": "QlKl",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "bb57c8d2-3935-499c-af72-c28a58fcbd48",
-                            "name": "English",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "7b5ebf55-7960-415b-8d0f-46dd90d6b537",
-                            "name": "Spanish",
-                            "color": "red"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Director(s)": {
                     "id": "S%5BcC",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "040e425f-7079-43cc-a024-cce7499ed84d",
-                            "name": "Lee Unkrich",
-                            "color": "default"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Starring": {
                     "id": "V%3ERB",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "dde0bea4-1de4-448e-992f-e9a599c52391",
-                            "name": "Anthony Gonzalez",
-                            "color": "orange"
-                        },
-                        {
-                            "id": "179ec502-3fd3-430a-b41b-040eaa1c8c79",
-                            "name": "Gael García Bernal",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "2ea9d3d4-86bc-45b8-a42b-b8ac3b29c709",
-                            "name": "Benjamin Bratt",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "429d1497-7518-437b-8153-7f0cd34ab410",
-                            "name": "Alanna Ubach",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "be51c197-289c-48db-b241-498f0fa1ef2a",
-                            "name": "Renée Victor",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "957fecda-99f0-4ae9-9b4d-3078d09ff084",
-                            "name": "Ana Ofelia Murguía",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "4827e3b8-0cab-424c-9151-55baec9766f7",
-                            "name": "Edward James Olmos",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "83388a67-8497-4f6c-955c-3b4324e04c48",
-                            "name": "Jaime Camil",
-                            "color": "gray"
-                        },
-                        {
-                            "id": "7ec0c036-a5cd-42ca-a283-4fdc09419fa4",
-                            "name": "Alfonso Arau",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "114529b6-0359-4e93-a069-09032c292d7e",
-                            "name": "Herbert Siguenza",
-                            "color": "pink"
-                        },
-                        {
-                            "id": "62566181-37f9-4cdb-83bc-289936c31c83",
-                            "name": "Lombardo Boyar",
-                            "color": "orange"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Date Released": {
                     "id": "VZeU",
                     "type": "date",
-                    "date": {
-                        "start": "2017-10-27",
-                        "end": null,
-                        "time_zone": null
-                    }
+                    "date": null
                 },
                 "TMDB Score": {
                     "id": "WBe%3E",
                     "type": "number",
-                    "number": 8.222
+                    "number": null
                 },
                 "Worldwide Gross": {
                     "id": "WwvX",
                     "type": "number",
-                    "number": 800526015
+                    "number": null
                 },
                 "Cinematographer(s)": {
                     "id": "%5DZv%3E",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "931aca19-5f22-4187-a5df-4c403d52ee2a",
-                            "name": "Matt Aspbury",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "57f49fbf-009d-4d35-b999-42c4959aab9b",
-                            "name": "Danielle Feinberg",
-                            "color": "pink"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Composer(s)": {
                     "id": "%5E_%5Cw",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "b1f189fd-d2ee-4a14-bbc0-6dce3f400b01",
-                            "name": "Michael Giacchino",
-                            "color": "brown"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Editor(s)": {
                     "id": "v%5Bql",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "5291316e-57a3-4dc4-8890-d4a46955ed6a",
-                            "name": "Lee Unkrich",
-                            "color": "blue"
-                        },
-                        {
-                            "id": "f1a8c0f9-8a1f-4c87-b235-dea4992aafde",
-                            "name": "Steve Bloom",
-                            "color": "green"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Genre(s)": {
                     "id": "yffv",
                     "type": "multi_select",
-                    "multi_select": [
-                        {
-                            "id": "bb3f1bf2-1cfe-4af1-8b98-56b9e5c95b9c",
-                            "name": "Family",
-                            "color": "yellow"
-                        },
-                        {
-                            "id": "432d2b4a-7ca0-4b86-ae32-3d30df0e6d45",
-                            "name": "Animation",
-                            "color": "brown"
-                        },
-                        {
-                            "id": "229edab9-8c26-48de-adfe-87dcecdbec39",
-                            "name": "Fantasy",
-                            "color": "green"
-                        },
-                        {
-                            "id": "82f38258-819b-48eb-bdc5-6a45e8b0a5cc",
-                            "name": "Music",
-                            "color": "purple"
-                        },
-                        {
-                            "id": "50ee6c3d-5b69-48bd-918b-639c962adc99",
-                            "name": "Comedy",
-                            "color": "red"
-                        },
-                        {
-                            "id": "3ba54a4e-f66d-4b1f-ba78-364b799e5e11",
-                            "name": "Adventure",
-                            "color": "pink"
-                        }
-                    ]
+                    "multi_select": []
                 },
                 "Name": {
                     "id": "title",
@@ -282,7 +109,7 @@
                         {
                             "type": "text",
                             "text": {
-                                "content": "Coco",
+                                "content": "Into the Inferno",
                                 "link": null
                             },
                             "annotations": {
@@ -293,13 +120,13 @@
                                 "code": false,
                                 "color": "default"
                             },
-                            "plain_text": "Coco",
+                            "plain_text": "Into the Inferno",
                             "href": null
                         }
                     ]
                 }
             },
-            "url": "https://www.notion.so/Coco-6885527e31244a3dbc73819bc52cde1c",
+            "url": "https://www.notion.so/Into-the-Inferno-d972d0d594dc4ecdb74505729d2148e1",
             "public_url": null
         }
     ],

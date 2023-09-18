@@ -248,12 +248,12 @@ def slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_de
 
 def create_movies_in_notion(movies_list):
     load_dotenv()
-    database_id = os.getenv("EXAMPLE_MOVIES_DATABASE_ID")
+    database_id = os.getenv("MOVIES_DATABASE_ID")
     error_list = []
     topic = "movies"
 
-    get_pages(database_id, topic)
-    with open(str(Path.cwd().joinpath('notion_projects', 'movies', 'movies_databases', topic +'-db.json')), encoding="utf8") as file:
+    #get_pages(database_id, topic)
+    with open(str(Path.cwd().joinpath('notion_projects', 'movies', 'movies_databases','real-' + topic +'-db.json')), encoding="utf8") as file:
         movies_pages = json.loads(file.read())["results"]
     
     for movie_name in movies_list:
@@ -261,7 +261,7 @@ def create_movies_in_notion(movies_list):
             movie_exist = check_pages(database_id, movies_pages, movie_name, topic)
             if movie_exist == False:
                 description_data, cast_crew_data = get_movie_info(movie_name, database_id)
-                movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template, casts_and_characters_blocks_to_add = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
+                movie_data_string, movie_data_dict, cover_data, icon_data, summary, movie_description, template, casts_and_characters_blocks_to_add, cinematographers, composers = process_movie_info(movie_name, database_id, description_data, cast_crew_data, topic)
                 fast_create_movie(movie_data_string, cover_data, icon_data, database_id, template)
                 print(f"{movie_name} has been added to the database")
             else:
