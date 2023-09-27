@@ -248,12 +248,12 @@ def slow_populate_movie(movie_page, movie_data_dict, template, summary, movie_de
 
 def create_movies_in_notion(movies_list):
     load_dotenv()
-    database_id = os.getenv("MOVIES_DATABASE_ID")
+    database_id = os.getenv("EXAMPLE_MOVIES_DATABASE_ID")
     error_list = []
     topic = "movies"
 
-    #get_pages(database_id, topic)
-    with open(str(Path.cwd().joinpath('notion_projects', 'movies', 'movies_databases','real-' + topic +'-db.json')), encoding="utf8") as file:
+    get_pages(database_id, topic)
+    with open(str(Path.cwd().joinpath('notion_projects', 'movies', 'movies_databases',topic +'-db.json')), encoding="utf8") as file:
         movies_pages = json.loads(file.read())["results"]
     
     for movie_name in movies_list:
@@ -283,7 +283,7 @@ def populate_existing_movies_in_notion():
     error_list = []
     topic = "movies"
 
-    get_pages(database_id, topic)
+    #get_pages(database_id, topic)
     with open(str(Path.cwd().joinpath('notion_projects', 'movies', 'movies_databases', topic + '-db.json')), encoding="utf8") as file:
         movies_pages = json.loads(file.read())["results"]
     
