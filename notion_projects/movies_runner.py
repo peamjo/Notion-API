@@ -21,8 +21,8 @@ def get_content_children():
 if __name__ == '__main__':
     start = time.time()
 
-    create_movies()
-    #populate_movies()
+    #create_movies()
+    populate_movies()
     #get_content_children()
     
     end = time.time()
