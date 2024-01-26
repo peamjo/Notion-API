@@ -1,1 +1,1 @@
-import os
+AMPLE_
